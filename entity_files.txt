@@ -1,0 +1,17 @@
+AlbumArtistMap
+AlbumEntity
+ArtistEntity
+Event
+FormatEntity
+LyricsEntity
+PlayCountEntity
+PlaylistEntity
+PlaylistSongMap
+RecognitionHistory
+RelatedSongMap
+SearchHistory
+SetVideoIdEntity
+SongAlbumMap
+SongArtistMap
+SongEntity
+SpeedDialItem
