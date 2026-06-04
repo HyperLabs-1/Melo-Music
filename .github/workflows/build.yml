@@ -18,7 +18,7 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleUniversalFossRelease --no-daemon
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Melo-APK
           path: app/build/outputs/apk/**/*.apk
