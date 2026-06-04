@@ -1,0 +1,5 @@
+{
+  "name": "Melo Music Server",
+  "region": "Global",
+  "serverUrl": "wss://iad1tya-melomusic.hf.space/ws"
+}
