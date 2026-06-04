@@ -16,7 +16,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
       - name: Build APK
-        run: ./gradlew assembleFossRelease --no-daemon
+        run: ./gradlew assembleUniversalFossRelease --no-daemon
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
