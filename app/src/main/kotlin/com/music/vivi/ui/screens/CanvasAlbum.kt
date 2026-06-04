@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -8,12 +8,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import iad1tya.melo.music.applecanvas.AppleMusicCanvasProvider
-import iad1tya.melo.music.melomusiccanvas.melomusicCanvasProvider
-import iad1tya.melo.music.canvas.CanvasArtwork
-import iad1tya.melo.music.canvas.MonochromeAlbumCanvas
-import iad1tya.melo.music.canvas.MonochromeApiCanvas
-import iad1tya.melo.music.ui.player.CanvasArtworkPlaybackCache
+import com.hyperlabs.melo.applecanvas.AppleMusicCanvasProvider
+import com.hyperlabs.melo.melomusiccanvas.melomusicCanvasProvider
+import com.hyperlabs.melo.canvas.CanvasArtwork
+import com.hyperlabs.melo.canvas.MonochromeAlbumCanvas
+import com.hyperlabs.melo.canvas.MonochromeApiCanvas
+import com.hyperlabs.melo.ui.player.CanvasArtworkPlaybackCache
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.util.Locale

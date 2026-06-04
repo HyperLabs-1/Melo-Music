@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.utils
+package com.hyperlabs.melo.ui.utils
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -48,14 +48,14 @@ import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
 import com.music.innertube.YouTube
 import com.music.innertube.models.MediaInfo
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.entities.FormatEntity
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.ui.component.LocalBottomSheetPageState
-import iad1tya.melo.music.ui.component.shimmer.ShimmerHost
-import iad1tya.melo.music.ui.component.shimmer.TextPlaceholder
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.entities.FormatEntity
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.ui.component.LocalBottomSheetPageState
+import com.hyperlabs.melo.ui.component.shimmer.ShimmerHost
+import com.hyperlabs.melo.ui.component.shimmer.TextPlaceholder
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable

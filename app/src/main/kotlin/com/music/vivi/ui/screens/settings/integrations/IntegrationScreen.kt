@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings.integrations
+package com.hyperlabs.melo.ui.screens.settings.integrations
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -18,12 +18,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.IntegrationCard
-import iad1tya.melo.music.ui.component.IntegrationCardItem
-import iad1tya.melo.music.ui.utils.backToMain
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.IntegrationCard
+import com.hyperlabs.melo.ui.component.IntegrationCardItem
+import com.hyperlabs.melo.ui.utils.backToMain
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

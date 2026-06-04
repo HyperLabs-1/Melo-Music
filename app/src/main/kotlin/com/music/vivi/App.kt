@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music
+package com.hyperlabs.melo
 
 import android.app.Application
 import android.app.NotificationChannel
@@ -22,14 +22,14 @@ import com.music.innertube.YouTube
 import com.music.innertube.models.IpVersion
 import com.music.innertube.models.YouTubeLocale
 import com.music.kugou.KuGou
-import iad1tya.melo.music.constants.*
-import iad1tya.melo.music.di.ApplicationScope
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.extensions.toInetSocketAddress
-import iad1tya.melo.music.utils.CrashHandler
-import iad1tya.melo.music.utils.cipher.CipherDeobfuscator
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.constants.*
+import com.hyperlabs.melo.di.ApplicationScope
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.extensions.toInetSocketAddress
+import com.hyperlabs.melo.utils.CrashHandler
+import com.hyperlabs.melo.utils.cipher.CipherDeobfuscator
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

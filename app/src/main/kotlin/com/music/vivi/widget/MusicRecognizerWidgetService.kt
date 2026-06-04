@@ -3,7 +3,7 @@
  * Licensed under GPL-3.0 | See git history for contributors
  */
 
-package iad1tya.melo.music.widget
+package com.hyperlabs.melo.widget
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -25,11 +25,11 @@ import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.request.crossfade
 import coil3.toBitmap
-import iad1tya.melo.music.MainActivity
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.DatabaseDao
-import iad1tya.melo.music.db.entities.RecognitionHistory
-import iad1tya.melo.music.recognition.MusicRecognitionService
+import com.hyperlabs.melo.MainActivity
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.DatabaseDao
+import com.hyperlabs.melo.db.entities.RecognitionHistory
+import com.hyperlabs.melo.recognition.MusicRecognitionService
 import com.music.shazamkit.models.RecognitionStatus
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
@@ -330,8 +330,8 @@ class MusicRecognizerWidgetService : Service() {
     // ─── Constants ────────────────────────────────────────────────────────────
 
     companion object {
-        const val ACTION_START_RECOGNITION = "iad1tya.melo.music.widget.recognizer.START"
-        const val ACTION_STOP_RECOGNITION = "iad1tya.melo.music.widget.recognizer.STOP"
+        const val ACTION_START_RECOGNITION = "com.hyperlabs.melo.widget.recognizer.START"
+        const val ACTION_STOP_RECOGNITION = "com.hyperlabs.melo.widget.recognizer.STOP"
 
         const val PREFS_NAME = "recognizer_widget_prefs"
         const val PREF_STATE = "state"

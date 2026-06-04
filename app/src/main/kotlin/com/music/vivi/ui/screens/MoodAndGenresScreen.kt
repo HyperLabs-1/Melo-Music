@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import android.content.res.Configuration.ORIENTATION_LANDSCAPE
 import androidx.compose.foundation.background
@@ -33,14 +33,14 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.NavigationTitle
-import iad1tya.melo.music.ui.component.shimmer.ListItemPlaceHolder
-import iad1tya.melo.music.ui.component.shimmer.ShimmerHost
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.viewmodels.MoodAndGenresViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.NavigationTitle
+import com.hyperlabs.melo.ui.component.shimmer.ListItemPlaceHolder
+import com.hyperlabs.melo.ui.component.shimmer.ShimmerHost
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.viewmodels.MoodAndGenresViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

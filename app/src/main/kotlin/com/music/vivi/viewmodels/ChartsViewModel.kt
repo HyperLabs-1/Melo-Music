@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

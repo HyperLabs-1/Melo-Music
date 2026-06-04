@@ -1,4 +1,4 @@
-package iad1tya.melo.music.recognition
+package com.hyperlabs.melo.recognition
 
 import androidx.annotation.OptIn
 import androidx.media3.common.util.UnstableApi

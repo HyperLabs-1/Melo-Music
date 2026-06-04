@@ -1,4 +1,4 @@
-package iad1tya.melo.music.artistvideo
+package com.hyperlabs.melo.artistvideo
 
 import android.view.TextureView
 import android.view.ViewGroup

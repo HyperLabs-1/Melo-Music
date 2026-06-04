@@ -1,11 +1,11 @@
 
 
-package iad1tya.melo.music.ui.utils
+package com.hyperlabs.melo.ui.utils
 
 import android.content.Context
 import android.widget.Toast
 import androidx.compose.ui.platform.UriHandler
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 
 fun UriHandler.safeOpenUri(context: Context, uri: String) {

@@ -1,26 +1,26 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
-import iad1tya.melo.music.MainActivity
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.InternalDatabase
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.ArtistEntity
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.db.entities.SongEntity
-import iad1tya.melo.music.extensions.div
-import iad1tya.melo.music.extensions.tryOrNull
-import iad1tya.melo.music.extensions.zipInputStream
-import iad1tya.melo.music.extensions.zipOutputStream
-import iad1tya.melo.music.playback.MusicService
-import iad1tya.melo.music.playback.MusicService.Companion.PERSISTENT_QUEUE_FILE
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.MainActivity
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.InternalDatabase
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.ArtistEntity
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.db.entities.SongEntity
+import com.hyperlabs.melo.extensions.div
+import com.hyperlabs.melo.extensions.tryOrNull
+import com.hyperlabs.melo.extensions.zipInputStream
+import com.hyperlabs.melo.extensions.zipOutputStream
+import com.hyperlabs.melo.playback.MusicService
+import com.hyperlabs.melo.playback.MusicService.Companion.PERSISTENT_QUEUE_FILE
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking

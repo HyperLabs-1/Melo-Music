@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import android.content.Intent
 import android.os.Bundle
@@ -39,9 +39,9 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.FileProvider
-import iad1tya.melo.music.R
-import iad1tya.melo.music.ui.theme.melomusicTheme
-import iad1tya.melo.music.utils.CrashHandler
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.ui.theme.melomusicTheme
+import com.hyperlabs.melo.utils.CrashHandler
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date

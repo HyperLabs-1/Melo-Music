@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.utils
+package com.hyperlabs.melo.ui.utils
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -35,9 +35,9 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.entities.SongEntity
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.entities.SongEntity
 import kotlinx.coroutines.FlowPreview
 
 @OptIn(FlowPreview::class)

@@ -1,4 +1,4 @@
-package iad1tya.melo.music.recognition
+package com.hyperlabs.melo.recognition
 
 import android.util.Base64
 import java.io.ByteArrayOutputStream

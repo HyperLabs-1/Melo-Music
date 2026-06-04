@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -32,22 +32,22 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AiProviderKey
-import iad1tya.melo.music.constants.DeeplApiKey
-import iad1tya.melo.music.constants.DeeplFormalityKey
-import iad1tya.melo.music.constants.LanguageCodeToName
-import iad1tya.melo.music.constants.OpenRouterApiKey
-import iad1tya.melo.music.constants.OpenRouterBaseUrlKey
-import iad1tya.melo.music.constants.OpenRouterModelKey
-import iad1tya.melo.music.constants.TranslateLanguageKey
-import iad1tya.melo.music.constants.TranslateModeKey
-import iad1tya.melo.music.ui.component.EnumDialog
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.component.TextFieldDialog
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AiProviderKey
+import com.hyperlabs.melo.constants.DeeplApiKey
+import com.hyperlabs.melo.constants.DeeplFormalityKey
+import com.hyperlabs.melo.constants.LanguageCodeToName
+import com.hyperlabs.melo.constants.OpenRouterApiKey
+import com.hyperlabs.melo.constants.OpenRouterBaseUrlKey
+import com.hyperlabs.melo.constants.OpenRouterModelKey
+import com.hyperlabs.melo.constants.TranslateLanguageKey
+import com.hyperlabs.melo.constants.TranslateModeKey
+import com.hyperlabs.melo.ui.component.EnumDialog
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.component.TextFieldDialog
+import com.hyperlabs.melo.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

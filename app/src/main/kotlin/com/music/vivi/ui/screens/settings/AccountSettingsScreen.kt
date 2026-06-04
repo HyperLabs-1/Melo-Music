@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -36,14 +36,14 @@ import androidx.navigation.NavController
 import coil3.compose.AsyncImage
 import com.music.innertube.YouTube
 import com.music.innertube.utils.parseCookieString
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.constants.*
-import iad1tya.melo.music.ui.component.*
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.AccountSettingsViewModel
-import iad1tya.melo.music.viewmodels.HomeViewModel
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.constants.*
+import com.hyperlabs.melo.ui.component.*
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.AccountSettingsViewModel
+import com.hyperlabs.melo.viewmodels.HomeViewModel
+import com.hyperlabs.melo.R
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun AccountSettingsScreen(

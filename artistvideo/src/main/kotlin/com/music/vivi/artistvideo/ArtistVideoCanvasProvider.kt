@@ -1,4 +1,4 @@
-package iad1tya.melo.music.artistvideo
+package com.hyperlabs.melo.artistvideo
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body

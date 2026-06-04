@@ -1,4 +1,4 @@
-package iad1tya.melo.music.betterlyrics.models
+package com.hyperlabs.melo.betterlyrics.models
 
 import kotlinx.serialization.Serializable
 

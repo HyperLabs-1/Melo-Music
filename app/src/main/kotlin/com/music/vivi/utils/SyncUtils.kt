@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.content.Context
 import androidx.datastore.preferences.core.edit
@@ -11,19 +11,19 @@ import com.music.innertube.models.PlaylistItem
 import com.music.innertube.models.SongItem
 import com.music.innertube.utils.completed
 import com.music.innertube.utils.parseCookieString
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.constants.LastFMUseSendLikes
-import iad1tya.melo.music.constants.LastFullSyncKey
-import iad1tya.melo.music.constants.SYNC_COOLDOWN
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.ArtistEntity
-import iad1tya.melo.music.db.entities.PlaylistEntity
-import iad1tya.melo.music.db.entities.PlaylistSongMap
-import iad1tya.melo.music.db.entities.SongEntity
-import iad1tya.melo.music.extensions.collectLatest
-import iad1tya.melo.music.extensions.isInternetConnected
-import iad1tya.melo.music.extensions.isSyncEnabled
-import iad1tya.melo.music.models.toMediaMetadata
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.constants.LastFMUseSendLikes
+import com.hyperlabs.melo.constants.LastFullSyncKey
+import com.hyperlabs.melo.constants.SYNC_COOLDOWN
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.ArtistEntity
+import com.hyperlabs.melo.db.entities.PlaylistEntity
+import com.hyperlabs.melo.db.entities.PlaylistSongMap
+import com.hyperlabs.melo.db.entities.SongEntity
+import com.hyperlabs.melo.extensions.collectLatest
+import com.hyperlabs.melo.extensions.isInternetConnected
+import com.hyperlabs.melo.extensions.isSyncEnabled
+import com.hyperlabs.melo.models.toMediaMetadata
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineExceptionHandler

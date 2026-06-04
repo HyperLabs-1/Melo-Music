@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import android.annotation.SuppressLint
 import android.content.res.Configuration
@@ -41,23 +41,23 @@ import androidx.media3.exoplayer.offline.Download
 import androidx.media3.exoplayer.offline.DownloadRequest
 import androidx.media3.exoplayer.offline.DownloadService
 import com.music.innertube.YouTube
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.LocalSyncUtils
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.entities.PlaylistSongMap
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.ExoDownloadService
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.Material3MenuGroup
-import iad1tya.melo.music.ui.component.Material3MenuItemData
-import iad1tya.melo.music.ui.component.NewAction
-import iad1tya.melo.music.ui.component.NewActionGrid
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.LocalSyncUtils
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.entities.PlaylistSongMap
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.ExoDownloadService
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.Material3MenuGroup
+import com.hyperlabs.melo.ui.component.Material3MenuItemData
+import com.hyperlabs.melo.ui.component.NewAction
+import com.hyperlabs.melo.ui.component.NewActionGrid
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -78,7 +78,7 @@ fun SelectionSongMenu(
     val coroutineScope = rememberCoroutineScope()
     val playerConnection = LocalPlayerConnection.current ?: return
     val syncUtils = LocalSyncUtils.current
-    val listenTogetherManager = iad1tya.melo.music.LocalListenTogetherManager.current
+    val listenTogetherManager = com.hyperlabs.melo.LocalListenTogetherManager.current
     val isGuest = listenTogetherManager?.isInRoom == true && listenTogetherManager.isHost == false
 
     val allInLibrary by remember {
@@ -533,7 +533,7 @@ fun SelectionMediaMetadataMenu(
     val downloadUtil = LocalDownloadUtil.current
     val coroutineScope = rememberCoroutineScope()
     val playerConnection = LocalPlayerConnection.current ?: return
-    val listenTogetherManager = iad1tya.melo.music.LocalListenTogetherManager.current
+    val listenTogetherManager = com.hyperlabs.melo.LocalListenTogetherManager.current
     val isGuest = listenTogetherManager?.isInRoom == true && listenTogetherManager.isHost == false
 
     val allLiked by remember(songSelection) {

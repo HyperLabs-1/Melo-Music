@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.api
+package com.hyperlabs.melo.api
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

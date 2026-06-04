@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.recognition
+package com.hyperlabs.melo.recognition
 
 import android.Manifest
 import android.annotation.SuppressLint

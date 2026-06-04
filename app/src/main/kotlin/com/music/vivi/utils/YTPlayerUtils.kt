@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.net.ConnectivityManager
 import android.util.Log
@@ -9,7 +9,7 @@ import com.music.innertube.NewPipeExtractor
 import com.music.innertube.YouTube
 import com.music.innertube.models.YouTubeClient
 import com.music.innertube.models.YouTubeClient.Companion.ANDROID_CREATOR
-import iad1tya.melo.music.utils.BotDetectionMitigator
+import com.hyperlabs.melo.utils.BotDetectionMitigator
 import com.music.innertube.models.YouTubeClient.Companion.ANDROID_VR_1_43_32
 import com.music.innertube.models.YouTubeClient.Companion.ANDROID_VR_1_61_48
 import com.music.innertube.models.YouTubeClient.Companion.ANDROID_VR_NO_AUTH
@@ -22,16 +22,16 @@ import com.music.innertube.models.YouTubeClient.Companion.WEB
 import com.music.innertube.models.YouTubeClient.Companion.WEB_CREATOR
 import com.music.innertube.models.YouTubeClient.Companion.WEB_REMIX
 import com.music.innertube.models.response.PlayerResponse
-import iad1tya.melo.music.constants.AudioQuality
-import iad1tya.melo.music.utils.cipher.CipherDeobfuscator
-import iad1tya.melo.music.utils.YTPlayerUtils.MAIN_CLIENT
-import iad1tya.melo.music.utils.YTPlayerUtils.STREAM_FALLBACK_CLIENTS
-import iad1tya.melo.music.utils.YTPlayerUtils.validateStatus
-import iad1tya.melo.music.utils.potoken.PoTokenGenerator
-import iad1tya.melo.music.utils.potoken.PoTokenResult
-import iad1tya.melo.music.utils.sabr.EjsNTransformSolver
-import iad1tya.melo.music.utils.PlaybackLogLevel
-import iad1tya.melo.music.utils.PlaybackLogManager
+import com.hyperlabs.melo.constants.AudioQuality
+import com.hyperlabs.melo.utils.cipher.CipherDeobfuscator
+import com.hyperlabs.melo.utils.YTPlayerUtils.MAIN_CLIENT
+import com.hyperlabs.melo.utils.YTPlayerUtils.STREAM_FALLBACK_CLIENTS
+import com.hyperlabs.melo.utils.YTPlayerUtils.validateStatus
+import com.hyperlabs.melo.utils.potoken.PoTokenGenerator
+import com.hyperlabs.melo.utils.potoken.PoTokenResult
+import com.hyperlabs.melo.utils.sabr.EjsNTransformSolver
+import com.hyperlabs.melo.utils.PlaybackLogLevel
+import com.hyperlabs.melo.utils.PlaybackLogManager
 import com.music.innertube.models.IpVersion
 import okhttp3.Dns
 import okhttp3.OkHttpClient
@@ -123,7 +123,7 @@ object YTPlayerUtils {
         isDownload: Boolean = false
     ): Result<PlaybackData> {
         val showFallbackToast = context?.let { 
-            it.dataStore.data.first()[iad1tya.melo.music.constants.ShowAudioFallbackToastKey] 
+            it.dataStore.data.first()[com.hyperlabs.melo.constants.ShowAudioFallbackToastKey] 
         } ?: true
 
         var losslessFailed = false
@@ -137,13 +137,13 @@ object YTPlayerUtils {
                         val title = knownTitle ?: metadata?.videoDetails?.title
                         val author = knownArtist ?: metadata?.videoDetails?.author?.replace(" - Topic", "")
                         if (title != null && author != null) {
-                            val qobuzClient = iad1tya.melo.music.utils.qobuz.QobuzApiClient()
+                            val qobuzClient = com.hyperlabs.melo.utils.qobuz.QobuzApiClient()
                             val queryArtist = author
                             val queryTitle = title
                             val durationSeconds = metadata?.videoDetails?.lengthSeconds?.toLongOrNull()
                             val durationMs = knownDurationMs ?: (if (durationSeconds != null) durationSeconds * 1000L else null)
                             
-                            var bestMatch: iad1tya.melo.music.utils.qobuz.QobuzTrack? = null
+                            var bestMatch: com.hyperlabs.melo.utils.qobuz.QobuzTrack? = null
                             for (term in qobuzSearchTerms(queryArtist, queryTitle)) {
                                 val searchResult = runCatching { qobuzClient.search(term) }.getOrNull() ?: continue
                                 val candidates = searchResult.tracks?.items ?: continue
@@ -990,7 +990,7 @@ private fun artistSimilarity(a: String, b: String): Float {
     return maxOf(jaccardScore, coverageScore)
 }
 
-fun confidence(queryArtist: String, queryTitle: String, queryDuration: Long?, candidate: iad1tya.melo.music.utils.qobuz.QobuzTrack): Float {
+fun confidence(queryArtist: String, queryTitle: String, queryDuration: Long?, candidate: com.hyperlabs.melo.utils.qobuz.QobuzTrack): Float {
     if (!candidate.streamable) return 0f
 
     val titleSim = jaccard(normalize(queryTitle), normalize(candidate.title))

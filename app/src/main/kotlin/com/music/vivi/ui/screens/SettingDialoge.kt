@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -22,16 +22,16 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import coil3.compose.AsyncImage
 import com.music.innertube.utils.parseCookieString
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AccountEmailKey
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.constants.UseLoginForBrowse
-import iad1tya.melo.music.constants.YtmSyncKey
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.HomeViewModel
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AccountEmailKey
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.constants.UseLoginForBrowse
+import com.hyperlabs.melo.constants.YtmSyncKey
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.HomeViewModel
 import androidx.compose.ui.layout.ContentScale
 
 @Composable

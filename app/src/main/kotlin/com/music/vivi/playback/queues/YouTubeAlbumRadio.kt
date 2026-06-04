@@ -1,12 +1,12 @@
 
 
-package iad1tya.melo.music.playback.queues
+package com.hyperlabs.melo.playback.queues
 
 import androidx.media3.common.MediaItem
 import com.music.innertube.YouTube
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.models.MediaMetadata
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.models.MediaMetadata
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.withContext
 

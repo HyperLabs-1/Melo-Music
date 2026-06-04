@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*

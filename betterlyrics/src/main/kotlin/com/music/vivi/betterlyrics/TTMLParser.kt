@@ -1,4 +1,4 @@
-package iad1tya.melo.music.betterlyrics
+package com.hyperlabs.melo.betterlyrics
 
 import org.w3c.dom.Element
 import org.w3c.dom.Node

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.models
+package com.hyperlabs.melo.models
 
 import java.io.Serializable
 

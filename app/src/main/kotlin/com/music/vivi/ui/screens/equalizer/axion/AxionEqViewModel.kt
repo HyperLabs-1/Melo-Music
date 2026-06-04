@@ -1,13 +1,13 @@
-package iad1tya.melo.music.ui.screens.equalizer.axion
+package com.hyperlabs.melo.ui.screens.equalizer.axion
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.eq.EqualizerService
-import iad1tya.melo.music.eq.data.EQProfileRepository
-import iad1tya.melo.music.eq.data.FilterType
-import iad1tya.melo.music.eq.data.ParametricEQBand
-import iad1tya.melo.music.eq.data.SavedEQProfile
+import com.hyperlabs.melo.eq.EqualizerService
+import com.hyperlabs.melo.eq.data.EQProfileRepository
+import com.hyperlabs.melo.eq.data.FilterType
+import com.hyperlabs.melo.eq.data.ParametricEQBand
+import com.hyperlabs.melo.eq.data.SavedEQProfile
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow

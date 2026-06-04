@@ -1,20 +1,20 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import android.content.Intent
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.App
-import iad1tya.melo.music.constants.AccountChannelHandleKey
-import iad1tya.melo.music.constants.AccountEmailKey
-import iad1tya.melo.music.constants.AccountNameKey
-import iad1tya.melo.music.constants.DataSyncIdKey
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.constants.VisitorDataKey
-import iad1tya.melo.music.utils.SyncUtils
-import iad1tya.melo.music.utils.dataStore
+import com.hyperlabs.melo.App
+import com.hyperlabs.melo.constants.AccountChannelHandleKey
+import com.hyperlabs.melo.constants.AccountEmailKey
+import com.hyperlabs.melo.constants.AccountNameKey
+import com.hyperlabs.melo.constants.DataSyncIdKey
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.constants.VisitorDataKey
+import com.hyperlabs.melo.utils.SyncUtils
+import com.hyperlabs.melo.utils.dataStore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

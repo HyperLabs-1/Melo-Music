@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -26,8 +26,8 @@ import androidx.compose.ui.unit.dp
 import com.music.innertube.models.ArtistItem
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.YTItem
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ThumbnailCornerRadius
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ThumbnailCornerRadius
 
 @Composable
 fun SpeedDialGridItem(

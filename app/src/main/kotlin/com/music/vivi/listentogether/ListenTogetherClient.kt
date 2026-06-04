@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.listentogether
+package com.hyperlabs.melo.listentogether
 
 import android.util.Base64
 import android.Manifest
@@ -18,17 +18,17 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.getSystemService
 import androidx.datastore.preferences.core.edit
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListenTogetherAutoApprovalKey
-import iad1tya.melo.music.constants.ListenTogetherIsHostKey
-import iad1tya.melo.music.constants.ListenTogetherRoomCodeKey
-import iad1tya.melo.music.constants.ListenTogetherServerUrlKey
-import iad1tya.melo.music.constants.ListenTogetherSessionTimestampKey
-import iad1tya.melo.music.constants.ListenTogetherSessionTokenKey
-import iad1tya.melo.music.constants.ListenTogetherUserIdKey
-import iad1tya.melo.music.utils.NetworkConnectivityObserver
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListenTogetherAutoApprovalKey
+import com.hyperlabs.melo.constants.ListenTogetherIsHostKey
+import com.hyperlabs.melo.constants.ListenTogetherRoomCodeKey
+import com.hyperlabs.melo.constants.ListenTogetherServerUrlKey
+import com.hyperlabs.melo.constants.ListenTogetherSessionTimestampKey
+import com.hyperlabs.melo.constants.ListenTogetherSessionTokenKey
+import com.hyperlabs.melo.constants.ListenTogetherUserIdKey
+import com.hyperlabs.melo.utils.NetworkConnectivityObserver
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -145,10 +145,10 @@ class ListenTogetherClient @Inject constructor(
 
         
         private const val NOTIFICATION_CHANNEL_ID = "listen_together_channel"
-        const val ACTION_APPROVE_JOIN = "iad1tya.melo.music.LISTEN_TOGETHER_APPROVE_JOIN"
-        const val ACTION_REJECT_JOIN = "iad1tya.melo.music.LISTEN_TOGETHER_REJECT_JOIN"
-        const val ACTION_APPROVE_SUGGESTION = "iad1tya.melo.music.LISTEN_TOGETHER_APPROVE_SUGGESTION"
-        const val ACTION_REJECT_SUGGESTION = "iad1tya.melo.music.LISTEN_TOGETHER_REJECT_SUGGESTION"
+        const val ACTION_APPROVE_JOIN = "com.hyperlabs.melo.LISTEN_TOGETHER_APPROVE_JOIN"
+        const val ACTION_REJECT_JOIN = "com.hyperlabs.melo.LISTEN_TOGETHER_REJECT_JOIN"
+        const val ACTION_APPROVE_SUGGESTION = "com.hyperlabs.melo.LISTEN_TOGETHER_APPROVE_SUGGESTION"
+        const val ACTION_REJECT_SUGGESTION = "com.hyperlabs.melo.LISTEN_TOGETHER_REJECT_SUGGESTION"
         const val EXTRA_USER_ID = "extra_user_id"
         const val EXTRA_SUGGESTION_ID = "extra_suggestion_id"
         const val EXTRA_NOTIFICATION_ID = "extra_notification_id"
@@ -274,7 +274,7 @@ class ListenTogetherClient @Inject constructor(
     
     private fun loadBlockedUsernames() {
         try {
-            val blockedJson = context.dataStore.get(iad1tya.melo.music.constants.ListenTogetherBlockedUsersKey, "")
+            val blockedJson = context.dataStore.get(com.hyperlabs.melo.constants.ListenTogetherBlockedUsersKey, "")
             val blockedList = if (blockedJson.isNotEmpty()) {
                 json.decodeFromString<List<String>>(blockedJson)
             } else {
@@ -292,7 +292,7 @@ class ListenTogetherClient @Inject constructor(
         try {
             val blockedJson = json.encodeToString(_blockedUsernames.value.toList())
             context.dataStore.edit { preferences ->
-                preferences[iad1tya.melo.music.constants.ListenTogetherBlockedUsersKey] = blockedJson
+                preferences[com.hyperlabs.melo.constants.ListenTogetherBlockedUsersKey] = blockedJson
             }
         } catch (e: Exception) {
             log(LogLevel.ERROR, "Failed to save blocked usernames", e.message)

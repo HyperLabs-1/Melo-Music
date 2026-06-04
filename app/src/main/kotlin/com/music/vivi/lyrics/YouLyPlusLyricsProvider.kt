@@ -1,12 +1,12 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
 import android.content.Context
 import com.music.youlyplus.YouLyPlus
-import iad1tya.melo.music.constants.EnableYouLyPlusKey
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.constants.EnableYouLyPlusKey
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 
 object YouLyPlusLyricsProvider : LyricsProvider {
     override val name = "YouLyPlus"

@@ -1,8 +1,8 @@
-package iad1tya.melo.music.melomusic.updater.downloadmanager
+package com.hyperlabs.melo.melomusic.updater.downloadmanager
 
 import android.content.Context
 import android.os.Environment
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 import kotlinx.coroutines.*
 import java.io.File
 import java.io.FileOutputStream

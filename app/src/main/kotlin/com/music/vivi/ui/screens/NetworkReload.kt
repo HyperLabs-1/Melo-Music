@@ -1,11 +1,11 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.platform.LocalContext
-import iad1tya.melo.music.utils.NetworkConnectivityObserver
+import com.hyperlabs.melo.utils.NetworkConnectivityObserver
 
 @Composable
 fun NetworkReload(

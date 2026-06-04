@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils.qobuz
+package com.hyperlabs.melo.utils.qobuz
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

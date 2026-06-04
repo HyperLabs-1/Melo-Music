@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

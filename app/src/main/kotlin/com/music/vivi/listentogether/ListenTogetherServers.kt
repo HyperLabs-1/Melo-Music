@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.listentogether
+package com.hyperlabs.melo.listentogether
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json

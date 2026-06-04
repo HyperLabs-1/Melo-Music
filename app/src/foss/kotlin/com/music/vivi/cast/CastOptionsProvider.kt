@@ -1,4 +1,4 @@
-package iad1tya.melo.music.cast
+package com.hyperlabs.melo.cast
 
 /**
  * Stub CastOptionsProvider for F-Droid builds.

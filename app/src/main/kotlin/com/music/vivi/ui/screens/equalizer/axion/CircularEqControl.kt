@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.screens.equalizer.axion
+package com.hyperlabs.melo.ui.screens.equalizer.axion
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.gestures.awaitEachGesture
@@ -27,7 +27,7 @@ import androidx.compose.ui.text.drawText
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 import kotlin.math.PI
 import kotlin.math.atan2
 import kotlin.math.cos

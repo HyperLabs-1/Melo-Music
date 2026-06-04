@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image

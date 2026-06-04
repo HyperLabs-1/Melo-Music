@@ -1,7 +1,7 @@
-package iad1tya.melo.music.utils.potoken
+package com.hyperlabs.melo.utils.potoken
 
 import android.webkit.CookieManager
-import iad1tya.melo.music.utils.cipher.CipherDeobfuscator
+import com.hyperlabs.melo.utils.cipher.CipherDeobfuscator
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.sync.Mutex

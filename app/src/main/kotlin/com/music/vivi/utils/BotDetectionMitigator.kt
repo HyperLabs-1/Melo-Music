@@ -1,13 +1,13 @@
 
 
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import androidx.datastore.preferences.core.edit
 import com.music.innertube.YouTube
-import iad1tya.melo.music.constants.VisitorDataKey
-import iad1tya.melo.music.utils.cipher.CipherDeobfuscator
-import iad1tya.melo.music.utils.PlaybackLogManager
-import iad1tya.melo.music.utils.PlaybackLogLevel
+import com.hyperlabs.melo.constants.VisitorDataKey
+import com.hyperlabs.melo.utils.cipher.CipherDeobfuscator
+import com.hyperlabs.melo.utils.PlaybackLogManager
+import com.hyperlabs.melo.utils.PlaybackLogLevel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import timber.log.Timber

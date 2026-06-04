@@ -1,3 +1,3 @@
-package iad1tya.melo.music.utils.sabr
+package com.hyperlabs.melo.utils.sabr
 
 class SabrException(message: String, cause: Throwable? = null) : Exception(message, cause)

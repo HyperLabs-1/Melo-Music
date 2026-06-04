@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.compose.runtime.getValue
@@ -14,15 +14,15 @@ import com.music.innertube.models.filterExplicit
 import com.music.innertube.models.filterVideoSongs
 import com.music.innertube.models.filterYoutubeShorts
 import com.music.innertube.pages.ArtistPage
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.HideYoutubeShortsKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.extensions.filterExplicit
-import iad1tya.melo.music.extensions.filterExplicitAlbums
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.HideYoutubeShortsKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.extensions.filterExplicit
+import com.hyperlabs.melo.extensions.filterExplicitAlbums
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -33,8 +33,8 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import iad1tya.melo.music.extensions.filterVideoSongs as filterVideoSongsLocal
-import iad1tya.melo.music.artistvideo.ArtistVideoCanvasProvider
+import com.hyperlabs.melo.extensions.filterVideoSongs as filterVideoSongsLocal
+import com.hyperlabs.melo.artistvideo.ArtistVideoCanvasProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 

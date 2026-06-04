@@ -1,10 +1,10 @@
 
 
-package iad1tya.melo.music.extensions
+package com.hyperlabs.melo.extensions
 
-import iad1tya.melo.music.db.entities.Album
-import iad1tya.melo.music.db.entities.Playlist
-import iad1tya.melo.music.db.entities.Song
+import com.hyperlabs.melo.db.entities.Album
+import com.hyperlabs.melo.db.entities.Playlist
+import com.hyperlabs.melo.db.entities.Song
 
 fun <T> List<T>.reversed(reversed: Boolean) = if (reversed) asReversed() else this
 

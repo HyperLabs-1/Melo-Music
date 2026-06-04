@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.theme
+package com.hyperlabs.melo.ui.theme
 
 import android.graphics.Bitmap
 import android.os.Build

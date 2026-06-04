@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -26,20 +26,20 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ArtistSongSortType
-import iad1tya.melo.music.db.entities.SpeedDialItem
-import iad1tya.melo.music.db.entities.Artist
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.ui.component.ArtistListItem
-import iad1tya.melo.music.ui.component.Material3MenuGroup
-import iad1tya.melo.music.ui.component.Material3MenuItemData
-import iad1tya.melo.music.ui.component.NewAction
-import iad1tya.melo.music.ui.component.NewActionGrid
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ArtistSongSortType
+import com.hyperlabs.melo.db.entities.SpeedDialItem
+import com.hyperlabs.melo.db.entities.Artist
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.ui.component.ArtistListItem
+import com.hyperlabs.melo.ui.component.Material3MenuGroup
+import com.hyperlabs.melo.ui.component.Material3MenuItemData
+import com.hyperlabs.melo.ui.component.NewAction
+import com.hyperlabs.melo.ui.component.NewActionGrid
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first

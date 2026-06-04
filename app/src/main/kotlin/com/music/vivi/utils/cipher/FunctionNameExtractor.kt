@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils.cipher
+package com.hyperlabs.melo.utils.cipher
 
 import timber.log.Timber
 

@@ -1,8 +1,8 @@
 
 
-package iad1tya.melo.music.di
+package com.hyperlabs.melo.di
 
-import iad1tya.melo.music.lyrics.LyricsHelper
+import com.hyperlabs.melo.lyrics.LyricsHelper
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent

@@ -1,18 +1,18 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
 import android.content.Context
 import android.util.LruCache
-import iad1tya.melo.music.constants.LyricsProviderOrderKey
-import iad1tya.melo.music.constants.PreferredLyricsProvider
-import iad1tya.melo.music.constants.PreferredLyricsProviderKey
-import iad1tya.melo.music.db.entities.LyricsEntity.Companion.LYRICS_NOT_FOUND
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.utils.NetworkConnectivityObserver
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.constants.LyricsProviderOrderKey
+import com.hyperlabs.melo.constants.PreferredLyricsProvider
+import com.hyperlabs.melo.constants.PreferredLyricsProviderKey
+import com.hyperlabs.melo.db.entities.LyricsEntity.Companion.LYRICS_NOT_FOUND
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.utils.NetworkConnectivityObserver
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job

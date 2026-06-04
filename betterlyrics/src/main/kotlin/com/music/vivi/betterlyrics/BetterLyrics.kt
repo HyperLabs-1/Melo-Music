@@ -1,6 +1,6 @@
-package iad1tya.melo.music.betterlyrics
+package com.hyperlabs.melo.betterlyrics
 
-import iad1tya.melo.music.betterlyrics.models.TTMLResponse
+import com.hyperlabs.melo.betterlyrics.models.TTMLResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.cio.CIO

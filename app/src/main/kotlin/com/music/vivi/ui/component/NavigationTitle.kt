@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
@@ -30,7 +30,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 @Composable
 fun NavigationTitle(

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.recognition
+package com.hyperlabs.melo.ui.screens.recognition
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -56,16 +56,16 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ThumbnailCornerRadius
-import iad1tya.melo.music.db.entities.RecognitionHistory
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.NavigationTitle
-import iad1tya.melo.music.ui.utils.backToMain
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ThumbnailCornerRadius
+import com.hyperlabs.melo.db.entities.RecognitionHistory
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.NavigationTitle
+import com.hyperlabs.melo.ui.utils.backToMain
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.time.LocalDate

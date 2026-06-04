@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "iad1tya.melo.music.artistvideo"
+    namespace = "com.hyperlabs.melo.artistvideo"
     compileSdk = 36
 
     defaultConfig {

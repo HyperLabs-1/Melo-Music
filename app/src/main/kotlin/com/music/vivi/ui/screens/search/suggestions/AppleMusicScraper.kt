@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.search.suggestions
+package com.hyperlabs.melo.ui.screens.search.suggestions
 
 import android.util.Log
 import okhttp3.OkHttpClient

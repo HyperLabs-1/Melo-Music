@@ -1,8 +1,8 @@
 
 
-package iad1tya.melo.music.constants
+package com.hyperlabs.melo.constants
 
-import iad1tya.melo.music.ui.screens.OptionStats
+import com.hyperlabs.melo.ui.screens.OptionStats
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 

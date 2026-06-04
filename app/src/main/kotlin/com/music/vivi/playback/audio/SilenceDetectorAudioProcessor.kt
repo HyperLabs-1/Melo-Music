@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.playback.audio
+package com.hyperlabs.melo.playback.audio
 
 import androidx.media3.common.C
 import androidx.media3.common.audio.AudioProcessor

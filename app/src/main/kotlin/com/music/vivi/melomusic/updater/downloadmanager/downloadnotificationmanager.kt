@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic.updater.downloadmanager
+package com.hyperlabs.melo.melomusic.updater.downloadmanager
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -10,7 +10,7 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.graphics.toColorInt
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 object DownloadNotificationManager {
     private lateinit var notificationManager: NotificationManager

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.utils
+package com.hyperlabs.melo.ui.utils
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent

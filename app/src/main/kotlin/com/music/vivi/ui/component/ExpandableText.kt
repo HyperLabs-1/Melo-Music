@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.background
@@ -30,7 +30,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 data class LinkSegment(
     val text: String,

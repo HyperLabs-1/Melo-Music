@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -29,28 +29,28 @@ import androidx.compose.ui.unit.dp
 import android.content.Intent
 import android.net.Uri
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.melomusic.component.UpdateInfoDialog
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.melomusic.updater.getAutoUpdateCheckSetting
-import iad1tya.melo.music.melomusic.updater.saveAutoUpdateCheckSetting
-import iad1tya.melo.music.melomusic.updater.getUpdateAvailableState
-import iad1tya.melo.music.melomusic.updater.saveUpdateAvailableState
-import iad1tya.melo.music.melomusic.updater.getUpdateNotificationsSetting
-import iad1tya.melo.music.melomusic.updater.saveUpdateNotificationsSetting
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.melomusic.component.UpdateInfoDialog
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.melomusic.updater.getAutoUpdateCheckSetting
+import com.hyperlabs.melo.melomusic.updater.saveAutoUpdateCheckSetting
+import com.hyperlabs.melo.melomusic.updater.getUpdateAvailableState
+import com.hyperlabs.melo.melomusic.updater.saveUpdateAvailableState
+import com.hyperlabs.melo.melomusic.updater.getUpdateNotificationsSetting
+import com.hyperlabs.melo.melomusic.updater.saveUpdateNotificationsSetting
 import android.widget.Toast
 import androidx.compose.ui.res.pluralStringResource
-import iad1tya.melo.music.melomusic.updater.getDownloadedApkCount
-import iad1tya.melo.music.melomusic.updater.clearDownloadedApks
-import iad1tya.melo.music.melomusic.updater.getBetaUpdatesSetting
-import iad1tya.melo.music.melomusic.updater.saveBetaUpdatesSetting
-import iad1tya.melo.music.melomusic.updater.autoClearOldApks
+import com.hyperlabs.melo.melomusic.updater.getDownloadedApkCount
+import com.hyperlabs.melo.melomusic.updater.clearDownloadedApks
+import com.hyperlabs.melo.melomusic.updater.getBetaUpdatesSetting
+import com.hyperlabs.melo.melomusic.updater.saveBetaUpdatesSetting
+import com.hyperlabs.melo.melomusic.updater.autoClearOldApks
 import androidx.compose.material3.MaterialTheme
-import iad1tya.melo.music.BuildConfig
+import com.hyperlabs.melo.BuildConfig
 
 
 

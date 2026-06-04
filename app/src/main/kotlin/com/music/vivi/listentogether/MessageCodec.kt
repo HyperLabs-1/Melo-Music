@@ -1,9 +1,9 @@
 
 
-package iad1tya.melo.music.listentogether
+package com.hyperlabs.melo.listentogether
 
 import com.google.protobuf.MessageLite
-import iad1tya.melo.music.listentogether.proto.Listentogether
+import com.hyperlabs.melo.listentogether.proto.Listentogether
 import kotlinx.serialization.json.Json
 import timber.log.Timber
 import java.io.ByteArrayInputStream

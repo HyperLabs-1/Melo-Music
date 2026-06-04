@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.player
+package com.hyperlabs.melo.ui.player
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.LinearEasing
@@ -79,33 +79,33 @@ import coil3.SingletonImageLoader
 import coil3.compose.AsyncImage
 import coil3.request.CachePolicy
 import coil3.request.ImageRequest
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.CropAlbumArtKey
-import iad1tya.melo.music.constants.HidePlayerThumbnailKey
-import iad1tya.melo.music.constants.PlayerBackgroundStyle
-import iad1tya.melo.music.constants.PlayerBackgroundStyleKey
-import iad1tya.melo.music.constants.PlayerHorizontalPadding
-import iad1tya.melo.music.constants.RotatingThumbnailKey
-import iad1tya.melo.music.constants.SeekExtraSeconds
-import iad1tya.melo.music.constants.SwipeThumbnailKey
-import iad1tya.melo.music.constants.ThumbnailCornerRadiusKey
-import iad1tya.melo.music.constants.ThumbnailCornerRadius
-import iad1tya.melo.music.listentogether.RoomRole
-import iad1tya.melo.music.ui.component.CastButton
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.constants.CanvasThumbnailAnimationKey
-import iad1tya.melo.music.canvas.MonochromeApiCanvas
-import iad1tya.melo.music.canvas.CanvasArtwork
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.ui.utils.resize
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.CropAlbumArtKey
+import com.hyperlabs.melo.constants.HidePlayerThumbnailKey
+import com.hyperlabs.melo.constants.PlayerBackgroundStyle
+import com.hyperlabs.melo.constants.PlayerBackgroundStyleKey
+import com.hyperlabs.melo.constants.PlayerHorizontalPadding
+import com.hyperlabs.melo.constants.RotatingThumbnailKey
+import com.hyperlabs.melo.constants.SeekExtraSeconds
+import com.hyperlabs.melo.constants.SwipeThumbnailKey
+import com.hyperlabs.melo.constants.ThumbnailCornerRadiusKey
+import com.hyperlabs.melo.constants.ThumbnailCornerRadius
+import com.hyperlabs.melo.listentogether.RoomRole
+import com.hyperlabs.melo.ui.component.CastButton
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.constants.CanvasThumbnailAnimationKey
+import com.hyperlabs.melo.canvas.MonochromeApiCanvas
+import com.hyperlabs.melo.canvas.CanvasArtwork
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.ui.utils.resize
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.delay
-import iad1tya.melo.music.applecanvas.AppleMusicCanvasProvider
-import iad1tya.melo.music.melomusiccanvas.melomusicCanvasProvider
+import com.hyperlabs.melo.applecanvas.AppleMusicCanvasProvider
+import com.hyperlabs.melo.melomusiccanvas.melomusicCanvasProvider
 import java.util.Locale
 
 
@@ -577,7 +577,7 @@ private fun ThumbnailItem(
     textBackgroundColor: Color,
     layoutDirection: LayoutDirection,
     onSeek: (String, Boolean) -> Unit,
-    playerConnection: iad1tya.melo.music.playback.PlayerConnection,
+    playerConnection: com.hyperlabs.melo.playback.PlayerConnection,
     context: android.content.Context,
     isLandscape: Boolean = false,
     isListenTogetherGuest: Boolean = false,

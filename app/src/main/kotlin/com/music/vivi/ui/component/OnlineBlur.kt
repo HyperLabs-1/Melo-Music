@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import iad1tya.melo.music.ui.utils.fadingEdge
+import com.hyperlabs.melo.ui.utils.fadingEdge
 
 @Composable
 fun OnlineBlur(

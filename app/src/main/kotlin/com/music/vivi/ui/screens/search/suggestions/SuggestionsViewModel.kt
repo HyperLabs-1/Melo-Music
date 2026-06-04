@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.search.suggestions
+package com.hyperlabs.melo.ui.screens.search.suggestions
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
@@ -19,8 +19,8 @@ import com.music.innertube.YouTube
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.ArtistItem
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.playback.PlayerConnection
-import iad1tya.melo.music.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.playback.PlayerConnection
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
 import androidx.navigation.NavController
 
 @HiltViewModel

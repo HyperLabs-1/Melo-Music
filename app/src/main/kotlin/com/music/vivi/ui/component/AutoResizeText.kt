@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.Text

@@ -1,10 +1,10 @@
-package iad1tya.melo.music.db.daos
+package com.hyperlabs.melo.db.daos
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import iad1tya.melo.music.db.entities.SpeedDialItem
+import com.hyperlabs.melo.db.entities.SpeedDialItem
 import kotlinx.coroutines.flow.Flow
 
 @Dao

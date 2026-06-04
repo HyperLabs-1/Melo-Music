@@ -6,7 +6,7 @@
  */
 
 
-package iad1tya.melo.music.localmedia
+package com.hyperlabs.melo.localmedia
 
 import java.util.Locale
 

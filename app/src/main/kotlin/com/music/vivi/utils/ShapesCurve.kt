@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ListItemColors

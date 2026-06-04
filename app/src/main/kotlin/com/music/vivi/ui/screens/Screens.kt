@@ -1,11 +1,11 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Immutable
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 @Immutable
 sealed class Screens(

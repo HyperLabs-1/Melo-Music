@@ -1,4 +1,4 @@
-package iad1tya.melo.music.canvas
+package com.hyperlabs.melo.canvas
 
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals

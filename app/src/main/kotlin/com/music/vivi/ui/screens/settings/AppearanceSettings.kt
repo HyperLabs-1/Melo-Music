@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import android.app.Activity
 import android.content.Context
@@ -56,76 +56,76 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.CanvasThumbnailAnimationKey
-import iad1tya.melo.music.constants.ChipSortTypeKey
-import iad1tya.melo.music.constants.CropAlbumArtKey
-import iad1tya.melo.music.constants.DefaultOpenTabKey
-import iad1tya.melo.music.constants.DensityScale
-import iad1tya.melo.music.constants.DensityScaleKey
-import iad1tya.melo.music.constants.DynamicThemeKey
-import iad1tya.melo.music.constants.EnableDynamicIconKey
-import iad1tya.melo.music.constants.EnableHighRefreshRateKey
-import iad1tya.melo.music.constants.EnableLyricsThumbnailPlayPauseKey
-import iad1tya.melo.music.constants.GridItemSize
-import iad1tya.melo.music.constants.GridItemsSizeKey
-import iad1tya.melo.music.constants.HidePlayerThumbnailKey
-import iad1tya.melo.music.constants.LibraryFilter
-import iad1tya.melo.music.constants.ListenTogetherInTopBarKey
-import iad1tya.melo.music.constants.LyricsAnimationStyle
-import iad1tya.melo.music.constants.LyricsAnimationStyleKey
-import iad1tya.melo.music.constants.LyricsStandardBlurKey
-import iad1tya.melo.music.constants.LyricsTextPositionKey
-import iad1tya.melo.music.constants.LyricsTextSizeKey
-import iad1tya.melo.music.constants.PlayerBackgroundStyle
-import iad1tya.melo.music.constants.PlayerBackgroundStyleKey
-import iad1tya.melo.music.constants.PlayerButtonsStyle
-import iad1tya.melo.music.constants.PlayerButtonsStyleKey
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.CanvasThumbnailAnimationKey
+import com.hyperlabs.melo.constants.ChipSortTypeKey
+import com.hyperlabs.melo.constants.CropAlbumArtKey
+import com.hyperlabs.melo.constants.DefaultOpenTabKey
+import com.hyperlabs.melo.constants.DensityScale
+import com.hyperlabs.melo.constants.DensityScaleKey
+import com.hyperlabs.melo.constants.DynamicThemeKey
+import com.hyperlabs.melo.constants.EnableDynamicIconKey
+import com.hyperlabs.melo.constants.EnableHighRefreshRateKey
+import com.hyperlabs.melo.constants.EnableLyricsThumbnailPlayPauseKey
+import com.hyperlabs.melo.constants.GridItemSize
+import com.hyperlabs.melo.constants.GridItemsSizeKey
+import com.hyperlabs.melo.constants.HidePlayerThumbnailKey
+import com.hyperlabs.melo.constants.LibraryFilter
+import com.hyperlabs.melo.constants.ListenTogetherInTopBarKey
+import com.hyperlabs.melo.constants.LyricsAnimationStyle
+import com.hyperlabs.melo.constants.LyricsAnimationStyleKey
+import com.hyperlabs.melo.constants.LyricsStandardBlurKey
+import com.hyperlabs.melo.constants.LyricsTextPositionKey
+import com.hyperlabs.melo.constants.LyricsTextSizeKey
+import com.hyperlabs.melo.constants.PlayerBackgroundStyle
+import com.hyperlabs.melo.constants.PlayerBackgroundStyleKey
+import com.hyperlabs.melo.constants.PlayerButtonsStyle
+import com.hyperlabs.melo.constants.PlayerButtonsStyleKey
 
-import iad1tya.melo.music.constants.RotatingThumbnailKey
-import iad1tya.melo.music.constants.SelectedThemeColorKey
-import iad1tya.melo.music.constants.ShowCachedPlaylistKey
-import iad1tya.melo.music.constants.ShowDownloadedPlaylistKey
-import iad1tya.melo.music.constants.ShowLikedPlaylistKey
-import iad1tya.melo.music.constants.ShowTopPlaylistKey
-import iad1tya.melo.music.constants.ShowUploadedPlaylistKey
-import iad1tya.melo.music.constants.SliderStyle
-import iad1tya.melo.music.constants.SliderStyleKey
-import iad1tya.melo.music.constants.SlimNavBarKey
-import iad1tya.melo.music.constants.SquigglySliderKey
-import iad1tya.melo.music.constants.SwipeSensitivityKey
-import iad1tya.melo.music.constants.SwipeThumbnailKey
-import iad1tya.melo.music.constants.SwipeLyricsKey
-import iad1tya.melo.music.constants.SwipeToRemoveSongKey
-import iad1tya.melo.music.constants.SwipeToSongKey
-import iad1tya.melo.music.constants.ThumbnailCornerRadiusKey
+import com.hyperlabs.melo.constants.RotatingThumbnailKey
+import com.hyperlabs.melo.constants.SelectedThemeColorKey
+import com.hyperlabs.melo.constants.ShowCachedPlaylistKey
+import com.hyperlabs.melo.constants.ShowDownloadedPlaylistKey
+import com.hyperlabs.melo.constants.ShowLikedPlaylistKey
+import com.hyperlabs.melo.constants.ShowTopPlaylistKey
+import com.hyperlabs.melo.constants.ShowUploadedPlaylistKey
+import com.hyperlabs.melo.constants.SliderStyle
+import com.hyperlabs.melo.constants.SliderStyleKey
+import com.hyperlabs.melo.constants.SlimNavBarKey
+import com.hyperlabs.melo.constants.SquigglySliderKey
+import com.hyperlabs.melo.constants.SwipeSensitivityKey
+import com.hyperlabs.melo.constants.SwipeThumbnailKey
+import com.hyperlabs.melo.constants.SwipeLyricsKey
+import com.hyperlabs.melo.constants.SwipeToRemoveSongKey
+import com.hyperlabs.melo.constants.SwipeToSongKey
+import com.hyperlabs.melo.constants.ThumbnailCornerRadiusKey
 
-import iad1tya.melo.music.constants.UseNewPlayerDesignKey
-import iad1tya.melo.music.ui.component.ThumbnailCornerRadiusModal
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.EnumDialog
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.component.PlayerSliderTrack
-import iad1tya.melo.music.ui.component.SquigglySlider
-import iad1tya.melo.music.ui.component.WavySlider
-import iad1tya.melo.music.ui.theme.DefaultThemeColor
-import iad1tya.melo.music.ui.theme.PlayerSliderColors
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.IconUtils
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.constants.UseNewPlayerDesignKey
+import com.hyperlabs.melo.ui.component.ThumbnailCornerRadiusModal
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.EnumDialog
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.component.PlayerSliderTrack
+import com.hyperlabs.melo.ui.component.SquigglySlider
+import com.hyperlabs.melo.ui.component.WavySlider
+import com.hyperlabs.melo.ui.theme.DefaultThemeColor
+import com.hyperlabs.melo.ui.theme.PlayerSliderColors
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.IconUtils
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
-import iad1tya.melo.music.constants.LyricsClickKey
-import iad1tya.melo.music.constants.AppleMusicLyricsBlurKey
-import iad1tya.melo.music.constants.LyricsGlowEffectKey
-import iad1tya.melo.music.constants.LyricsLineSpacingKey
-import iad1tya.melo.music.constants.LyricsScrollKey
-import iad1tya.melo.music.constants.MiniPlayerBackgroundStyleKey
-import iad1tya.melo.music.constants.ShowCommentButtonKey
+import com.hyperlabs.melo.constants.LyricsClickKey
+import com.hyperlabs.melo.constants.AppleMusicLyricsBlurKey
+import com.hyperlabs.melo.constants.LyricsGlowEffectKey
+import com.hyperlabs.melo.constants.LyricsLineSpacingKey
+import com.hyperlabs.melo.constants.LyricsScrollKey
+import com.hyperlabs.melo.constants.MiniPlayerBackgroundStyleKey
+import com.hyperlabs.melo.constants.ShowCommentButtonKey
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -180,11 +180,11 @@ fun AppearanceSettings(
         defaultValue = true
     )
     val (showCodecOnPlayer, onShowCodecOnPlayerChange) = rememberPreference(
-        iad1tya.melo.music.constants.ShowCodecOnPlayerKey,
+        com.hyperlabs.melo.constants.ShowCodecOnPlayerKey,
         defaultValue = false
     )
     val (hidePlayerSlider, onHidePlayerSliderChange) = rememberPreference(
-        iad1tya.melo.music.constants.HidePlayerSliderKey,
+        com.hyperlabs.melo.constants.HidePlayerSliderKey,
         defaultValue = false
     )
     val (hidePlayerThumbnail, onHidePlayerThumbnailChange) = rememberPreference(

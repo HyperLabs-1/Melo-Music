@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import android.content.Context
 import android.content.res.Configuration
@@ -72,24 +72,24 @@ import androidx.media3.exoplayer.offline.DownloadRequest
 import androidx.media3.exoplayer.offline.DownloadService
 import androidx.navigation.NavController
 import com.music.innertube.YouTube
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.listentogether.ConnectionState
-import iad1tya.melo.music.listentogether.ListenTogetherEvent
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.playback.ExoDownloadService
-import iad1tya.melo.music.ui.component.BottomSheetState
-import iad1tya.melo.music.ui.component.ListDialog
-import iad1tya.melo.music.ui.component.Material3MenuGroup
-import iad1tya.melo.music.ui.component.Material3MenuItemData
-import iad1tya.melo.music.ui.component.NewAction
-import iad1tya.melo.music.ui.component.NewActionGrid
-import iad1tya.melo.music.ui.component.VolumeSlider
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.listentogether.ConnectionState
+import com.hyperlabs.melo.listentogether.ListenTogetherEvent
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.playback.ExoDownloadService
+import com.hyperlabs.melo.ui.component.BottomSheetState
+import com.hyperlabs.melo.ui.component.ListDialog
+import com.hyperlabs.melo.ui.component.Material3MenuGroup
+import com.hyperlabs.melo.ui.component.Material3MenuItemData
+import com.hyperlabs.melo.ui.component.NewAction
+import com.hyperlabs.melo.ui.component.NewActionGrid
+import com.hyperlabs.melo.ui.component.VolumeSlider
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlin.math.log2
@@ -145,9 +145,9 @@ fun PlayerMenu(
     }
 
     val listenTogetherManager = LocalListenTogetherManager.current
-    val ringtoneViewModel = iad1tya.melo.music.LocalRingtoneViewModel.current
-    val listenTogetherRoleState = listenTogetherManager?.role?.collectAsState(initial = iad1tya.melo.music.listentogether.RoomRole.NONE)
-    val isListenTogetherGuest = listenTogetherRoleState?.value == iad1tya.melo.music.listentogether.RoomRole.GUEST
+    val ringtoneViewModel = com.hyperlabs.melo.LocalRingtoneViewModel.current
+    val listenTogetherRoleState = listenTogetherManager?.role?.collectAsState(initial = com.hyperlabs.melo.listentogether.RoomRole.NONE)
+    val isListenTogetherGuest = listenTogetherRoleState?.value == com.hyperlabs.melo.listentogether.RoomRole.GUEST
     val pendingSuggestions by listenTogetherManager?.pendingSuggestions?.collectAsState(initial = emptyList()) ?: remember { mutableStateOf(emptyList()) }
 
     AddToPlaylistDialog(
@@ -687,7 +687,7 @@ fun TempoPitchDialog(onDismiss: () -> Unit) {
         playerConnection.player.playbackParameters =
             PlaybackParameters(tempo, 2f.pow(transposeValue.toFloat() / 12))
     }
-    val listenTogetherManager = iad1tya.melo.music.LocalListenTogetherManager.current
+    val listenTogetherManager = com.hyperlabs.melo.LocalListenTogetherManager.current
     val isInRoom = listenTogetherManager?.isInRoom ?: false
 
     AlertDialog(
@@ -806,7 +806,7 @@ fun ListenTogetherDialog(
     if (!visible) return
     
     val context = LocalContext.current
-    val listenTogetherManager = iad1tya.melo.music.LocalListenTogetherManager.current
+    val listenTogetherManager = com.hyperlabs.melo.LocalListenTogetherManager.current
     
     
     if (listenTogetherManager == null) {
@@ -860,7 +860,7 @@ fun ListenTogetherDialog(
     val pendingSuggestions by listenTogetherManager.pendingSuggestions.collectAsState()
     
     
-    var savedUsername by rememberPreference(iad1tya.melo.music.constants.ListenTogetherUsernameKey, "")
+    var savedUsername by rememberPreference(com.hyperlabs.melo.constants.ListenTogetherUsernameKey, "")
     var roomCodeInput by rememberSaveable { mutableStateOf("") }
     var usernameInput by rememberSaveable { mutableStateOf(savedUsername) }
 

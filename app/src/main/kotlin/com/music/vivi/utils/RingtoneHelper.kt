@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.content.ContentValues
 import android.content.Context
@@ -11,7 +11,7 @@ import android.os.Environment
 import android.provider.MediaStore
 import android.provider.Settings
 import androidx.core.content.getSystemService
-import iad1tya.melo.music.constants.AudioQuality
+import com.hyperlabs.melo.constants.AudioQuality
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext

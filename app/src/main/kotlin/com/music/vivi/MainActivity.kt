@@ -1,9 +1,9 @@
 
 
-package iad1tya.melo.music
-import iad1tya.melo.music.ui.screens.settings.RingtoneViewModel
-import iad1tya.melo.music.ui.component.RingtoneTrimmerDialog
-import iad1tya.melo.music.ui.component.RingtoneProgressDialog
+package com.hyperlabs.melo
+import com.hyperlabs.melo.ui.screens.settings.RingtoneViewModel
+import com.hyperlabs.melo.ui.component.RingtoneTrimmerDialog
+import com.hyperlabs.melo.ui.component.RingtoneProgressDialog
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.CompositionLocalProvider
@@ -139,75 +139,75 @@ import coil3.toBitmap
 import com.music.innertube.YouTube
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.constants.AppBarHeight
-import iad1tya.melo.music.constants.AppLanguageKey
-import iad1tya.melo.music.constants.DarkModeKey
-import iad1tya.melo.music.constants.DefaultOpenTabKey
-import iad1tya.melo.music.constants.DisableScreenshotKey
-import iad1tya.melo.music.constants.DynamicThemeKey
-import iad1tya.melo.music.constants.EnableHighRefreshRateKey
-import iad1tya.melo.music.constants.FloatingToolbarBottomPadding
-import iad1tya.melo.music.constants.FloatingToolbarHorizontalPadding
-import iad1tya.melo.music.constants.ListenTogetherInTopBarKey
-import iad1tya.melo.music.constants.ListenTogetherUsernameKey
-import iad1tya.melo.music.constants.MiniPlayerBottomSpacing
-import iad1tya.melo.music.constants.MiniPlayerHeight
-import iad1tya.melo.music.constants.NavigationBarAnimationSpec
-import iad1tya.melo.music.constants.NavigationBarHeight
-import iad1tya.melo.music.melomusic.updater.checkForUpdate
-import iad1tya.melo.music.melomusic.updater.getAutoUpdateCheckSetting
-import iad1tya.melo.music.melomusic.updater.isNewerVersion
-import iad1tya.melo.music.melomusic.updater.saveUpdateAvailableState
-import iad1tya.melo.music.melomusic.updater.getUpdateNotificationsSetting
-import iad1tya.melo.music.melomusic.UpdateNotificationHelper
+import com.hyperlabs.melo.constants.AppBarHeight
+import com.hyperlabs.melo.constants.AppLanguageKey
+import com.hyperlabs.melo.constants.DarkModeKey
+import com.hyperlabs.melo.constants.DefaultOpenTabKey
+import com.hyperlabs.melo.constants.DisableScreenshotKey
+import com.hyperlabs.melo.constants.DynamicThemeKey
+import com.hyperlabs.melo.constants.EnableHighRefreshRateKey
+import com.hyperlabs.melo.constants.FloatingToolbarBottomPadding
+import com.hyperlabs.melo.constants.FloatingToolbarHorizontalPadding
+import com.hyperlabs.melo.constants.ListenTogetherInTopBarKey
+import com.hyperlabs.melo.constants.ListenTogetherUsernameKey
+import com.hyperlabs.melo.constants.MiniPlayerBottomSpacing
+import com.hyperlabs.melo.constants.MiniPlayerHeight
+import com.hyperlabs.melo.constants.NavigationBarAnimationSpec
+import com.hyperlabs.melo.constants.NavigationBarHeight
+import com.hyperlabs.melo.melomusic.updater.checkForUpdate
+import com.hyperlabs.melo.melomusic.updater.getAutoUpdateCheckSetting
+import com.hyperlabs.melo.melomusic.updater.isNewerVersion
+import com.hyperlabs.melo.melomusic.updater.saveUpdateAvailableState
+import com.hyperlabs.melo.melomusic.updater.getUpdateNotificationsSetting
+import com.hyperlabs.melo.melomusic.UpdateNotificationHelper
 import android.util.Log
 import androidx.compose.ui.platform.LocalContext
-import iad1tya.melo.music.constants.PauseListenHistoryKey
-import iad1tya.melo.music.constants.PauseSearchHistoryKey
-import iad1tya.melo.music.constants.PureBlackKey
-import iad1tya.melo.music.constants.SYSTEM_DEFAULT
-import iad1tya.melo.music.constants.SelectedThemeColorKey
-import iad1tya.melo.music.constants.StopMusicOnTaskClearKey
-import iad1tya.melo.music.constants.UseNewMiniPlayerDesignKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.SearchHistory
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.DownloadUtil
-import iad1tya.melo.music.playback.MusicService
-import iad1tya.melo.music.playback.MusicService.MusicBinder
-import iad1tya.melo.music.playback.PlayerConnection
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.ui.component.AppNavigationRail
-import iad1tya.melo.music.ui.component.BottomSheetMenu
-import iad1tya.melo.music.ui.component.BottomSheetPage
-import iad1tya.melo.music.ui.component.FloatingNavigationToolbar
-import iad1tya.melo.music.ui.component.LocalBottomSheetPageState
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.rememberBottomSheetState
-import iad1tya.melo.music.ui.component.shimmer.ShimmerTheme
-import iad1tya.melo.music.ui.menu.YouTubeSongMenu
-import iad1tya.melo.music.ui.player.BottomSheetPlayer
-import iad1tya.melo.music.ui.screens.Screens
-import iad1tya.melo.music.ui.screens.SettingDialoge
-import iad1tya.melo.music.ui.screens.WelcomeDialog
-import iad1tya.melo.music.ui.screens.navigationBuilder
-import iad1tya.melo.music.ui.screens.settings.DarkMode
-import iad1tya.melo.music.ui.screens.settings.NavigationTab
-import iad1tya.melo.music.ui.theme.ColorSaver
-import iad1tya.melo.music.ui.theme.DefaultThemeColor
-import iad1tya.melo.music.ui.theme.melomusicTheme
-import iad1tya.melo.music.ui.theme.extractThemeColor
-import iad1tya.melo.music.ui.utils.appBarScrollBehavior
-import iad1tya.melo.music.ui.utils.resetHeightOffset
-import iad1tya.melo.music.utils.SyncUtils
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.utils.reportException
-import iad1tya.melo.music.utils.setAppLocale
-import iad1tya.melo.music.viewmodels.HomeViewModel
+import com.hyperlabs.melo.constants.PauseListenHistoryKey
+import com.hyperlabs.melo.constants.PauseSearchHistoryKey
+import com.hyperlabs.melo.constants.PureBlackKey
+import com.hyperlabs.melo.constants.SYSTEM_DEFAULT
+import com.hyperlabs.melo.constants.SelectedThemeColorKey
+import com.hyperlabs.melo.constants.StopMusicOnTaskClearKey
+import com.hyperlabs.melo.constants.UseNewMiniPlayerDesignKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.SearchHistory
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.DownloadUtil
+import com.hyperlabs.melo.playback.MusicService
+import com.hyperlabs.melo.playback.MusicService.MusicBinder
+import com.hyperlabs.melo.playback.PlayerConnection
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.ui.component.AppNavigationRail
+import com.hyperlabs.melo.ui.component.BottomSheetMenu
+import com.hyperlabs.melo.ui.component.BottomSheetPage
+import com.hyperlabs.melo.ui.component.FloatingNavigationToolbar
+import com.hyperlabs.melo.ui.component.LocalBottomSheetPageState
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.rememberBottomSheetState
+import com.hyperlabs.melo.ui.component.shimmer.ShimmerTheme
+import com.hyperlabs.melo.ui.menu.YouTubeSongMenu
+import com.hyperlabs.melo.ui.player.BottomSheetPlayer
+import com.hyperlabs.melo.ui.screens.Screens
+import com.hyperlabs.melo.ui.screens.SettingDialoge
+import com.hyperlabs.melo.ui.screens.WelcomeDialog
+import com.hyperlabs.melo.ui.screens.navigationBuilder
+import com.hyperlabs.melo.ui.screens.settings.DarkMode
+import com.hyperlabs.melo.ui.screens.settings.NavigationTab
+import com.hyperlabs.melo.ui.theme.ColorSaver
+import com.hyperlabs.melo.ui.theme.DefaultThemeColor
+import com.hyperlabs.melo.ui.theme.melomusicTheme
+import com.hyperlabs.melo.ui.theme.extractThemeColor
+import com.hyperlabs.melo.ui.utils.appBarScrollBehavior
+import com.hyperlabs.melo.ui.utils.resetHeightOffset
+import com.hyperlabs.melo.utils.SyncUtils
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.utils.reportException
+import com.hyperlabs.melo.utils.setAppLocale
+import com.hyperlabs.melo.viewmodels.HomeViewModel
 import com.valentinilk.shimmer.LocalShimmerTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
@@ -227,8 +227,8 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     companion object {
-        private const val ACTION_SEARCH = "iad1tya.melo.music.action.SEARCH"
-        private const val ACTION_LIBRARY = "iad1tya.melo.music.action.LIBRARY"
+        private const val ACTION_SEARCH = "com.hyperlabs.melo.action.SEARCH"
+        private const val ACTION_LIBRARY = "com.hyperlabs.melo.action.LIBRARY"
     }
 
     @Inject
@@ -241,7 +241,7 @@ class MainActivity : ComponentActivity() {
     lateinit var syncUtils: SyncUtils
 
     @Inject
-    lateinit var listenTogetherManager: iad1tya.melo.music.listentogether.ListenTogetherManager
+    lateinit var listenTogetherManager: com.hyperlabs.melo.listentogether.ListenTogetherManager
 
     private lateinit var navController: NavHostController
     private var pendingIntent: Intent? = null
@@ -750,7 +750,7 @@ class MainActivity : ComponentActivity() {
                 val snackbarHostState = remember { SnackbarHostState() }
                 var showSettingDialoge by remember { mutableStateOf(false) }
 
-                val (lastOpenedVersionCode, setLastOpenedVersionCode) = rememberPreference(iad1tya.melo.music.constants.LastOpenedVersionCodeKey, -1)
+                val (lastOpenedVersionCode, setLastOpenedVersionCode) = rememberPreference(com.hyperlabs.melo.constants.LastOpenedVersionCodeKey, -1)
                 var showWelcomeDialog by remember { mutableStateOf(false) }
 
                 LaunchedEffect(lastOpenedVersionCode) {
@@ -1325,5 +1325,5 @@ val LocalPlayerConnection = staticCompositionLocalOf<PlayerConnection?> { error(
 val LocalPlayerAwareWindowInsets = compositionLocalOf<WindowInsets> { error("No WindowInsets provided") }
 val LocalDownloadUtil = staticCompositionLocalOf<DownloadUtil> { error("No DownloadUtil provided") }
 val LocalSyncUtils = staticCompositionLocalOf<SyncUtils> { error("No SyncUtils provided") }
-val LocalListenTogetherManager = staticCompositionLocalOf<iad1tya.melo.music.listentogether.ListenTogetherManager?> { null }
+val LocalListenTogetherManager = staticCompositionLocalOf<com.hyperlabs.melo.listentogether.ListenTogetherManager?> { null }
 val LocalIsPlayerExpanded = compositionLocalOf { false }

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.db.entities
+package com.hyperlabs.melo.db.entities
 
 import androidx.compose.runtime.Immutable
 import androidx.room.Embedded

@@ -1,24 +1,24 @@
 
 
-package iad1tya.melo.music.listentogether
+package com.hyperlabs.melo.listentogether
 
 import android.content.Context
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
 import com.music.innertube.YouTube
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.constants.ListenTogetherSmartResyncKey
-import iad1tya.melo.music.constants.ListenTogetherSyncVolumeKey
-import iad1tya.melo.music.extensions.currentMetadata
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.models.MediaMetadata.Album
-import iad1tya.melo.music.models.MediaMetadata.Artist
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.PlayerConnection
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.utils.dataStore
+import com.hyperlabs.melo.constants.ListenTogetherSmartResyncKey
+import com.hyperlabs.melo.constants.ListenTogetherSyncVolumeKey
+import com.hyperlabs.melo.extensions.currentMetadata
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.models.MediaMetadata.Album
+import com.hyperlabs.melo.models.MediaMetadata.Artist
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.PlayerConnection
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.utils.dataStore
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

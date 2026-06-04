@@ -2,18 +2,18 @@
 
 @file:OptIn(ExperimentalCoroutinesApi::class)
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.constants.AddToPlaylistSortDescendingKey
-import iad1tya.melo.music.constants.AddToPlaylistSortTypeKey
-import iad1tya.melo.music.constants.PlaylistSortType
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.utils.SyncUtils
-import iad1tya.melo.music.utils.dataStore
+import com.hyperlabs.melo.constants.AddToPlaylistSortDescendingKey
+import com.hyperlabs.melo.constants.AddToPlaylistSortTypeKey
+import com.hyperlabs.melo.constants.PlaylistSortType
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.utils.SyncUtils
+import com.hyperlabs.melo.utils.dataStore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.ExperimentalCoroutinesApi

@@ -1,4 +1,4 @@
-package iad1tya.melo.music.canvas
+package com.hyperlabs.melo.canvas
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body

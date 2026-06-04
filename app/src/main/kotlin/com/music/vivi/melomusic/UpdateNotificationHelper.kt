@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic
+package com.hyperlabs.melo.melomusic
 
 import android.Manifest
 import android.app.NotificationChannel
@@ -12,7 +12,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 object UpdateNotificationHelper {
     private const val CHANNEL_ID = "updates"

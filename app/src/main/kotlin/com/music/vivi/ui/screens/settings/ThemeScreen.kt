@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class, ExperimentalLayoutApi::class, ExperimentalMaterial3Api::class)
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateDpAsState
@@ -68,16 +68,16 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.materialkolor.PaletteStyle
 import com.materialkolor.rememberDynamicColorScheme
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.DarkModeKey
-import iad1tya.melo.music.constants.DynamicThemeKey
-import iad1tya.melo.music.constants.PureBlackKey
-import iad1tya.melo.music.constants.PureBlackMiniPlayerKey
-import iad1tya.melo.music.constants.SelectedThemeColorKey
-import iad1tya.melo.music.ui.theme.DefaultThemeColor
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.DarkModeKey
+import com.hyperlabs.melo.constants.DynamicThemeKey
+import com.hyperlabs.melo.constants.PureBlackKey
+import com.hyperlabs.melo.constants.PureBlackMiniPlayerKey
+import com.hyperlabs.melo.constants.SelectedThemeColorKey
+import com.hyperlabs.melo.ui.theme.DefaultThemeColor
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
 
 data class ThemePalette(
     val nameRes: Int,

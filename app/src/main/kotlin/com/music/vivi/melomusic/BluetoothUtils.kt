@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic
+package com.hyperlabs.melo.melomusic
 
 import android.content.Context
 import android.media.AudioDeviceInfo

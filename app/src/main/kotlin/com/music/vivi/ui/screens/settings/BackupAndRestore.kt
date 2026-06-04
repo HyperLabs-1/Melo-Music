@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -34,20 +34,20 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.menu.AddToPlaylistDialogOnline
-import iad1tya.melo.music.ui.menu.CsvColumnMappingDialog
-import iad1tya.melo.music.ui.menu.CsvImportProgressDialog
-import iad1tya.melo.music.ui.menu.LoadingScreen
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.viewmodels.BackupRestoreViewModel
-import iad1tya.melo.music.viewmodels.ConvertedSongLog
-import iad1tya.melo.music.viewmodels.CsvImportState
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.menu.AddToPlaylistDialogOnline
+import com.hyperlabs.melo.ui.menu.CsvColumnMappingDialog
+import com.hyperlabs.melo.ui.menu.CsvImportProgressDialog
+import com.hyperlabs.melo.ui.menu.LoadingScreen
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.viewmodels.BackupRestoreViewModel
+import com.hyperlabs.melo.viewmodels.ConvertedSongLog
+import com.hyperlabs.melo.viewmodels.CsvImportState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

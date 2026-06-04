@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils.potoken
+package com.hyperlabs.melo.utils.potoken
 
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonNull

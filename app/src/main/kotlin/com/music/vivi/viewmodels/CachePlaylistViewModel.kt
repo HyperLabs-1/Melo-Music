@@ -1,21 +1,21 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.media3.datasource.cache.SimpleCache
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.di.DownloadCache
-import iad1tya.melo.music.di.PlayerCache
-import iad1tya.melo.music.extensions.filterExplicit
-import iad1tya.melo.music.extensions.filterVideoSongs
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.di.DownloadCache
+import com.hyperlabs.melo.di.PlayerCache
+import com.hyperlabs.melo.extensions.filterExplicit
+import com.hyperlabs.melo.extensions.filterVideoSongs
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.delay

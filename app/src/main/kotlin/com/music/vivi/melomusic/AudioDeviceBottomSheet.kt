@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 
-package iad1tya.melo.music.melomusic
+package com.hyperlabs.melo.melomusic
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -40,7 +40,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.runtime.key
-import iad1tya.melo.music.melomusic.shapes.RoundedStarShape
+import com.hyperlabs.melo.melomusic.shapes.RoundedStarShape
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -125,11 +125,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import iad1tya.melo.music.R
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.constants.AudioQuality
-import iad1tya.melo.music.constants.AudioQualityKey
-import iad1tya.melo.music.utils.rememberEnumPreference
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.constants.AudioQuality
+import com.hyperlabs.melo.constants.AudioQualityKey
+import com.hyperlabs.melo.utils.rememberEnumPreference
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
@@ -841,8 +841,8 @@ fun AudioQualitySelector(context: Context) {
 @Composable
 fun DownloadQualitySelector() {
     val (downloadQuality, onDownloadQualityChange) = rememberEnumPreference(
-        key = iad1tya.melo.music.constants.DownloadQualityKey,
-        defaultValue = iad1tya.melo.music.constants.DownloadQuality.YOUTUBE
+        key = com.hyperlabs.melo.constants.DownloadQualityKey,
+        defaultValue = com.hyperlabs.melo.constants.DownloadQuality.YOUTUBE
     )
 
     Column(
@@ -863,8 +863,8 @@ fun DownloadQualitySelector() {
             "Lossless"
         )
         val selectedIndex = when (downloadQuality) {
-            iad1tya.melo.music.constants.DownloadQuality.SAAVN -> 1
-            iad1tya.melo.music.constants.DownloadQuality.LOSSLESS -> 2
+            com.hyperlabs.melo.constants.DownloadQuality.SAAVN -> 1
+            com.hyperlabs.melo.constants.DownloadQuality.LOSSLESS -> 2
             else -> 0
         }
 
@@ -881,9 +881,9 @@ fun DownloadQualitySelector() {
                     checked = selectedIndex == index,
                     onCheckedChange = {
                         val newQuality = when (index) {
-                            1 -> iad1tya.melo.music.constants.DownloadQuality.SAAVN
-                            2 -> iad1tya.melo.music.constants.DownloadQuality.LOSSLESS
-                            else -> iad1tya.melo.music.constants.DownloadQuality.YOUTUBE
+                            1 -> com.hyperlabs.melo.constants.DownloadQuality.SAAVN
+                            2 -> com.hyperlabs.melo.constants.DownloadQuality.LOSSLESS
+                            else -> com.hyperlabs.melo.constants.DownloadQuality.YOUTUBE
                         }
                         onDownloadQualityChange(newQuality)
                     },

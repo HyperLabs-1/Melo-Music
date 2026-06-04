@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -58,25 +58,25 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.NavigationTitle
-import iad1tya.melo.music.ui.component.YouTubeGridItem
-import iad1tya.melo.music.ui.component.YouTubeListItem
-import iad1tya.melo.music.ui.component.shimmer.GridItemPlaceHolder
-import iad1tya.melo.music.ui.component.shimmer.ShimmerHost
-import iad1tya.melo.music.ui.component.shimmer.TextPlaceholder
-import iad1tya.melo.music.ui.menu.YouTubeAlbumMenu
-import iad1tya.melo.music.ui.menu.YouTubeSongMenu
-import iad1tya.melo.music.ui.utils.SnapLayoutInfoProvider
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.viewmodels.ChartsViewModel
-import iad1tya.melo.music.viewmodels.ExploreViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.NavigationTitle
+import com.hyperlabs.melo.ui.component.YouTubeGridItem
+import com.hyperlabs.melo.ui.component.YouTubeListItem
+import com.hyperlabs.melo.ui.component.shimmer.GridItemPlaceHolder
+import com.hyperlabs.melo.ui.component.shimmer.ShimmerHost
+import com.hyperlabs.melo.ui.component.shimmer.TextPlaceholder
+import com.hyperlabs.melo.ui.menu.YouTubeAlbumMenu
+import com.hyperlabs.melo.ui.menu.YouTubeSongMenu
+import com.hyperlabs.melo.ui.utils.SnapLayoutInfoProvider
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.viewmodels.ChartsViewModel
+import com.hyperlabs.melo.viewmodels.ExploreViewModel
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable

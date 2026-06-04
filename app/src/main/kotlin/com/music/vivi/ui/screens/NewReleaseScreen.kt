@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -25,21 +25,21 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.GridItemSize
-import iad1tya.melo.music.constants.GridItemsSizeKey
-import iad1tya.melo.music.constants.GridThumbnailHeight
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.YouTubeGridItem
-import iad1tya.melo.music.ui.component.shimmer.GridItemPlaceHolder
-import iad1tya.melo.music.ui.component.shimmer.ShimmerHost
-import iad1tya.melo.music.ui.menu.YouTubeAlbumMenu
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.viewmodels.NewReleaseViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.GridItemSize
+import com.hyperlabs.melo.constants.GridItemsSizeKey
+import com.hyperlabs.melo.constants.GridThumbnailHeight
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.YouTubeGridItem
+import com.hyperlabs.melo.ui.component.shimmer.GridItemPlaceHolder
+import com.hyperlabs.melo.ui.component.shimmer.ShimmerHost
+import com.hyperlabs.melo.ui.menu.YouTubeAlbumMenu
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.viewmodels.NewReleaseViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable

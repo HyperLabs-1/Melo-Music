@@ -1,12 +1,12 @@
-package iad1tya.melo.music.eq
+package com.hyperlabs.melo.eq
 
 
 import android.annotation.SuppressLint
 import androidx.annotation.OptIn
 import androidx.media3.common.util.UnstableApi
-import iad1tya.melo.music.eq.audio.CustomEqualizerAudioProcessor
-import iad1tya.melo.music.eq.data.ParametricEQ
-import iad1tya.melo.music.eq.data.SavedEQProfile
+import com.hyperlabs.melo.eq.audio.CustomEqualizerAudioProcessor
+import com.hyperlabs.melo.eq.data.ParametricEQ
+import com.hyperlabs.melo.eq.data.SavedEQProfile
 import timber.log.Timber
 import javax.inject.Inject
 import javax.inject.Singleton

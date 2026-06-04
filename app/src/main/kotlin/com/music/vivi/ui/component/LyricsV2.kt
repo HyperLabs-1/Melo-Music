@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -32,8 +32,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import iad1tya.melo.music.lyrics.LyricsEntry
-import iad1tya.melo.music.lyrics.WordTimestamp
+import com.hyperlabs.melo.lyrics.LyricsEntry
+import com.hyperlabs.melo.lyrics.WordTimestamp
 import kotlin.math.PI
 import kotlin.math.sin
 

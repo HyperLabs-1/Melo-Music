@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component.shimmer
+package com.hyperlabs.melo.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -17,9 +17,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.constants.ListThumbnailSize
-import iad1tya.melo.music.constants.ThumbnailCornerRadius
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.constants.ListThumbnailSize
+import com.hyperlabs.melo.constants.ThumbnailCornerRadius
 
 @Composable
 fun ListItemPlaceHolder(

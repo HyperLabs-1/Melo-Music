@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic.commitscreen
+package com.hyperlabs.melo.melomusic.commitscreen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -26,7 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 @Composable
  fun CommitItem(

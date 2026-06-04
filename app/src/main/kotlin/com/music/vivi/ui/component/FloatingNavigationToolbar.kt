@@ -2,7 +2,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.Crossfade
@@ -73,8 +73,8 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.R
-import iad1tya.melo.music.ui.screens.Screens
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.ui.screens.Screens
 
 @Composable
 fun FloatingNavigationToolbar(

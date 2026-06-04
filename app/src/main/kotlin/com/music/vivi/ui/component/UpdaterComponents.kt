@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
@@ -44,7 +44,7 @@ import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.core.content.ContextCompat
-import iad1tya.melo.music.melomusic.updater.extractUrls
+import com.hyperlabs.melo.melomusic.updater.extractUrls
 @Composable
 fun AnimatedActionButton(
     text: String,

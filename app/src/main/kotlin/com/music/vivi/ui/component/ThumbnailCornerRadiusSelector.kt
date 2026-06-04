@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,9 +22,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import kotlin.math.roundToInt
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ThumbnailCornerRadiusKey
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ThumbnailCornerRadiusKey
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

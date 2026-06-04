@@ -5,7 +5,7 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package iad1tya.melo.music.spotifyimport
+package com.hyperlabs.melo.spotifyimport
 
 import android.content.Context
 import androidx.datastore.preferences.core.edit
@@ -21,29 +21,29 @@ import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.withContext
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.SpotifyAccessTokenExpiresAtKey
-import iad1tya.melo.music.constants.SpotifyAccessTokenKey
-import iad1tya.melo.music.constants.SpotifyAccountAvatarUrlKey
-import iad1tya.melo.music.constants.SpotifyAccountNameKey
-import iad1tya.melo.music.constants.SpotifySpDcKey
-import iad1tya.melo.music.constants.SpotifySpKeyKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.PlaylistEntity
-import iad1tya.melo.music.db.entities.PlaylistSongMap
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.SpotifyAccessTokenExpiresAtKey
+import com.hyperlabs.melo.constants.SpotifyAccessTokenKey
+import com.hyperlabs.melo.constants.SpotifyAccountAvatarUrlKey
+import com.hyperlabs.melo.constants.SpotifyAccountNameKey
+import com.hyperlabs.melo.constants.SpotifySpDcKey
+import com.hyperlabs.melo.constants.SpotifySpKeyKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.PlaylistEntity
+import com.hyperlabs.melo.db.entities.PlaylistSongMap
 import com.music.innertube.YouTube
 import com.music.innertube.models.SongItem
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.spotify.Spotify
-import iad1tya.melo.music.spotify.SpotifyAuth
-import iad1tya.melo.music.spotify.SpotifyMapper
-import iad1tya.melo.music.spotify.models.SpotifyPlaylist
-import iad1tya.melo.music.spotify.models.SpotifyPlaylistTracksRef
-import iad1tya.melo.music.spotify.models.SpotifyTrack
-import iad1tya.melo.music.utils.clearWebAuthSession
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.spotify.Spotify
+import com.hyperlabs.melo.spotify.SpotifyAuth
+import com.hyperlabs.melo.spotify.SpotifyMapper
+import com.hyperlabs.melo.spotify.models.SpotifyPlaylist
+import com.hyperlabs.melo.spotify.models.SpotifyPlaylistTracksRef
+import com.hyperlabs.melo.spotify.models.SpotifyTrack
+import com.hyperlabs.melo.utils.clearWebAuthSession
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.reportException
 import java.time.LocalDateTime
 import java.util.concurrent.atomic.AtomicInteger
 import javax.inject.Inject

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.utils
+package com.hyperlabs.melo.ui.utils
 
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.lazy.LazyListState

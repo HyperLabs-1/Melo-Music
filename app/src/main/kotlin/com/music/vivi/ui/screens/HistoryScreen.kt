@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -57,32 +57,32 @@ import androidx.compose.ui.util.fastForEachReversed
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.music.innertube.utils.parseCookieString
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.HistorySource
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.ui.component.ChipsRow
-import iad1tya.melo.music.ui.component.HideOnScrollFAB
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.NavigationTitle
-import iad1tya.melo.music.ui.component.SongListItem
-import iad1tya.melo.music.ui.component.YouTubeListItem
-import iad1tya.melo.music.ui.menu.SelectionMediaMetadataMenu
-import iad1tya.melo.music.ui.menu.SongMenu
-import iad1tya.melo.music.ui.menu.YouTubeSongMenu
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.DateAgo
-import iad1tya.melo.music.viewmodels.HistoryViewModel
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.HistorySource
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.ui.component.ChipsRow
+import com.hyperlabs.melo.ui.component.HideOnScrollFAB
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.NavigationTitle
+import com.hyperlabs.melo.ui.component.SongListItem
+import com.hyperlabs.melo.ui.component.YouTubeListItem
+import com.hyperlabs.melo.ui.menu.SelectionMediaMetadataMenu
+import com.hyperlabs.melo.ui.menu.SongMenu
+import com.hyperlabs.melo.ui.menu.YouTubeSongMenu
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.DateAgo
+import com.hyperlabs.melo.viewmodels.HistoryViewModel
 import java.time.format.DateTimeFormatter
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)

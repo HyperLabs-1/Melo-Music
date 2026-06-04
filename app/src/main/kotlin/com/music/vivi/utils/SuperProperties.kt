@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.os.Build
 import android.util.Base64

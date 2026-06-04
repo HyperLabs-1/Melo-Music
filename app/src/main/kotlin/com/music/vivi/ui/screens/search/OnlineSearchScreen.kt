@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.search
+package com.hyperlabs.melo.ui.screens.search
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -55,26 +55,26 @@ import com.music.innertube.models.AlbumItem
 import com.music.innertube.models.ArtistItem
 import com.music.innertube.models.PlaylistItem
 import com.music.innertube.models.SongItem
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.SuggestionItemHeight
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.YouTubeListItem
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.utils.getGroupedShape
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.SuggestionItemHeight
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.YouTubeListItem
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.utils.getGroupedShape
 import androidx.compose.material3.Surface
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Shape
 import com.music.innertube.utils.YouTubeUrlParser
-import iad1tya.melo.music.ui.menu.YouTubeAlbumMenu
-import iad1tya.melo.music.ui.menu.YouTubeArtistMenu
-import iad1tya.melo.music.ui.menu.YouTubePlaylistMenu
-import iad1tya.melo.music.ui.menu.YouTubeSongMenu
-import iad1tya.melo.music.viewmodels.OnlineSearchSuggestionViewModel
+import com.hyperlabs.melo.ui.menu.YouTubeAlbumMenu
+import com.hyperlabs.melo.ui.menu.YouTubeArtistMenu
+import com.hyperlabs.melo.ui.menu.YouTubePlaylistMenu
+import com.hyperlabs.melo.ui.menu.YouTubeSongMenu
+import com.hyperlabs.melo.viewmodels.OnlineSearchSuggestionViewModel
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.debounce

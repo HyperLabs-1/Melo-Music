@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.library
+package com.hyperlabs.melo.ui.screens.library
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
@@ -49,30 +49,30 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ArtistFilter
-import iad1tya.melo.music.constants.ArtistFilterKey
-import iad1tya.melo.music.constants.ArtistSortDescendingKey
-import iad1tya.melo.music.constants.ArtistSortType
-import iad1tya.melo.music.constants.ArtistSortTypeKey
-import iad1tya.melo.music.constants.ArtistViewTypeKey
-import iad1tya.melo.music.constants.CONTENT_TYPE_ARTIST
-import iad1tya.melo.music.constants.CONTENT_TYPE_HEADER
-import iad1tya.melo.music.constants.GridItemSize
-import iad1tya.melo.music.constants.GridItemsSizeKey
-import iad1tya.melo.music.constants.GridThumbnailHeight
-import iad1tya.melo.music.constants.LibraryViewType
-import iad1tya.melo.music.constants.YtmSyncKey
-import iad1tya.melo.music.ui.component.ChipsRow
-import iad1tya.melo.music.ui.component.EmptyPlaceholder
-import iad1tya.melo.music.ui.component.LibraryArtistGridItem
-import iad1tya.melo.music.ui.component.LibraryArtistListItem
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.SortHeader
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.LibraryArtistsViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ArtistFilter
+import com.hyperlabs.melo.constants.ArtistFilterKey
+import com.hyperlabs.melo.constants.ArtistSortDescendingKey
+import com.hyperlabs.melo.constants.ArtistSortType
+import com.hyperlabs.melo.constants.ArtistSortTypeKey
+import com.hyperlabs.melo.constants.ArtistViewTypeKey
+import com.hyperlabs.melo.constants.CONTENT_TYPE_ARTIST
+import com.hyperlabs.melo.constants.CONTENT_TYPE_HEADER
+import com.hyperlabs.melo.constants.GridItemSize
+import com.hyperlabs.melo.constants.GridItemsSizeKey
+import com.hyperlabs.melo.constants.GridThumbnailHeight
+import com.hyperlabs.melo.constants.LibraryViewType
+import com.hyperlabs.melo.constants.YtmSyncKey
+import com.hyperlabs.melo.ui.component.ChipsRow
+import com.hyperlabs.melo.ui.component.EmptyPlaceholder
+import com.hyperlabs.melo.ui.component.LibraryArtistGridItem
+import com.hyperlabs.melo.ui.component.LibraryArtistListItem
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.SortHeader
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.LibraryArtistsViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

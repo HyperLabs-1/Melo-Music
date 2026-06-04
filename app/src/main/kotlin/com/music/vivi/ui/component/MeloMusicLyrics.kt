@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -41,10 +41,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import iad1tya.melo.music.constants.AppleMusicLyricsBlurKey
-import iad1tya.melo.music.lyrics.LyricsEntry
-import iad1tya.melo.music.ui.screens.settings.LyricsPosition
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.constants.AppleMusicLyricsBlurKey
+import com.hyperlabs.melo.lyrics.LyricsEntry
+import com.hyperlabs.melo.ui.screens.settings.LyricsPosition
+import com.hyperlabs.melo.utils.rememberPreference
 
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -101,7 +101,7 @@ fun melomusicLyricsLine(
 
     
     val wordData = remember(entry.text, entry.words, activeDuration) {
-        val isHindiText = iad1tya.melo.music.lyrics.LyricsUtils.isHindi(entry.text)
+        val isHindiText = com.hyperlabs.melo.lyrics.LyricsUtils.isHindi(entry.text)
         if (!isHindiText && entry.words != null && entry.words.isNotEmpty()) {
             
             entry.words.mapIndexed { index, word ->

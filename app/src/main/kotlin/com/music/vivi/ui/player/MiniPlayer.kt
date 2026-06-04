@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.player
+package com.hyperlabs.melo.ui.player
 
 import android.content.res.Configuration
 import android.os.Build
@@ -100,35 +100,35 @@ import coil3.imageLoader
 import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.toBitmap
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.CropAlbumArtKey
-import iad1tya.melo.music.constants.DarkModeKey
-import iad1tya.melo.music.constants.MiniPlayerBackgroundStyleKey
-import iad1tya.melo.music.constants.MiniPlayerHeight
-import iad1tya.melo.music.constants.PlayerBackgroundStyle
-import iad1tya.melo.music.constants.PureBlackMiniPlayerKey
-import iad1tya.melo.music.constants.SwipeSensitivityKey
-import iad1tya.melo.music.constants.SwipeThumbnailKey
-import iad1tya.melo.music.constants.ThumbnailCornerRadius
-import iad1tya.melo.music.constants.UseNewMiniPlayerDesignKey
-import iad1tya.melo.music.db.entities.ArtistEntity
-import iad1tya.melo.music.listentogether.ListenTogetherManager
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.playback.CastConnectionHandler
-import iad1tya.melo.music.playback.PlayerConnection
-import iad1tya.melo.music.ui.screens.settings.DarkMode
-import iad1tya.melo.music.ui.theme.PlayerColorExtractor
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.melomusic.AudioDeviceBottomSheet
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.CropAlbumArtKey
+import com.hyperlabs.melo.constants.DarkModeKey
+import com.hyperlabs.melo.constants.MiniPlayerBackgroundStyleKey
+import com.hyperlabs.melo.constants.MiniPlayerHeight
+import com.hyperlabs.melo.constants.PlayerBackgroundStyle
+import com.hyperlabs.melo.constants.PureBlackMiniPlayerKey
+import com.hyperlabs.melo.constants.SwipeSensitivityKey
+import com.hyperlabs.melo.constants.SwipeThumbnailKey
+import com.hyperlabs.melo.constants.ThumbnailCornerRadius
+import com.hyperlabs.melo.constants.UseNewMiniPlayerDesignKey
+import com.hyperlabs.melo.db.entities.ArtistEntity
+import com.hyperlabs.melo.listentogether.ListenTogetherManager
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.playback.CastConnectionHandler
+import com.hyperlabs.melo.playback.PlayerConnection
+import com.hyperlabs.melo.ui.screens.settings.DarkMode
+import com.hyperlabs.melo.ui.theme.PlayerColorExtractor
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.melomusic.AudioDeviceBottomSheet
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.math.roundToInt
-import iad1tya.melo.music.melomusic.isBluetoothHeadphoneConnected
+import com.hyperlabs.melo.melomusic.isBluetoothHeadphoneConnected
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Headphones
 import androidx.compose.material.icons.filled.Speaker
@@ -141,7 +141,7 @@ import androidx.compose.ui.res.stringResource
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
 import kotlin.math.roundToInt
-import iad1tya.melo.music.ui.component.Icon as MIcon
+import com.hyperlabs.melo.ui.component.Icon as MIcon
 
 
 @Stable

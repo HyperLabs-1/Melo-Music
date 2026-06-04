@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic.commitscreen
+package com.hyperlabs.melo.melomusic.commitscreen
 
 import android.content.Intent
 import android.net.Uri
@@ -60,8 +60,8 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

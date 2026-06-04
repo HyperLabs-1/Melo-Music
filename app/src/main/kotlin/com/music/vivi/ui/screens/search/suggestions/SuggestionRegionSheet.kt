@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.screens.search.suggestions
+package com.hyperlabs.melo.ui.screens.search.suggestions
 
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.clickable
@@ -21,7 +21,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.constants.SuggestionRegionSlugToName
+import com.hyperlabs.melo.constants.SuggestionRegionSlugToName
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)

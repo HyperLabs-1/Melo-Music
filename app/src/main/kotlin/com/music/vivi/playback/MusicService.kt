@@ -2,7 +2,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package iad1tya.melo.music.playback
+package com.hyperlabs.melo.playback
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -72,111 +72,111 @@ import com.google.common.util.concurrent.MoreExecutors
 import com.music.innertube.YouTube
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.MainActivity
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AudioNormalizationKey
-import iad1tya.melo.music.constants.AudioOffload
-import iad1tya.melo.music.constants.AudioQualityKey
-import iad1tya.melo.music.constants.AutoDownloadOnLikeKey
-import iad1tya.melo.music.constants.AutoLoadMoreKey
-import iad1tya.melo.music.constants.AutoSkipNextOnErrorKey
-import iad1tya.melo.music.constants.CrossfadeDurationKey
-import iad1tya.melo.music.constants.CrossfadeEnabledKey
-import iad1tya.melo.music.constants.CrossfadeGaplessKey
-import iad1tya.melo.music.constants.DisableLoadMoreWhenRepeatAllKey
+import com.hyperlabs.melo.MainActivity
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AudioNormalizationKey
+import com.hyperlabs.melo.constants.AudioOffload
+import com.hyperlabs.melo.constants.AudioQualityKey
+import com.hyperlabs.melo.constants.AutoDownloadOnLikeKey
+import com.hyperlabs.melo.constants.AutoLoadMoreKey
+import com.hyperlabs.melo.constants.AutoSkipNextOnErrorKey
+import com.hyperlabs.melo.constants.CrossfadeDurationKey
+import com.hyperlabs.melo.constants.CrossfadeEnabledKey
+import com.hyperlabs.melo.constants.CrossfadeGaplessKey
+import com.hyperlabs.melo.constants.DisableLoadMoreWhenRepeatAllKey
 import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
-import iad1tya.melo.music.constants.DiscordActivityNameKey
-import iad1tya.melo.music.constants.DiscordActivityTypeKey
-import iad1tya.melo.music.constants.DiscordAdvancedModeKey
-import iad1tya.melo.music.constants.DiscordButton1TextKey
-import iad1tya.melo.music.constants.DiscordButton1VisibleKey
-import iad1tya.melo.music.constants.DiscordButton2TextKey
-import iad1tya.melo.music.constants.DiscordButton2VisibleKey
-import iad1tya.melo.music.constants.DiscordStatusKey
-import iad1tya.melo.music.constants.DiscordTokenKey
-import iad1tya.melo.music.constants.DiscordUseDetailsKey
-import iad1tya.melo.music.constants.EnableDiscordRPCKey
-import iad1tya.melo.music.constants.EnableLastFMScrobblingKey
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.HistoryDuration
-import iad1tya.melo.music.constants.LastFMUseNowPlaying
-import iad1tya.melo.music.constants.MediaSessionConstants.CommandToggleLike
-import iad1tya.melo.music.constants.MediaSessionConstants.CommandToggleRepeatMode
-import iad1tya.melo.music.constants.MediaSessionConstants.CommandToggleShuffle
-import iad1tya.melo.music.constants.MediaSessionConstants.CommandToggleStartRadio
-import iad1tya.melo.music.constants.PauseListenHistoryKey
-import iad1tya.melo.music.constants.PauseOnMute
-import iad1tya.melo.music.constants.PersistentQueueKey
-import iad1tya.melo.music.constants.PersistentShuffleAcrossQueuesKey
-import iad1tya.melo.music.constants.PlayerVolumeKey
-import iad1tya.melo.music.constants.RememberShuffleAndRepeatKey
-import iad1tya.melo.music.constants.RepeatModeKey
-import iad1tya.melo.music.constants.ResumeOnBluetoothConnectKey
-import iad1tya.melo.music.constants.ScrobbleDelayPercentKey
-import iad1tya.melo.music.constants.ScrobbleDelaySecondsKey
-import iad1tya.melo.music.constants.ScrobbleMinSongDurationKey
-import iad1tya.melo.music.constants.ShowLyricsKey
-import iad1tya.melo.music.constants.ShuffleModeKey
-import iad1tya.melo.music.constants.ShufflePlaylistFirstKey
-import iad1tya.melo.music.constants.PreventDuplicateTracksInQueueKey
-import iad1tya.melo.music.constants.SimilarContent
-import iad1tya.melo.music.constants.SkipSilenceInstantKey
-import iad1tya.melo.music.constants.SkipSilenceKey
-import iad1tya.melo.music.constants.IpVersionKey
+import com.hyperlabs.melo.constants.DiscordActivityNameKey
+import com.hyperlabs.melo.constants.DiscordActivityTypeKey
+import com.hyperlabs.melo.constants.DiscordAdvancedModeKey
+import com.hyperlabs.melo.constants.DiscordButton1TextKey
+import com.hyperlabs.melo.constants.DiscordButton1VisibleKey
+import com.hyperlabs.melo.constants.DiscordButton2TextKey
+import com.hyperlabs.melo.constants.DiscordButton2VisibleKey
+import com.hyperlabs.melo.constants.DiscordStatusKey
+import com.hyperlabs.melo.constants.DiscordTokenKey
+import com.hyperlabs.melo.constants.DiscordUseDetailsKey
+import com.hyperlabs.melo.constants.EnableDiscordRPCKey
+import com.hyperlabs.melo.constants.EnableLastFMScrobblingKey
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.HistoryDuration
+import com.hyperlabs.melo.constants.LastFMUseNowPlaying
+import com.hyperlabs.melo.constants.MediaSessionConstants.CommandToggleLike
+import com.hyperlabs.melo.constants.MediaSessionConstants.CommandToggleRepeatMode
+import com.hyperlabs.melo.constants.MediaSessionConstants.CommandToggleShuffle
+import com.hyperlabs.melo.constants.MediaSessionConstants.CommandToggleStartRadio
+import com.hyperlabs.melo.constants.PauseListenHistoryKey
+import com.hyperlabs.melo.constants.PauseOnMute
+import com.hyperlabs.melo.constants.PersistentQueueKey
+import com.hyperlabs.melo.constants.PersistentShuffleAcrossQueuesKey
+import com.hyperlabs.melo.constants.PlayerVolumeKey
+import com.hyperlabs.melo.constants.RememberShuffleAndRepeatKey
+import com.hyperlabs.melo.constants.RepeatModeKey
+import com.hyperlabs.melo.constants.ResumeOnBluetoothConnectKey
+import com.hyperlabs.melo.constants.ScrobbleDelayPercentKey
+import com.hyperlabs.melo.constants.ScrobbleDelaySecondsKey
+import com.hyperlabs.melo.constants.ScrobbleMinSongDurationKey
+import com.hyperlabs.melo.constants.ShowLyricsKey
+import com.hyperlabs.melo.constants.ShuffleModeKey
+import com.hyperlabs.melo.constants.ShufflePlaylistFirstKey
+import com.hyperlabs.melo.constants.PreventDuplicateTracksInQueueKey
+import com.hyperlabs.melo.constants.SimilarContent
+import com.hyperlabs.melo.constants.SkipSilenceInstantKey
+import com.hyperlabs.melo.constants.SkipSilenceKey
+import com.hyperlabs.melo.constants.IpVersionKey
 import com.music.innertube.models.IpVersion
 import okhttp3.Dns
 import java.net.InetAddress
 import java.net.Inet4Address
 import java.net.Inet6Address
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.Event
-import iad1tya.melo.music.db.entities.FormatEntity
-import iad1tya.melo.music.db.entities.LyricsEntity
-import iad1tya.melo.music.db.entities.RelatedSongMap
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.di.DownloadCache
-import iad1tya.melo.music.di.PlayerCache
-import iad1tya.melo.music.eq.EqualizerService
-import iad1tya.melo.music.eq.audio.CustomEqualizerAudioProcessor
-import iad1tya.melo.music.eq.data.EQProfileRepository
-import iad1tya.melo.music.extensions.SilentHandler
-import iad1tya.melo.music.extensions.collect
-import iad1tya.melo.music.extensions.collectLatest
-import iad1tya.melo.music.extensions.currentMetadata
-import iad1tya.melo.music.extensions.findNextMediaItemById
-import iad1tya.melo.music.extensions.mediaItems
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.extensions.setOffloadEnabled
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.extensions.toPersistQueue
-import iad1tya.melo.music.extensions.toQueue
-import iad1tya.melo.music.lyrics.LyricsHelper
-import iad1tya.melo.music.models.PersistPlayerState
-import iad1tya.melo.music.models.PersistQueue
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.audio.SilenceDetectorAudioProcessor
-import iad1tya.melo.music.playback.queues.EmptyQueue
-import iad1tya.melo.music.playback.queues.Queue
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.playback.queues.filterExplicit
-import iad1tya.melo.music.playback.queues.filterVideoSongs
-import iad1tya.melo.music.utils.CoilBitmapLoader
-import iad1tya.melo.music.utils.DiscordRPC
-import iad1tya.melo.music.utils.NetworkConnectivityObserver
-import iad1tya.melo.music.utils.ScrobbleManager
-import iad1tya.melo.music.utils.SyncUtils
-import iad1tya.melo.music.utils.YTPlayerUtils
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
-import iad1tya.melo.music.utils.reportException
-import iad1tya.melo.music.widget.MeloMusicWidgetManager
-import iad1tya.melo.music.widget.MusicWidgetReceiver
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.Event
+import com.hyperlabs.melo.db.entities.FormatEntity
+import com.hyperlabs.melo.db.entities.LyricsEntity
+import com.hyperlabs.melo.db.entities.RelatedSongMap
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.di.DownloadCache
+import com.hyperlabs.melo.di.PlayerCache
+import com.hyperlabs.melo.eq.EqualizerService
+import com.hyperlabs.melo.eq.audio.CustomEqualizerAudioProcessor
+import com.hyperlabs.melo.eq.data.EQProfileRepository
+import com.hyperlabs.melo.extensions.SilentHandler
+import com.hyperlabs.melo.extensions.collect
+import com.hyperlabs.melo.extensions.collectLatest
+import com.hyperlabs.melo.extensions.currentMetadata
+import com.hyperlabs.melo.extensions.findNextMediaItemById
+import com.hyperlabs.melo.extensions.mediaItems
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.extensions.setOffloadEnabled
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.extensions.toPersistQueue
+import com.hyperlabs.melo.extensions.toQueue
+import com.hyperlabs.melo.lyrics.LyricsHelper
+import com.hyperlabs.melo.models.PersistPlayerState
+import com.hyperlabs.melo.models.PersistQueue
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.audio.SilenceDetectorAudioProcessor
+import com.hyperlabs.melo.playback.queues.EmptyQueue
+import com.hyperlabs.melo.playback.queues.Queue
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.playback.queues.filterExplicit
+import com.hyperlabs.melo.playback.queues.filterVideoSongs
+import com.hyperlabs.melo.utils.CoilBitmapLoader
+import com.hyperlabs.melo.utils.DiscordRPC
+import com.hyperlabs.melo.utils.NetworkConnectivityObserver
+import com.hyperlabs.melo.utils.ScrobbleManager
+import com.hyperlabs.melo.utils.SyncUtils
+import com.hyperlabs.melo.utils.YTPlayerUtils
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
+import com.hyperlabs.melo.utils.reportException
+import com.hyperlabs.melo.widget.MeloMusicWidgetManager
+import com.hyperlabs.melo.widget.MusicWidgetReceiver
 import dagger.hilt.android.AndroidEntryPoint
-import iad1tya.melo.music.utils.isLocalMediaId
+import com.hyperlabs.melo.utils.isLocalMediaId
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -241,7 +241,7 @@ class MusicService :
     lateinit var widgetManager: MeloMusicWidgetManager
 
     @Inject
-    lateinit var listenTogetherManager: iad1tya.melo.music.listentogether.ListenTogetherManager
+    lateinit var listenTogetherManager: com.hyperlabs.melo.listentogether.ListenTogetherManager
     
 
     private lateinit var audioManager: AudioManager
@@ -283,13 +283,13 @@ class MusicService :
     val waitingForNetworkConnection = MutableStateFlow(false)
     private val isNetworkConnected = MutableStateFlow(false)
 
-    private lateinit var audioQuality: iad1tya.melo.music.constants.AudioQuality
+    private lateinit var audioQuality: com.hyperlabs.melo.constants.AudioQuality
     private lateinit var ipVersion: IpVersion
 
     private var currentQueue: Queue = EmptyQueue
     var queueTitle: String? = null
 
-    val currentMediaMetadata = MutableStateFlow<iad1tya.melo.music.models.MediaMetadata?>(null)
+    val currentMediaMetadata = MutableStateFlow<com.hyperlabs.melo.models.MediaMetadata?>(null)
     private val currentSong =
         currentMediaMetadata
             .flatMapLatest { mediaMetadata ->
@@ -538,7 +538,7 @@ class MusicService :
 
         audioManager.registerAudioDeviceCallback(audioDeviceCallback, null)
 
-        audioQuality = dataStore.get(AudioQualityKey).toEnum(iad1tya.melo.music.constants.AudioQuality.OPUS)
+        audioQuality = dataStore.get(AudioQualityKey).toEnum(com.hyperlabs.melo.constants.AudioQuality.OPUS)
         ipVersion = dataStore.get(IpVersionKey).toEnum(IpVersion.AUTO)
         playerVolume = MutableStateFlow(dataStore.get(PlayerVolumeKey, 1f).coerceIn(0f, 1f))
 
@@ -588,8 +588,8 @@ class MusicService :
         scope.launch {
             dataStore.data
                 .map { it[AudioQualityKey]?.let { value ->
-                    iad1tya.melo.music.constants.AudioQuality.entries.find { it.name == value }
-                } ?: iad1tya.melo.music.constants.AudioQuality.OPUS }
+                    com.hyperlabs.melo.constants.AudioQuality.entries.find { it.name == value }
+                } ?: com.hyperlabs.melo.constants.AudioQuality.OPUS }
                 .distinctUntilChanged()
                 .collect { newQuality ->
                     val oldQuality = audioQuality
@@ -2522,13 +2522,13 @@ class MusicService :
 
             
             var shouldBypassCache = bypassCacheForQualityChange.contains(mediaId)
-            if (!shouldBypassCache && audioQuality == iad1tya.melo.music.constants.AudioQuality.LOSSLESS) {
+            if (!shouldBypassCache && audioQuality == com.hyperlabs.melo.constants.AudioQuality.LOSSLESS) {
                 val format = runBlocking(Dispatchers.IO) { database.format(mediaId).firstOrNull() }
                 if (format?.codecs != "flac") {
                     shouldBypassCache = true
                 }
             }
-            if (!shouldBypassCache && audioQuality == iad1tya.melo.music.constants.AudioQuality.SAAVN) {
+            if (!shouldBypassCache && audioQuality == com.hyperlabs.melo.constants.AudioQuality.SAAVN) {
                 val format = runBlocking(Dispatchers.IO) { database.format(mediaId).firstOrNull() }
                 if (format?.codecs != "mp4a.40.2") {
                     shouldBypassCache = true
@@ -2949,7 +2949,7 @@ class MusicService :
 
     
     private fun initializeCast() {
-        if (dataStore.get(iad1tya.melo.music.constants.EnableGoogleCastKey, true)) {
+        if (dataStore.get(com.hyperlabs.melo.constants.EnableGoogleCastKey, true)) {
             try {
                 castConnectionHandler = CastConnectionHandler(this, scope, this)
                 castConnectionHandler?.initialize()
@@ -3163,11 +3163,11 @@ class MusicService :
     private var preloadJob: kotlinx.coroutines.Job? = null
 
     private fun preloadUpcomingItems() {
-        val preloadEnabled = kotlinx.coroutines.runBlocking { dataStore.get(iad1tya.melo.music.constants.PreloadNextSongEnabledKey, true) }
+        val preloadEnabled = kotlinx.coroutines.runBlocking { dataStore.get(com.hyperlabs.melo.constants.PreloadNextSongEnabledKey, true) }
         if (!preloadEnabled) return
 
-        val preloadLimit = kotlinx.coroutines.runBlocking { dataStore.get(iad1tya.melo.music.constants.PreloadNextSongLimitKey, 1) }
-        val preloadLyrics = kotlinx.coroutines.runBlocking { dataStore.get(iad1tya.melo.music.constants.PreloadLyricsEnabledKey, true) }
+        val preloadLimit = kotlinx.coroutines.runBlocking { dataStore.get(com.hyperlabs.melo.constants.PreloadNextSongLimitKey, 1) }
+        val preloadLyrics = kotlinx.coroutines.runBlocking { dataStore.get(com.hyperlabs.melo.constants.PreloadLyricsEnabledKey, true) }
 
         val currentIndex = player.currentMediaItemIndex
         if (currentIndex == androidx.media3.common.C.INDEX_UNSET) return
@@ -3190,7 +3190,7 @@ class MusicService :
                         val dbSong = database.song(mediaId).firstOrNull()
                         val knownArtist = dbSong?.artists?.joinToString(separator = ", ") { artist -> artist.name }?.replace(" - Topic", "")
                         
-                        val playbackData = iad1tya.melo.music.utils.YTPlayerUtils.playerResponseForPlayback(
+                        val playbackData = com.hyperlabs.melo.utils.YTPlayerUtils.playerResponseForPlayback(
                             videoId = mediaId,
                             audioQuality = audioQuality,
                             connectivityManager = connectivityManager,
@@ -3214,16 +3214,16 @@ class MusicService :
                         val dbSong = database.song(mediaId).firstOrNull()
                         if (dbSong != null) {
                             kotlin.runCatching {
-                                val metadata = iad1tya.melo.music.models.MediaMetadata(
+                                val metadata = com.hyperlabs.melo.models.MediaMetadata(
                                     id = dbSong.song.id,
                                     title = dbSong.song.title,
-                                    artists = dbSong.artists.map { artist -> iad1tya.melo.music.models.MediaMetadata.Artist(artist.id, artist.name) },
+                                    artists = dbSong.artists.map { artist -> com.hyperlabs.melo.models.MediaMetadata.Artist(artist.id, artist.name) },
                                     duration = dbSong.song.duration,
                                     thumbnailUrl = dbSong.song.thumbnailUrl
                                 )
                                 val lyricsResult = lyricsHelper.getLyrics(metadata)
                                 database.query {
-                                    upsert(iad1tya.melo.music.db.entities.LyricsEntity(id = mediaId, lyrics = lyricsResult.lyrics))
+                                    upsert(com.hyperlabs.melo.db.entities.LyricsEntity(id = mediaId, lyrics = lyricsResult.lyrics))
                                 }
                                 Timber.tag(TAG).d("Preloaded lyrics for $mediaId")
                             }

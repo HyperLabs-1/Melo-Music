@@ -1,17 +1,17 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.music.innertube.YouTube
 import com.music.innertube.pages.HistoryPage
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.HistorySource
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.HistorySource
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers

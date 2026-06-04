@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic.shapes
+package com.hyperlabs.melo.melomusic.shapes
 
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Outline

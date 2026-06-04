@@ -1,12 +1,12 @@
 
 
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.content.Context
 import android.content.Intent
 import android.os.Build
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.ui.screens.CrashActivity
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.ui.screens.CrashActivity
 import timber.log.Timber
 import java.io.PrintWriter
 import java.io.StringWriter

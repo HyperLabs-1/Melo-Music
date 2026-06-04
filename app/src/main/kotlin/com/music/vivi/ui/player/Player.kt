@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.player
+package com.hyperlabs.melo.ui.player
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -149,63 +149,63 @@ import coil3.imageLoader
 import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.toBitmap
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AudioQuality
-import iad1tya.melo.music.constants.AudioQualityKey
-import iad1tya.melo.music.constants.CropAlbumArtKey
-import iad1tya.melo.music.constants.DarkModeKey
-import iad1tya.melo.music.constants.HidePlayerThumbnailKey
-import iad1tya.melo.music.constants.EnableLyricsThumbnailPlayPauseKey
-import iad1tya.melo.music.constants.KeepScreenOn
-import iad1tya.melo.music.constants.PlayerBackgroundStyle
-import iad1tya.melo.music.constants.PlayerBackgroundStyleKey
-import iad1tya.melo.music.constants.PlayerButtonsStyle
-import iad1tya.melo.music.constants.PlayerButtonsStyleKey
-import iad1tya.melo.music.constants.PlayerHorizontalPadding
-import iad1tya.melo.music.constants.QueuePeekHeight
-import iad1tya.melo.music.constants.SliderStyle
-import iad1tya.melo.music.constants.SliderStyleKey
-import iad1tya.melo.music.constants.SquigglySliderKey
-import iad1tya.melo.music.constants.SwipeLyricsKey
-import iad1tya.melo.music.constants.ThumbnailCornerRadius
-import iad1tya.melo.music.constants.UseNewPlayerDesignKey
-import iad1tya.melo.music.db.entities.LyricsEntity
-import iad1tya.melo.music.extensions.SwipeGesture
-import iad1tya.melo.music.extensions.togglePlayPause
-import iad1tya.melo.music.extensions.toggleRepeatMode
-import iad1tya.melo.music.listentogether.RoomRole
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.playback.ExoDownloadService
-import iad1tya.melo.music.melomusic.getConnectedBluetoothDeviceName
-import iad1tya.melo.music.melomusic.isBuds
-import iad1tya.melo.music.melomusic.isSpeaker
-import iad1tya.melo.music.melomusic.AudioDeviceBottomSheet
-import iad1tya.melo.music.ui.component.BottomSheet
-import iad1tya.melo.music.ui.component.BottomSheetState
-import iad1tya.melo.music.ui.component.LocalBottomSheetPageState
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.Lyrics
-import iad1tya.melo.music.ui.component.PlayerSliderTrack
-import iad1tya.melo.music.ui.component.ResizableIconButton
-import iad1tya.melo.music.ui.component.SquigglySlider
-import iad1tya.melo.music.ui.component.WavySlider
-import iad1tya.melo.music.ui.component.rememberBottomSheetState
-import iad1tya.melo.music.ui.menu.OldPlayerMenu
-import iad1tya.melo.music.ui.menu.PlayerMenu
-import iad1tya.melo.music.ui.component.VolumeSlider
-import iad1tya.melo.music.ui.screens.settings.DarkMode
-import iad1tya.melo.music.ui.theme.PlayerColorExtractor
-import iad1tya.melo.music.ui.theme.PlayerSliderColors
-import iad1tya.melo.music.ui.utils.ShowMediaInfo
-import iad1tya.melo.music.ui.utils.ShowOffsetDialog
-import iad1tya.melo.music.utils.makeTimeString
-import iad1tya.melo.music.utils.isLocalMediaId
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AudioQuality
+import com.hyperlabs.melo.constants.AudioQualityKey
+import com.hyperlabs.melo.constants.CropAlbumArtKey
+import com.hyperlabs.melo.constants.DarkModeKey
+import com.hyperlabs.melo.constants.HidePlayerThumbnailKey
+import com.hyperlabs.melo.constants.EnableLyricsThumbnailPlayPauseKey
+import com.hyperlabs.melo.constants.KeepScreenOn
+import com.hyperlabs.melo.constants.PlayerBackgroundStyle
+import com.hyperlabs.melo.constants.PlayerBackgroundStyleKey
+import com.hyperlabs.melo.constants.PlayerButtonsStyle
+import com.hyperlabs.melo.constants.PlayerButtonsStyleKey
+import com.hyperlabs.melo.constants.PlayerHorizontalPadding
+import com.hyperlabs.melo.constants.QueuePeekHeight
+import com.hyperlabs.melo.constants.SliderStyle
+import com.hyperlabs.melo.constants.SliderStyleKey
+import com.hyperlabs.melo.constants.SquigglySliderKey
+import com.hyperlabs.melo.constants.SwipeLyricsKey
+import com.hyperlabs.melo.constants.ThumbnailCornerRadius
+import com.hyperlabs.melo.constants.UseNewPlayerDesignKey
+import com.hyperlabs.melo.db.entities.LyricsEntity
+import com.hyperlabs.melo.extensions.SwipeGesture
+import com.hyperlabs.melo.extensions.togglePlayPause
+import com.hyperlabs.melo.extensions.toggleRepeatMode
+import com.hyperlabs.melo.listentogether.RoomRole
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.playback.ExoDownloadService
+import com.hyperlabs.melo.melomusic.getConnectedBluetoothDeviceName
+import com.hyperlabs.melo.melomusic.isBuds
+import com.hyperlabs.melo.melomusic.isSpeaker
+import com.hyperlabs.melo.melomusic.AudioDeviceBottomSheet
+import com.hyperlabs.melo.ui.component.BottomSheet
+import com.hyperlabs.melo.ui.component.BottomSheetState
+import com.hyperlabs.melo.ui.component.LocalBottomSheetPageState
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.Lyrics
+import com.hyperlabs.melo.ui.component.PlayerSliderTrack
+import com.hyperlabs.melo.ui.component.ResizableIconButton
+import com.hyperlabs.melo.ui.component.SquigglySlider
+import com.hyperlabs.melo.ui.component.WavySlider
+import com.hyperlabs.melo.ui.component.rememberBottomSheetState
+import com.hyperlabs.melo.ui.menu.OldPlayerMenu
+import com.hyperlabs.melo.ui.menu.PlayerMenu
+import com.hyperlabs.melo.ui.component.VolumeSlider
+import com.hyperlabs.melo.ui.screens.settings.DarkMode
+import com.hyperlabs.melo.ui.theme.PlayerColorExtractor
+import com.hyperlabs.melo.ui.theme.PlayerSliderColors
+import com.hyperlabs.melo.ui.utils.ShowMediaInfo
+import com.hyperlabs.melo.ui.utils.ShowOffsetDialog
+import com.hyperlabs.melo.utils.makeTimeString
+import com.hyperlabs.melo.utils.isLocalMediaId
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
 import dagger.hilt.android.EntryPointAccessors
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -214,7 +214,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.math.max
 import kotlin.math.roundToInt
-import iad1tya.melo.music.ui.component.Icon as MIcon
+import com.hyperlabs.melo.ui.component.Icon as MIcon
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
 import androidx.media3.exoplayer.DefaultLoadControl
 import android.view.TextureView
@@ -227,15 +227,15 @@ import androidx.media3.common.MimeTypes
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.AspectRatioFrameLayout
 import androidx.media3.ui.PlayerView
-import iad1tya.melo.music.applecanvas.AppleMusicCanvasProvider
-import iad1tya.melo.music.canvas.CanvasArtwork
-import iad1tya.melo.music.canvas.MonochromeApiCanvas
-import iad1tya.melo.music.constants.CanvasThumbnailAnimationKey
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.ui.player.CanvasArtworkPlaybackCache
-import iad1tya.melo.music.ui.player.normalizeCanvasArtistName
-import iad1tya.melo.music.ui.player.normalizeCanvasSongTitle
-import iad1tya.melo.music.melomusiccanvas.melomusicCanvasProvider
+import com.hyperlabs.melo.applecanvas.AppleMusicCanvasProvider
+import com.hyperlabs.melo.canvas.CanvasArtwork
+import com.hyperlabs.melo.canvas.MonochromeApiCanvas
+import com.hyperlabs.melo.constants.CanvasThumbnailAnimationKey
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.ui.player.CanvasArtworkPlaybackCache
+import com.hyperlabs.melo.ui.player.normalizeCanvasArtistName
+import com.hyperlabs.melo.ui.player.normalizeCanvasSongTitle
+import com.hyperlabs.melo.melomusiccanvas.melomusicCanvasProvider
 import java.util.Locale
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
@@ -256,8 +256,8 @@ fun BottomSheetPlayer(
         UseNewPlayerDesignKey,
         defaultValue = true
     )
-    val showCodecOnPlayer by rememberPreference(iad1tya.melo.music.constants.ShowCodecOnPlayerKey, false)
-    val hidePlayerSlider by rememberPreference(iad1tya.melo.music.constants.HidePlayerSliderKey, false)
+    val showCodecOnPlayer by rememberPreference(com.hyperlabs.melo.constants.ShowCodecOnPlayerKey, false)
+    val hidePlayerSlider by rememberPreference(com.hyperlabs.melo.constants.HidePlayerSliderKey, false)
     val (hidePlayerThumbnail, onHidePlayerThumbnailChange) = rememberPreference(HidePlayerThumbnailKey, false)
     val cropAlbumArt by rememberPreference(CropAlbumArtKey, false)
     val mediaMetadata by playerConnection.mediaMetadata.collectAsState()
@@ -1664,7 +1664,7 @@ fun BottomSheetPlayer(
                                 FilledIconButton(
                                     onClick = {
                                         menuState.show {
-                                            iad1tya.melo.music.ui.menu.LyricsMenu(
+                                            com.hyperlabs.melo.ui.menu.LyricsMenu(
                                                 lyricsProvider = { currentLyrics },
                                                 songProvider = { currentSong?.song },
                                                 mediaMetadataProvider = { mediaMetadata },
@@ -1782,7 +1782,7 @@ fun BottomSheetPlayer(
                                     .background(textButtonColor.copy(alpha = 0.2f))
                                     .clickable {
                                         menuState.show {
-                                            iad1tya.melo.music.ui.menu.LyricsMenu(
+                                            com.hyperlabs.melo.ui.menu.LyricsMenu(
                                                 lyricsProvider = { currentLyrics },
                                                 songProvider = { currentSong?.song },
                                                 mediaMetadataProvider = { mediaMetadata },
@@ -2701,7 +2701,7 @@ fun InlineLyricsView(
                 try {
                     val entryPoint = EntryPointAccessors.fromApplication(
                         context.applicationContext,
-                        iad1tya.melo.music.di.LyricsHelperEntryPoint::class.java
+                        com.hyperlabs.melo.di.LyricsHelperEntryPoint::class.java
                     )
                     val lyricsHelper = entryPoint.lyricsHelper()
                     val fetchedLyricsWithProvider = lyricsHelper.getLyrics(mediaMetadata)

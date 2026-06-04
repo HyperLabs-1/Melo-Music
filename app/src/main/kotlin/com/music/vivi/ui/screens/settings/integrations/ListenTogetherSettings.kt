@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings.integrations
+package com.hyperlabs.melo.ui.screens.settings.integrations
 
 import android.widget.Toast
 import androidx.compose.foundation.background
@@ -62,26 +62,26 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListenTogetherAutoApprovalKey
-import iad1tya.melo.music.constants.ListenTogetherServerUrlKey
-import iad1tya.melo.music.constants.ListenTogetherSmartResyncKey
-import iad1tya.melo.music.constants.ListenTogetherSyncVolumeKey
-import iad1tya.melo.music.constants.ListenTogetherUsernameKey
-import iad1tya.melo.music.listentogether.ListenTogetherEvent
-import iad1tya.melo.music.listentogether.ListenTogetherServer
-import iad1tya.melo.music.listentogether.ListenTogetherServers
-import iad1tya.melo.music.listentogether.LogEntry
-import iad1tya.melo.music.listentogether.LogLevel
-import iad1tya.melo.music.listentogether.RoomRole
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.IntegrationCard
-import iad1tya.melo.music.ui.component.IntegrationCardItem
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.ListenTogetherViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListenTogetherAutoApprovalKey
+import com.hyperlabs.melo.constants.ListenTogetherServerUrlKey
+import com.hyperlabs.melo.constants.ListenTogetherSmartResyncKey
+import com.hyperlabs.melo.constants.ListenTogetherSyncVolumeKey
+import com.hyperlabs.melo.constants.ListenTogetherUsernameKey
+import com.hyperlabs.melo.listentogether.ListenTogetherEvent
+import com.hyperlabs.melo.listentogether.ListenTogetherServer
+import com.hyperlabs.melo.listentogether.ListenTogetherServers
+import com.hyperlabs.melo.listentogether.LogEntry
+import com.hyperlabs.melo.listentogether.LogLevel
+import com.hyperlabs.melo.listentogether.RoomRole
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.IntegrationCard
+import com.hyperlabs.melo.ui.component.IntegrationCardItem
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.ListenTogetherViewModel
 import kotlinx.coroutines.flow.collectLatest
 
 @OptIn(ExperimentalMaterial3Api::class)

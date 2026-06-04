@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -26,28 +26,28 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.LyricsRomanizeAsMainKey
-import iad1tya.melo.music.constants.LyricsRomanizeBelarusianKey
-import iad1tya.melo.music.constants.LyricsRomanizeBulgarianKey
-import iad1tya.melo.music.constants.LyricsRomanizeChineseKey
-import iad1tya.melo.music.constants.LyricsRomanizeHindiKey
-import iad1tya.melo.music.constants.LyricsRomanizePunjabiKey
-import iad1tya.melo.music.constants.LyricsRomanizeCyrillicByLineKey
-import iad1tya.melo.music.constants.LyricsRomanizeJapaneseKey
-import iad1tya.melo.music.constants.LyricsRomanizeKoreanKey
-import iad1tya.melo.music.constants.LyricsRomanizeKyrgyzKey
-import iad1tya.melo.music.constants.LyricsRomanizeMacedonianKey
-import iad1tya.melo.music.constants.LyricsRomanizeRussianKey
-import iad1tya.melo.music.constants.LyricsRomanizeSerbianKey
-import iad1tya.melo.music.constants.LyricsRomanizeUkrainianKey
-import iad1tya.melo.music.ui.component.ActionPromptDialog
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.LyricsRomanizeAsMainKey
+import com.hyperlabs.melo.constants.LyricsRomanizeBelarusianKey
+import com.hyperlabs.melo.constants.LyricsRomanizeBulgarianKey
+import com.hyperlabs.melo.constants.LyricsRomanizeChineseKey
+import com.hyperlabs.melo.constants.LyricsRomanizeHindiKey
+import com.hyperlabs.melo.constants.LyricsRomanizePunjabiKey
+import com.hyperlabs.melo.constants.LyricsRomanizeCyrillicByLineKey
+import com.hyperlabs.melo.constants.LyricsRomanizeJapaneseKey
+import com.hyperlabs.melo.constants.LyricsRomanizeKoreanKey
+import com.hyperlabs.melo.constants.LyricsRomanizeKyrgyzKey
+import com.hyperlabs.melo.constants.LyricsRomanizeMacedonianKey
+import com.hyperlabs.melo.constants.LyricsRomanizeRussianKey
+import com.hyperlabs.melo.constants.LyricsRomanizeSerbianKey
+import com.hyperlabs.melo.constants.LyricsRomanizeUkrainianKey
+import com.hyperlabs.melo.ui.component.ActionPromptDialog
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
@@ -11,11 +11,11 @@ import com.music.innertube.models.PlaylistItem
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.YTItem
 import com.music.innertube.models.filterVideoSongs
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers

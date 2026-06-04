@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
@@ -38,11 +38,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.withStyle
 import androidx.navigation.NavController
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.utils.backToMain
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.utils.backToMain
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

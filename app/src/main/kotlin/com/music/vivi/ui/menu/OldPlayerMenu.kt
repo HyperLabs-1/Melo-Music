@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import android.content.Intent
 import android.widget.Toast
@@ -49,23 +49,23 @@ import androidx.media3.exoplayer.offline.DownloadRequest
 import androidx.media3.exoplayer.offline.DownloadService
 import androidx.navigation.NavController
 import com.music.innertube.YouTube
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.extensions.toggleRepeatMode
-import iad1tya.melo.music.listentogether.RoomRole
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.playback.ExoDownloadService
-import iad1tya.melo.music.ui.component.BottomSheetState
-import iad1tya.melo.music.ui.component.ListDialog
-import iad1tya.melo.music.ui.component.Material3MenuGroup
-import iad1tya.melo.music.ui.component.Material3MenuItemData
-import iad1tya.melo.music.ui.component.NewAction
-import iad1tya.melo.music.ui.component.NewActionGrid
-import iad1tya.melo.music.ui.component.VolumeSlider
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.extensions.toggleRepeatMode
+import com.hyperlabs.melo.listentogether.RoomRole
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.playback.ExoDownloadService
+import com.hyperlabs.melo.ui.component.BottomSheetState
+import com.hyperlabs.melo.ui.component.ListDialog
+import com.hyperlabs.melo.ui.component.Material3MenuGroup
+import com.hyperlabs.melo.ui.component.Material3MenuItemData
+import com.hyperlabs.melo.ui.component.NewAction
+import com.hyperlabs.melo.ui.component.NewActionGrid
+import com.hyperlabs.melo.ui.component.VolumeSlider
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

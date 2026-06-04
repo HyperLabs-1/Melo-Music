@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic.updater
+package com.hyperlabs.melo.melomusic.updater
 
 import android.content.Context
 import android.os.Environment

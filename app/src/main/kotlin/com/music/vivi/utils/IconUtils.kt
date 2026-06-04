@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.content.ComponentName
 import android.content.Context
@@ -9,8 +9,8 @@ import android.content.pm.PackageManager
 object IconUtils {
     fun setIcon(context: Context, enabled: Boolean) {
         val pm = context.packageManager
-        val dynamic = ComponentName(context, "iad1tya.melo.music.MainActivityAlias")
-        val static = ComponentName(context, "iad1tya.melo.music.MainActivityStatic")
+        val dynamic = ComponentName(context, "com.hyperlabs.melo.MainActivityAlias")
+        val static = ComponentName(context, "com.hyperlabs.melo.MainActivityStatic")
 
         pm.setComponentEnabledSetting(
             dynamic,

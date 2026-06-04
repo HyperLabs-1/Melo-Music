@@ -1,7 +1,7 @@
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import android.content.Context
-import iad1tya.melo.music.db.entities.Song
+import com.hyperlabs.melo.db.entities.Song
 
 class DiscordRPC(
     val context: Context,

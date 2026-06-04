@@ -1,10 +1,10 @@
 
 
-package iad1tya.melo.music.playback.queues
+package com.hyperlabs.melo.playback.queues
 
 import androidx.media3.common.MediaItem
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.models.MediaMetadata
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.models.MediaMetadata
 
 interface Queue {
     val preloadItem: MediaMetadata?

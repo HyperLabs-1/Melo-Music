@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -63,34 +63,34 @@ import androidx.media3.exoplayer.offline.DownloadService
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
 import com.music.innertube.YouTube
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.LocalSyncUtils
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.constants.ListThumbnailSize
-import iad1tya.melo.music.db.entities.ArtistEntity
-import iad1tya.melo.music.db.entities.Event
-import iad1tya.melo.music.db.entities.SpeedDialItem
-import iad1tya.melo.music.db.entities.PlaylistSong
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.ExoDownloadService
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.ui.component.ListDialog
-import iad1tya.melo.music.ui.component.LocalBottomSheetPageState
-import iad1tya.melo.music.ui.component.Material3MenuGroup
-import iad1tya.melo.music.ui.component.Material3MenuItemData
-import iad1tya.melo.music.ui.component.NewAction
-import iad1tya.melo.music.ui.component.NewActionGrid
-import iad1tya.melo.music.ui.component.SongListItem
-import iad1tya.melo.music.ui.component.TextFieldDialog
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.ui.utils.ShowMediaInfo
-import iad1tya.melo.music.viewmodels.CachePlaylistViewModel
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.LocalSyncUtils
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.constants.ListThumbnailSize
+import com.hyperlabs.melo.db.entities.ArtistEntity
+import com.hyperlabs.melo.db.entities.Event
+import com.hyperlabs.melo.db.entities.SpeedDialItem
+import com.hyperlabs.melo.db.entities.PlaylistSong
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.ExoDownloadService
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.ui.component.ListDialog
+import com.hyperlabs.melo.ui.component.LocalBottomSheetPageState
+import com.hyperlabs.melo.ui.component.Material3MenuGroup
+import com.hyperlabs.melo.ui.component.Material3MenuItemData
+import com.hyperlabs.melo.ui.component.NewAction
+import com.hyperlabs.melo.ui.component.NewActionGrid
+import com.hyperlabs.melo.ui.component.SongListItem
+import com.hyperlabs.melo.ui.component.TextFieldDialog
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.ui.utils.ShowMediaInfo
+import com.hyperlabs.melo.viewmodels.CachePlaylistViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -252,7 +252,7 @@ fun SongMenu(
         mutableStateOf(false)
     }
 
-    val ringtoneViewModel = iad1tya.melo.music.LocalRingtoneViewModel.current
+    val ringtoneViewModel = com.hyperlabs.melo.LocalRingtoneViewModel.current
 
     if (showSelectArtistDialog) {
         ListDialog(
@@ -413,7 +413,7 @@ fun SongMenu(
                             },
                             onClick = {
                                 val durationMs = if (song.song.duration > 0) song.song.duration.toLong() * 1000 else 180000L
-                                val trackInfo = iad1tya.melo.music.listentogether.TrackInfo(
+                                val trackInfo = com.hyperlabs.melo.listentogether.TrackInfo(
                                     id = song.id,
                                     title = song.song.title,
                                     artist = orderedArtists.joinToString(", ") { it.name },

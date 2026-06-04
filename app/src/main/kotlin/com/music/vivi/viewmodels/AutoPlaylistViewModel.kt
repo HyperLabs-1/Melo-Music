@@ -1,22 +1,22 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.SongSortDescendingKey
-import iad1tya.melo.music.constants.SongSortType
-import iad1tya.melo.music.constants.SongSortTypeKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.extensions.filterExplicit
-import iad1tya.melo.music.extensions.filterVideoSongs
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.utils.SyncUtils
-import iad1tya.melo.music.utils.dataStore
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.SongSortDescendingKey
+import com.hyperlabs.melo.constants.SongSortType
+import com.hyperlabs.melo.constants.SongSortTypeKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.extensions.filterExplicit
+import com.hyperlabs.melo.extensions.filterVideoSongs
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.utils.SyncUtils
+import com.hyperlabs.melo.utils.dataStore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers

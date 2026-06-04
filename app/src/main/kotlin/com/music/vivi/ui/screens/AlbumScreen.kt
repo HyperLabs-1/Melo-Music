@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.BorderStroke
@@ -90,7 +90,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.foundation.layout.offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import iad1tya.melo.music.constants.AppBarHeight
+import com.hyperlabs.melo.constants.AppBarHeight
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.util.fastForEachIndexed
@@ -99,35 +99,35 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.media3.exoplayer.offline.Download
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.AlbumCanvasEnabledKey
-import iad1tya.melo.music.db.entities.Album
-import iad1tya.melo.music.playback.ExoDownloadService
-import iad1tya.melo.music.playback.queues.LocalAlbumRadio
-import iad1tya.melo.music.ui.component.AlbumGradient
-import iad1tya.melo.music.ui.component.ExpandableText
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.LinkSegment
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.NavigationTitle
-import iad1tya.melo.music.ui.component.SongListItem
-import iad1tya.melo.music.ui.component.YouTubeGridItem
-import iad1tya.melo.music.ui.menu.AlbumMenu
-import iad1tya.melo.music.ui.menu.SelectionSongMenu
-import iad1tya.melo.music.ui.menu.SongMenu
-import iad1tya.melo.music.ui.menu.YouTubeAlbumMenu
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.ui.utils.fadingEdge
-import iad1tya.melo.music.ui.player.CanvasArtworkPlayer
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.AlbumViewModel
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.AlbumCanvasEnabledKey
+import com.hyperlabs.melo.db.entities.Album
+import com.hyperlabs.melo.playback.ExoDownloadService
+import com.hyperlabs.melo.playback.queues.LocalAlbumRadio
+import com.hyperlabs.melo.ui.component.AlbumGradient
+import com.hyperlabs.melo.ui.component.ExpandableText
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.LinkSegment
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.NavigationTitle
+import com.hyperlabs.melo.ui.component.SongListItem
+import com.hyperlabs.melo.ui.component.YouTubeGridItem
+import com.hyperlabs.melo.ui.menu.AlbumMenu
+import com.hyperlabs.melo.ui.menu.SelectionSongMenu
+import com.hyperlabs.melo.ui.menu.SongMenu
+import com.hyperlabs.melo.ui.menu.YouTubeAlbumMenu
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.ui.utils.fadingEdge
+import com.hyperlabs.melo.ui.player.CanvasArtworkPlayer
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.AlbumViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable

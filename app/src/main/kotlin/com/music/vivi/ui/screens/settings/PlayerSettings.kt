@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -32,51 +32,51 @@ import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AudioNormalizationKey
-import iad1tya.melo.music.constants.AudioOffload
-import iad1tya.melo.music.constants.AudioQuality
-import iad1tya.melo.music.constants.AudioQualityKey
-import iad1tya.melo.music.constants.AutoDownloadOnLikeKey
-import iad1tya.melo.music.constants.CrossfadeDurationKey
-import iad1tya.melo.music.constants.CrossfadeEnabledKey
-import iad1tya.melo.music.constants.CrossfadeGaplessKey
-import iad1tya.melo.music.constants.AutoLoadMoreKey
-import iad1tya.melo.music.constants.AutoSkipNextOnErrorKey
-import iad1tya.melo.music.constants.DisableLoadMoreWhenRepeatAllKey
-import iad1tya.melo.music.constants.EnableGoogleCastKey
-import iad1tya.melo.music.constants.HistoryDuration
-import iad1tya.melo.music.constants.KeepScreenOn
-import iad1tya.melo.music.constants.PauseOnMute
-import iad1tya.melo.music.constants.PersistentQueueKey
-import iad1tya.melo.music.constants.PersistentShuffleAcrossQueuesKey
-import iad1tya.melo.music.constants.PreventDuplicateTracksInQueueKey
-import iad1tya.melo.music.constants.RememberShuffleAndRepeatKey
-import iad1tya.melo.music.constants.ResumeOnBluetoothConnectKey
-import iad1tya.melo.music.constants.SeekExtraSeconds
-import iad1tya.melo.music.constants.ShufflePlaylistFirstKey
-import iad1tya.melo.music.constants.SimilarContent
-import iad1tya.melo.music.constants.ShowAudioFallbackToastKey
-import iad1tya.melo.music.constants.SkipSilenceInstantKey
-import iad1tya.melo.music.constants.SkipSilenceKey
-import iad1tya.melo.music.constants.StopMusicOnTaskClearKey
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AudioNormalizationKey
+import com.hyperlabs.melo.constants.AudioOffload
+import com.hyperlabs.melo.constants.AudioQuality
+import com.hyperlabs.melo.constants.AudioQualityKey
+import com.hyperlabs.melo.constants.AutoDownloadOnLikeKey
+import com.hyperlabs.melo.constants.CrossfadeDurationKey
+import com.hyperlabs.melo.constants.CrossfadeEnabledKey
+import com.hyperlabs.melo.constants.CrossfadeGaplessKey
+import com.hyperlabs.melo.constants.AutoLoadMoreKey
+import com.hyperlabs.melo.constants.AutoSkipNextOnErrorKey
+import com.hyperlabs.melo.constants.DisableLoadMoreWhenRepeatAllKey
+import com.hyperlabs.melo.constants.EnableGoogleCastKey
+import com.hyperlabs.melo.constants.HistoryDuration
+import com.hyperlabs.melo.constants.KeepScreenOn
+import com.hyperlabs.melo.constants.PauseOnMute
+import com.hyperlabs.melo.constants.PersistentQueueKey
+import com.hyperlabs.melo.constants.PersistentShuffleAcrossQueuesKey
+import com.hyperlabs.melo.constants.PreventDuplicateTracksInQueueKey
+import com.hyperlabs.melo.constants.RememberShuffleAndRepeatKey
+import com.hyperlabs.melo.constants.ResumeOnBluetoothConnectKey
+import com.hyperlabs.melo.constants.SeekExtraSeconds
+import com.hyperlabs.melo.constants.ShufflePlaylistFirstKey
+import com.hyperlabs.melo.constants.SimilarContent
+import com.hyperlabs.melo.constants.ShowAudioFallbackToastKey
+import com.hyperlabs.melo.constants.SkipSilenceInstantKey
+import com.hyperlabs.melo.constants.SkipSilenceKey
+import com.hyperlabs.melo.constants.StopMusicOnTaskClearKey
 
-import iad1tya.melo.music.constants.PreloadNextSongEnabledKey
-import iad1tya.melo.music.constants.PreloadNextSongLimitKey
-import iad1tya.melo.music.constants.PreloadLyricsEnabledKey
+import com.hyperlabs.melo.constants.PreloadNextSongEnabledKey
+import com.hyperlabs.melo.constants.PreloadNextSongLimitKey
+import com.hyperlabs.melo.constants.PreloadLyricsEnabledKey
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.EnumDialog
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.EnumDialog
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlin.math.roundToInt
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -223,8 +223,8 @@ fun PlayerSettings(
     }
 
     val (downloadQuality, onDownloadQualityChange) = rememberEnumPreference(
-        iad1tya.melo.music.constants.DownloadQualityKey,
-        defaultValue = iad1tya.melo.music.constants.DownloadQuality.YOUTUBE
+        com.hyperlabs.melo.constants.DownloadQualityKey,
+        defaultValue = com.hyperlabs.melo.constants.DownloadQuality.YOUTUBE
     )
 
     var showSaavnAudioWarning by remember { mutableStateOf(false) }
@@ -265,12 +265,12 @@ fun PlayerSettings(
             },
             title = stringResource(R.string.download_quality_title),
             current = downloadQuality,
-            values = iad1tya.melo.music.constants.DownloadQuality.values().toList(),
+            values = com.hyperlabs.melo.constants.DownloadQuality.values().toList(),
             valueText = {
                 when (it) {
-                    iad1tya.melo.music.constants.DownloadQuality.YOUTUBE -> "YouTube Music (AAC/Default)"
-                    iad1tya.melo.music.constants.DownloadQuality.SAAVN -> "Saavn (320kbps)"
-                    iad1tya.melo.music.constants.DownloadQuality.LOSSLESS -> "Qobuz (Lossless)"
+                    com.hyperlabs.melo.constants.DownloadQuality.YOUTUBE -> "YouTube Music (AAC/Default)"
+                    com.hyperlabs.melo.constants.DownloadQuality.SAAVN -> "Saavn (320kbps)"
+                    com.hyperlabs.melo.constants.DownloadQuality.LOSSLESS -> "Qobuz (Lossless)"
                 }
             }
         )
@@ -408,9 +408,9 @@ fun PlayerSettings(
                     description = {
                         Text(
                             when (downloadQuality) {
-                                iad1tya.melo.music.constants.DownloadQuality.YOUTUBE -> "YouTube Music (AAC/Default)"
-                                iad1tya.melo.music.constants.DownloadQuality.SAAVN -> "Saavn (320kbps)"
-                                iad1tya.melo.music.constants.DownloadQuality.LOSSLESS -> "Qobuz (Lossless)"
+                                com.hyperlabs.melo.constants.DownloadQuality.YOUTUBE -> "YouTube Music (AAC/Default)"
+                                com.hyperlabs.melo.constants.DownloadQuality.SAAVN -> "Saavn (320kbps)"
+                                com.hyperlabs.melo.constants.DownloadQuality.LOSSLESS -> "Qobuz (Lossless)"
                             }
                         )
                     },

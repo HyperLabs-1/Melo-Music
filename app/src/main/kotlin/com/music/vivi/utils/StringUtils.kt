@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import java.math.BigInteger
 import java.security.MessageDigest

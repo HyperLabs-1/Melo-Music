@@ -1,11 +1,11 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
 import android.content.Context
-import iad1tya.melo.music.constants.EnableSimpMusicKey
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.constants.EnableSimpMusicKey
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 import com.music.simpmusic.SimpMusicLyrics
 
 object SimpMusicLyricsProvider : LyricsProvider {

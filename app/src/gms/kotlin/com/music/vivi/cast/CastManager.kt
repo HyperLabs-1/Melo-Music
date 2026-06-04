@@ -1,4 +1,4 @@
-package iad1tya.melo.music.cast
+package com.hyperlabs.melo.cast
 
 import android.content.Context
 import androidx.media3.cast.CastPlayer

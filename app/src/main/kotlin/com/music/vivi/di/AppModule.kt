@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.di
+package com.hyperlabs.melo.di
 
 import android.content.Context
 import androidx.media3.database.DatabaseProvider
@@ -9,13 +9,13 @@ import androidx.media3.datasource.cache.LeastRecentlyUsedCacheEvictor
 import androidx.media3.datasource.cache.NoOpCacheEvictor
 import androidx.media3.datasource.cache.SimpleCache
 import androidx.room.Room
-import iad1tya.melo.music.constants.MaxSongCacheSizeKey
-import iad1tya.melo.music.db.InternalDatabase
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.listentogether.ListenTogetherClient
-import iad1tya.melo.music.listentogether.ListenTogetherManager
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.constants.MaxSongCacheSizeKey
+import com.hyperlabs.melo.db.InternalDatabase
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.listentogether.ListenTogetherClient
+import com.hyperlabs.melo.listentogether.ListenTogetherManager
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -56,11 +56,11 @@ object AppModule {
     ): InternalDatabase = Room
         .databaseBuilder(context, InternalDatabase::class.java, InternalDatabase.DB_NAME)
         .addMigrations(
-            iad1tya.melo.music.db.MIGRATION_1_2,
-            iad1tya.melo.music.db.MIGRATION_21_24,
-            iad1tya.melo.music.db.MIGRATION_22_24,
-            iad1tya.melo.music.db.MIGRATION_24_25,
-            iad1tya.melo.music.db.MIGRATION_27_28,
+            com.hyperlabs.melo.db.MIGRATION_1_2,
+            com.hyperlabs.melo.db.MIGRATION_21_24,
+            com.hyperlabs.melo.db.MIGRATION_22_24,
+            com.hyperlabs.melo.db.MIGRATION_24_25,
+            com.hyperlabs.melo.db.MIGRATION_27_28,
         )
         .fallbackToDestructiveMigration(dropAllTables = true)
         .setJournalMode(androidx.room.RoomDatabase.JournalMode.WRITE_AHEAD_LOGGING)

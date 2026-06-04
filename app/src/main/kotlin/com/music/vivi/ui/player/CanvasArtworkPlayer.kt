@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.player
+package com.hyperlabs.melo.ui.player
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween

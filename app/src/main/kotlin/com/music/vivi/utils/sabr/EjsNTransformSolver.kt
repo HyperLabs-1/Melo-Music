@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils.sabr
+package com.hyperlabs.melo.utils.sabr
 
 import android.content.Context
 import android.net.Uri
@@ -6,8 +6,8 @@ import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.WebChromeClient
 import android.webkit.WebView
-import iad1tya.melo.music.utils.cipher.CipherDeobfuscator
-import iad1tya.melo.music.utils.cipher.PlayerJsFetcher
+import com.hyperlabs.melo.utils.cipher.CipherDeobfuscator
+import com.hyperlabs.melo.utils.cipher.PlayerJsFetcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.suspendCancellableCoroutine

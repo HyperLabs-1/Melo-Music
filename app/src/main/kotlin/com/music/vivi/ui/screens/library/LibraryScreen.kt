@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.library
+package com.hyperlabs.melo.ui.screens.library
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -11,11 +11,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ChipSortTypeKey
-import iad1tya.melo.music.constants.LibraryFilter
-import iad1tya.melo.music.ui.component.ChipsRow
-import iad1tya.melo.music.utils.rememberEnumPreference
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ChipSortTypeKey
+import com.hyperlabs.melo.constants.LibraryFilter
+import com.hyperlabs.melo.ui.component.ChipsRow
+import com.hyperlabs.melo.utils.rememberEnumPreference
 
 @Composable
 fun LibraryScreen(navController: NavController) {

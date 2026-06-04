@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.recognition
+package com.hyperlabs.melo.ui.screens.recognition
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -72,11 +72,11 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.entities.RecognitionHistory
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.utils.backToMain
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.entities.RecognitionHistory
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.utils.backToMain
 import com.music.shazamkit.models.RecognitionResult
 import com.music.shazamkit.models.RecognitionStatus
 import kotlinx.coroutines.Dispatchers
@@ -94,18 +94,18 @@ fun RecognitionScreen(
     
     
     LaunchedEffect(Unit) {
-        iad1tya.melo.music.recognition.MusicRecognitionService.reset()
+        com.hyperlabs.melo.recognition.MusicRecognitionService.reset()
     }
     
     
     DisposableEffect(Unit) {
         onDispose {
-            iad1tya.melo.music.recognition.MusicRecognitionService.reset()
+            com.hyperlabs.melo.recognition.MusicRecognitionService.reset()
         }
     }
     
     
-    val recognitionStatus by iad1tya.melo.music.recognition.MusicRecognitionService.recognitionStatus.collectAsState()
+    val recognitionStatus by com.hyperlabs.melo.recognition.MusicRecognitionService.recognitionStatus.collectAsState()
     
     var hasPermission by remember {
         mutableStateOf(
@@ -120,7 +120,7 @@ fun RecognitionScreen(
         hasPermission = isGranted
         if (isGranted) {
             coroutineScope.launch {
-                iad1tya.melo.music.recognition.MusicRecognitionService.recognize(context)
+                com.hyperlabs.melo.recognition.MusicRecognitionService.recognize(context)
             }
         }
     }
@@ -128,7 +128,7 @@ fun RecognitionScreen(
     fun startRecognition() {
         if (hasPermission) {
             coroutineScope.launch {
-                iad1tya.melo.music.recognition.MusicRecognitionService.recognize(context)
+                com.hyperlabs.melo.recognition.MusicRecognitionService.recognize(context)
             }
         } else {
             permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
@@ -136,7 +136,7 @@ fun RecognitionScreen(
     }
     
     fun resetToReady() {
-        iad1tya.melo.music.recognition.MusicRecognitionService.reset()
+        com.hyperlabs.melo.recognition.MusicRecognitionService.reset()
     }
 
     fun saveToHistory(result: RecognitionResult) {
@@ -212,7 +212,7 @@ fun RecognitionScreen(
                     }
                     is RecognitionStatus.Listening -> {
                         ListeningState(
-                            onCancel = { iad1tya.melo.music.recognition.MusicRecognitionService.reset() }
+                            onCancel = { com.hyperlabs.melo.recognition.MusicRecognitionService.reset() }
                         )
                     }
                     is RecognitionStatus.Processing -> {
@@ -453,7 +453,7 @@ private fun SuccessState(
             modifier = Modifier
                 .size(180.dp)
                 .aspectRatio(1f),
-            shape = RoundedCornerShape(iad1tya.melo.music.constants.ThumbnailCornerRadius),
+            shape = RoundedCornerShape(com.hyperlabs.melo.constants.ThumbnailCornerRadius),
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
         ) {
             AsyncImage(

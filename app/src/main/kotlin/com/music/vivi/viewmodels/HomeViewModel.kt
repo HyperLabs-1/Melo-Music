@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.datastore.preferences.core.edit
@@ -21,24 +21,24 @@ import com.music.innertube.models.filterYoutubeShorts
 import com.music.innertube.pages.ExplorePage
 import com.music.innertube.pages.HomePage
 import com.music.innertube.utils.completed
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.HideYoutubeShortsKey
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.constants.QuickPicks
-import iad1tya.melo.music.constants.QuickPicksKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.Album
-import iad1tya.melo.music.db.entities.LocalItem
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.db.entities.SpeedDialItem
-import iad1tya.melo.music.extensions.filterVideoSongs
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.models.SimilarRecommendation
-import iad1tya.melo.music.utils.SyncUtils
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.HideYoutubeShortsKey
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.constants.QuickPicks
+import com.hyperlabs.melo.constants.QuickPicksKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.Album
+import com.hyperlabs.melo.db.entities.LocalItem
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.db.entities.SpeedDialItem
+import com.hyperlabs.melo.extensions.filterVideoSongs
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.models.SimilarRecommendation
+import com.hyperlabs.melo.utils.SyncUtils
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers

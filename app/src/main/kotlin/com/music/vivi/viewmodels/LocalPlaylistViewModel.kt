@@ -1,21 +1,21 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.PlaylistSongSortDescendingKey
-import iad1tya.melo.music.constants.PlaylistSongSortType
-import iad1tya.melo.music.constants.PlaylistSongSortTypeKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.PlaylistSong
-import iad1tya.melo.music.extensions.reversed
-import iad1tya.melo.music.extensions.toEnum
-import iad1tya.melo.music.utils.SyncUtils
-import iad1tya.melo.music.utils.dataStore
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.PlaylistSongSortDescendingKey
+import com.hyperlabs.melo.constants.PlaylistSongSortType
+import com.hyperlabs.melo.constants.PlaylistSongSortTypeKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.PlaylistSong
+import com.hyperlabs.melo.extensions.reversed
+import com.hyperlabs.melo.extensions.toEnum
+import com.hyperlabs.melo.utils.SyncUtils
+import com.hyperlabs.melo.utils.dataStore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.SharingStarted

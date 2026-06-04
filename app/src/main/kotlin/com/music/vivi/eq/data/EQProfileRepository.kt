@@ -1,4 +1,4 @@
-package iad1tya.melo.music.eq.data
+package com.hyperlabs.melo.eq.data
 
 import android.content.Context
 import android.content.SharedPreferences

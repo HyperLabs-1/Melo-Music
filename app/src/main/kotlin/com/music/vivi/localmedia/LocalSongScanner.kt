@@ -5,7 +5,7 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package iad1tya.melo.music.localmedia
+package com.hyperlabs.melo.localmedia
 
 import android.content.ContentUris
 import android.content.Context
@@ -15,16 +15,16 @@ import android.provider.MediaStore
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.AlbumArtistMap
-import iad1tya.melo.music.db.entities.AlbumEntity
-import iad1tya.melo.music.db.entities.ArtistEntity
-import iad1tya.melo.music.db.entities.FormatEntity
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.db.entities.SongAlbumMap
-import iad1tya.melo.music.db.entities.SongArtistMap
-import iad1tya.melo.music.db.entities.SongEntity
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.AlbumArtistMap
+import com.hyperlabs.melo.db.entities.AlbumEntity
+import com.hyperlabs.melo.db.entities.ArtistEntity
+import com.hyperlabs.melo.db.entities.FormatEntity
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.db.entities.SongAlbumMap
+import com.hyperlabs.melo.db.entities.SongArtistMap
+import com.hyperlabs.melo.db.entities.SongEntity
 import java.nio.charset.StandardCharsets
 import java.time.Instant
 import java.time.LocalDateTime

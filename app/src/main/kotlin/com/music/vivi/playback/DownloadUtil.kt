@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.playback
+package com.hyperlabs.melo.playback
 
 import coil3.SingletonImageLoader
 import coil3.request.CachePolicy
@@ -19,22 +19,22 @@ import androidx.media3.exoplayer.offline.Download
 import androidx.media3.exoplayer.offline.DownloadManager
 import androidx.media3.exoplayer.offline.DownloadNotificationHelper
 import com.music.innertube.YouTube
-import iad1tya.melo.music.constants.AudioQuality
-import iad1tya.melo.music.constants.AudioQualityKey
-import iad1tya.melo.music.constants.IpVersionKey
+import com.hyperlabs.melo.constants.AudioQuality
+import com.hyperlabs.melo.constants.AudioQualityKey
+import com.hyperlabs.melo.constants.IpVersionKey
 import com.music.innertube.models.IpVersion
 import okhttp3.Dns
 import java.net.InetAddress
 import java.net.Inet4Address
 import java.net.Inet6Address
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.FormatEntity
-import iad1tya.melo.music.db.entities.SongEntity
-import iad1tya.melo.music.di.DownloadCache
-import iad1tya.melo.music.di.PlayerCache
-import iad1tya.melo.music.ui.utils.resize
-import iad1tya.melo.music.utils.YTPlayerUtils
-import iad1tya.melo.music.utils.enumPreference
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.FormatEntity
+import com.hyperlabs.melo.db.entities.SongEntity
+import com.hyperlabs.melo.di.DownloadCache
+import com.hyperlabs.melo.di.PlayerCache
+import com.hyperlabs.melo.ui.utils.resize
+import com.hyperlabs.melo.utils.YTPlayerUtils
+import com.hyperlabs.melo.utils.enumPreference
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.DelicateCoroutinesApi
@@ -65,7 +65,7 @@ constructor(
     @PlayerCache val playerCache: SimpleCache,
 ) {
     private val connectivityManager = context.getSystemService<ConnectivityManager>()!!
-    private val downloadQuality by enumPreference(context, iad1tya.melo.music.constants.DownloadQualityKey, iad1tya.melo.music.constants.DownloadQuality.YOUTUBE)
+    private val downloadQuality by enumPreference(context, com.hyperlabs.melo.constants.DownloadQualityKey, com.hyperlabs.melo.constants.DownloadQuality.YOUTUBE)
     private val ipVersion by enumPreference(context, IpVersionKey, IpVersion.AUTO)
     private val songUrlCache = HashMap<String, Pair<String, Long>>()
 
@@ -106,7 +106,7 @@ constructor(
             val mediaId = dataSpec.key ?: error("No media id")
             val length = if (dataSpec.length >= 0) dataSpec.length else 1
 
-            val isLosslessDownload = downloadQuality == iad1tya.melo.music.constants.DownloadQuality.LOSSLESS
+            val isLosslessDownload = downloadQuality == com.hyperlabs.melo.constants.DownloadQuality.LOSSLESS
             if (!isLosslessDownload && playerCache.isCached(mediaId, dataSpec.position, length)) {
                 return@Factory dataSpec
             }
@@ -119,8 +119,8 @@ constructor(
                 YTPlayerUtils.playerResponseForPlayback(
                     mediaId,
                     audioQuality = when (downloadQuality) {
-                        iad1tya.melo.music.constants.DownloadQuality.LOSSLESS -> AudioQuality.LOSSLESS
-                        iad1tya.melo.music.constants.DownloadQuality.SAAVN -> AudioQuality.SAAVN
+                        com.hyperlabs.melo.constants.DownloadQuality.LOSSLESS -> AudioQuality.LOSSLESS
+                        com.hyperlabs.melo.constants.DownloadQuality.SAAVN -> AudioQuality.SAAVN
                         else -> AudioQuality.OPUS
                     },
                     connectivityManager = connectivityManager,

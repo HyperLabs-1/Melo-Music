@@ -1,12 +1,12 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
 import android.content.Context
 import com.music.kugou.KuGou
-import iad1tya.melo.music.constants.EnableKugouKey
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.constants.EnableKugouKey
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 
 object KuGouLyricsProvider : LyricsProvider {
     override val name = "Kugou"

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibility
@@ -89,33 +89,33 @@ import com.music.innertube.models.ArtistItem
 import com.music.innertube.models.PlaylistItem
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.YTItem
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.CropAlbumArtKey
-import iad1tya.melo.music.constants.GridItemSize
-import iad1tya.melo.music.constants.GridItemsSizeKey
-import iad1tya.melo.music.constants.GridThumbnailHeight
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.constants.ListThumbnailSize
-import iad1tya.melo.music.constants.SmallGridThumbnailHeight
-import iad1tya.melo.music.constants.SwipeToSongKey
-import iad1tya.melo.music.constants.ThumbnailCornerRadius
-import iad1tya.melo.music.db.entities.Album
-import iad1tya.melo.music.db.entities.Artist
-import iad1tya.melo.music.db.entities.Playlist
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.playback.queues.LocalAlbumRadio
-import iad1tya.melo.music.ui.utils.resize
-import iad1tya.melo.music.utils.isLocalMediaId
-import iad1tya.melo.music.utils.joinByBullet
-import iad1tya.melo.music.utils.makeTimeString
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.CropAlbumArtKey
+import com.hyperlabs.melo.constants.GridItemSize
+import com.hyperlabs.melo.constants.GridItemsSizeKey
+import com.hyperlabs.melo.constants.GridThumbnailHeight
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.constants.ListThumbnailSize
+import com.hyperlabs.melo.constants.SmallGridThumbnailHeight
+import com.hyperlabs.melo.constants.SwipeToSongKey
+import com.hyperlabs.melo.constants.ThumbnailCornerRadius
+import com.hyperlabs.melo.db.entities.Album
+import com.hyperlabs.melo.db.entities.Artist
+import com.hyperlabs.melo.db.entities.Playlist
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.playback.queues.LocalAlbumRadio
+import com.hyperlabs.melo.ui.utils.resize
+import com.hyperlabs.melo.utils.isLocalMediaId
+import com.hyperlabs.melo.utils.joinByBullet
+import com.hyperlabs.melo.utils.makeTimeString
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.utils.reportException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
@@ -1804,7 +1804,7 @@ fun rememberQobuzMatch(
     artist: String,
     title: String,
     durationMs: Long?,
-    audioQuality: iad1tya.melo.music.constants.AudioQuality,
+    audioQuality: com.hyperlabs.melo.constants.AudioQuality,
     cachedFlac: Boolean
 ): androidx.compose.runtime.State<Boolean?> {
     return androidx.compose.runtime.produceState<Boolean?>(initialValue = if (cachedFlac) true else null, id) {
@@ -1813,13 +1813,13 @@ fun rememberQobuzMatch(
             return@produceState
         }
         kotlinx.coroutines.delay(300) // Debounce fast scrolling
-        val qobuzClient = iad1tya.melo.music.utils.qobuz.QobuzApiClient()
+        val qobuzClient = com.hyperlabs.melo.utils.qobuz.QobuzApiClient()
         var found = false
-        for (term in iad1tya.melo.music.utils.qobuzSearchTerms(artist, title)) {
+        for (term in com.hyperlabs.melo.utils.qobuzSearchTerms(artist, title)) {
             val searchResult = runCatching { qobuzClient.search(term) }.getOrNull() ?: continue
             val candidates = searchResult.tracks?.items.orEmpty()
             if (candidates.isEmpty()) continue
-            val scored = candidates.map { it to iad1tya.melo.music.utils.confidence(artist, title, durationMs, it) }
+            val scored = candidates.map { it to com.hyperlabs.melo.utils.confidence(artist, title, durationMs, it) }
             val match = scored.filter { it.second >= 0.5f }.maxByOrNull { it.second }
             if (match != null) {
                 found = true

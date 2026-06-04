@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import android.webkit.CookieManager
 import android.webkit.WebResourceRequest
@@ -34,19 +34,19 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.spotifyimport.SpotifyImportViewModel
-import iad1tya.melo.music.spotifyimport.SpotifyImportUiState
-import iad1tya.melo.music.spotifyimport.SpotifyImportSummaryUi
-import iad1tya.melo.music.spotifyimport.SpotifyImportSourceUi
-import iad1tya.melo.music.spotifyimport.SpotifyImportSourceType
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.spotify.SpotifyAuth
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.spotifyimport.SpotifyImportViewModel
+import com.hyperlabs.melo.spotifyimport.SpotifyImportUiState
+import com.hyperlabs.melo.spotifyimport.SpotifyImportSummaryUi
+import com.hyperlabs.melo.spotifyimport.SpotifyImportSourceUi
+import com.hyperlabs.melo.spotifyimport.SpotifyImportSourceType
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.spotify.SpotifyAuth
 import android.net.Uri
 
 @Composable

@@ -1,18 +1,18 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.Album
-import iad1tya.melo.music.db.entities.Artist
-import iad1tya.melo.music.db.entities.LocalItem
-import iad1tya.melo.music.db.entities.Playlist
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.utils.dataStore
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.Album
+import com.hyperlabs.melo.db.entities.Artist
+import com.hyperlabs.melo.db.entities.LocalItem
+import com.hyperlabs.melo.db.entities.Playlist
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.utils.dataStore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.ExperimentalCoroutinesApi

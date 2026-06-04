@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -56,26 +56,26 @@ import androidx.media3.exoplayer.offline.DownloadService
 import androidx.navigation.NavController
 import com.music.innertube.YouTube
 import com.music.innertube.models.AlbumItem
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalDownloadUtil
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.constants.ListThumbnailSize
-import iad1tya.melo.music.db.entities.SpeedDialItem
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.playback.ExoDownloadService
-import iad1tya.melo.music.playback.queues.YouTubeAlbumRadio
-import iad1tya.melo.music.ui.component.ListDialog
-import iad1tya.melo.music.ui.component.Material3MenuGroup
-import iad1tya.melo.music.ui.component.Material3MenuItemData
-import iad1tya.melo.music.ui.component.NewAction
-import iad1tya.melo.music.ui.component.NewActionGrid
-import iad1tya.melo.music.ui.component.SongListItem
-import iad1tya.melo.music.ui.component.YouTubeListItem
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalDownloadUtil
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.constants.ListThumbnailSize
+import com.hyperlabs.melo.db.entities.SpeedDialItem
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.playback.ExoDownloadService
+import com.hyperlabs.melo.playback.queues.YouTubeAlbumRadio
+import com.hyperlabs.melo.ui.component.ListDialog
+import com.hyperlabs.melo.ui.component.Material3MenuGroup
+import com.hyperlabs.melo.ui.component.Material3MenuItemData
+import com.hyperlabs.melo.ui.component.NewAction
+import com.hyperlabs.melo.ui.component.NewActionGrid
+import com.hyperlabs.melo.ui.component.SongListItem
+import com.hyperlabs.melo.ui.component.YouTubeListItem
+import com.hyperlabs.melo.utils.reportException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

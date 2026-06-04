@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import android.content.Context
 import android.widget.Toast
@@ -40,7 +40,7 @@ import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import iad1tya.melo.music.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.DefaultDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -82,24 +82,24 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AppBarHeight
-import iad1tya.melo.music.constants.ListenTogetherInTopBarKey
-import iad1tya.melo.music.constants.ListenTogetherUsernameKey
-import iad1tya.melo.music.listentogether.ConnectionState
-import iad1tya.melo.music.listentogether.JoinRequestPayload
-import iad1tya.melo.music.listentogether.ListenTogetherEvent
-import iad1tya.melo.music.listentogether.SuggestionReceivedPayload
-import iad1tya.melo.music.listentogether.UserInfo
-import iad1tya.melo.music.ui.component.ListDialog
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AppBarHeight
+import com.hyperlabs.melo.constants.ListenTogetherInTopBarKey
+import com.hyperlabs.melo.constants.ListenTogetherUsernameKey
+import com.hyperlabs.melo.listentogether.ConnectionState
+import com.hyperlabs.melo.listentogether.JoinRequestPayload
+import com.hyperlabs.melo.listentogether.ListenTogetherEvent
+import com.hyperlabs.melo.listentogether.SuggestionReceivedPayload
+import com.hyperlabs.melo.listentogether.UserInfo
+import com.hyperlabs.melo.ui.component.ListDialog
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)

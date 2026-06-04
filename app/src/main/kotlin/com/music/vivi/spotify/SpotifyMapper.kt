@@ -5,10 +5,10 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package iad1tya.melo.music.spotify
+package com.hyperlabs.melo.spotify
 
-import iad1tya.melo.music.spotify.models.SpotifyPlaylist
-import iad1tya.melo.music.spotify.models.SpotifyTrack
+import com.hyperlabs.melo.spotify.models.SpotifyPlaylist
+import com.hyperlabs.melo.spotify.models.SpotifyTrack
 
 /**
  * Utility object for creating search queries from Spotify track data.

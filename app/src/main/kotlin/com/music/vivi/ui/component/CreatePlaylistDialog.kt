@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
@@ -25,12 +25,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import com.music.innertube.YouTube
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.db.entities.PlaylistEntity
-import iad1tya.melo.music.extensions.isSyncEnabled
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.db.entities.PlaylistEntity
+import com.hyperlabs.melo.extensions.isSyncEnabled
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package iad1tya.melo.music.listentogether.proto;
+package com.hyperlabs.melo.listentogether.proto;
 
-option java_package = "iad1tya.melo.music.listentogether.proto";
+option java_package = "com.hyperlabs.melo.listentogether.proto";
 option java_multiple_files = false;
 option java_outer_classname = "Listentogether";
 

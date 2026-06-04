@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -34,29 +34,29 @@ import androidx.compose.ui.res.stringResource
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.StatPeriod
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.ui.component.ChoiceChipsRow
-import iad1tya.melo.music.ui.component.HideOnScrollFAB
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.LocalAlbumsGrid
-import iad1tya.melo.music.ui.component.LocalArtistsGrid
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.LocalSongsGrid
-import iad1tya.melo.music.ui.component.NavigationTitle
-import iad1tya.melo.music.ui.menu.AlbumMenu
-import iad1tya.melo.music.ui.menu.ArtistMenu
-import iad1tya.melo.music.ui.menu.SongMenu
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.joinByBullet
-import iad1tya.melo.music.utils.makeTimeString
-import iad1tya.melo.music.viewmodels.StatsViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.StatPeriod
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.ui.component.ChoiceChipsRow
+import com.hyperlabs.melo.ui.component.HideOnScrollFAB
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.LocalAlbumsGrid
+import com.hyperlabs.melo.ui.component.LocalArtistsGrid
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.LocalSongsGrid
+import com.hyperlabs.melo.ui.component.NavigationTitle
+import com.hyperlabs.melo.ui.menu.AlbumMenu
+import com.hyperlabs.melo.ui.menu.ArtistMenu
+import com.hyperlabs.melo.ui.menu.SongMenu
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.joinByBullet
+import com.hyperlabs.melo.utils.makeTimeString
+import com.hyperlabs.melo.viewmodels.StatsViewModel
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 

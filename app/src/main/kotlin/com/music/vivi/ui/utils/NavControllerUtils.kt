@@ -1,9 +1,9 @@
 
 
-package iad1tya.melo.music.ui.utils
+package com.hyperlabs.melo.ui.utils
 
 import androidx.navigation.NavController
-import iad1tya.melo.music.ui.screens.Screens
+import com.hyperlabs.melo.ui.screens.Screens
 
 fun NavController.backToMain() {
     val mainRoutes = Screens.MainScreens.map { it.route }

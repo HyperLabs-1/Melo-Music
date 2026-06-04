@@ -1,16 +1,16 @@
 
 
-package iad1tya.melo.music.extensions
+package com.hyperlabs.melo.extensions
 
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.models.PersistQueue
-import iad1tya.melo.music.models.QueueData
-import iad1tya.melo.music.models.QueueType
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.playback.queues.LocalAlbumRadio
-import iad1tya.melo.music.playback.queues.Queue
-import iad1tya.melo.music.playback.queues.YouTubeAlbumRadio
-import iad1tya.melo.music.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.models.PersistQueue
+import com.hyperlabs.melo.models.QueueData
+import com.hyperlabs.melo.models.QueueType
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.playback.queues.LocalAlbumRadio
+import com.hyperlabs.melo.playback.queues.Queue
+import com.hyperlabs.melo.playback.queues.YouTubeAlbumRadio
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
 
 fun Queue.toPersistQueue(
     title: String?,

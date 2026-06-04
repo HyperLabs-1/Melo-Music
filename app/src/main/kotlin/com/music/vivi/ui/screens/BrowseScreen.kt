@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
  
  import androidx.compose.foundation.ExperimentalFoundationApi
  import androidx.compose.foundation.combinedClickable
@@ -25,23 +25,23 @@ package iad1tya.melo.music.ui.screens
  import com.music.innertube.models.AlbumItem
  import com.music.innertube.models.ArtistItem
  import com.music.innertube.models.PlaylistItem
- import iad1tya.melo.music.LocalPlayerAwareWindowInsets
- import iad1tya.melo.music.LocalPlayerConnection
- import iad1tya.melo.music.R
- import iad1tya.melo.music.constants.GridItemSize
- import iad1tya.melo.music.constants.GridItemsSizeKey
- import iad1tya.melo.music.constants.GridThumbnailHeight
- import iad1tya.melo.music.ui.component.IconButton
- import iad1tya.melo.music.ui.component.LocalMenuState
- import iad1tya.melo.music.ui.component.YouTubeGridItem
- import iad1tya.melo.music.ui.component.shimmer.GridItemPlaceHolder
- import iad1tya.melo.music.ui.component.shimmer.ShimmerHost
- import iad1tya.melo.music.ui.menu.YouTubeAlbumMenu
- import iad1tya.melo.music.ui.menu.YouTubeArtistMenu
- import iad1tya.melo.music.ui.menu.YouTubePlaylistMenu
- import iad1tya.melo.music.ui.utils.backToMain
- import iad1tya.melo.music.utils.rememberEnumPreference
- import iad1tya.melo.music.viewmodels.BrowseViewModel
+ import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+ import com.hyperlabs.melo.LocalPlayerConnection
+ import com.hyperlabs.melo.R
+ import com.hyperlabs.melo.constants.GridItemSize
+ import com.hyperlabs.melo.constants.GridItemsSizeKey
+ import com.hyperlabs.melo.constants.GridThumbnailHeight
+ import com.hyperlabs.melo.ui.component.IconButton
+ import com.hyperlabs.melo.ui.component.LocalMenuState
+ import com.hyperlabs.melo.ui.component.YouTubeGridItem
+ import com.hyperlabs.melo.ui.component.shimmer.GridItemPlaceHolder
+ import com.hyperlabs.melo.ui.component.shimmer.ShimmerHost
+ import com.hyperlabs.melo.ui.menu.YouTubeAlbumMenu
+ import com.hyperlabs.melo.ui.menu.YouTubeArtistMenu
+ import com.hyperlabs.melo.ui.menu.YouTubePlaylistMenu
+ import com.hyperlabs.melo.ui.utils.backToMain
+ import com.hyperlabs.melo.utils.rememberEnumPreference
+ import com.hyperlabs.melo.viewmodels.BrowseViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
  @Composable

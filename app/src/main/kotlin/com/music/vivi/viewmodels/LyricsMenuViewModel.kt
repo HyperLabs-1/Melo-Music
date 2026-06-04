@@ -1,18 +1,18 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.LyricsEntity
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.lyrics.LyricsHelper
-import iad1tya.melo.music.lyrics.LyricsResult
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.utils.NetworkConnectivityObserver
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.LyricsEntity
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.lyrics.LyricsHelper
+import com.hyperlabs.melo.lyrics.LyricsResult
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.utils.NetworkConnectivityObserver
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import android.widget.Toast
 import androidx.compose.foundation.Image
@@ -31,10 +31,10 @@ import androidx.mediarouter.media.MediaRouteSelector
 import androidx.mediarouter.media.MediaRouter
 import com.google.android.gms.cast.CastMediaControlIntent
 import com.google.android.gms.cast.framework.CastContext
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.EnableGoogleCastKey
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.EnableGoogleCastKey
+import com.hyperlabs.melo.utils.rememberPreference
 import timber.log.Timber
 
 /**

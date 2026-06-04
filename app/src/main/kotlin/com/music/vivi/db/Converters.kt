@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.db
+package com.hyperlabs.melo.db
 
 import androidx.room.TypeConverter
 import java.time.Instant

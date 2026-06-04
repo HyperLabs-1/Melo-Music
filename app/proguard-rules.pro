@@ -6,20 +6,20 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # WEB_REMIX Streaming - WebView JavaScript interfaces
--keepclassmembers class iad1tya.melo.music.utils.sabr.EjsNTransformSolver$SolverWebView {
+-keepclassmembers class com.hyperlabs.melo.utils.sabr.EjsNTransformSolver$SolverWebView {
     @android.webkit.JavascriptInterface public *;
 }
--keepclassmembers class iad1tya.melo.music.utils.cipher.CipherWebView {
+-keepclassmembers class com.hyperlabs.melo.utils.cipher.CipherWebView {
     @android.webkit.JavascriptInterface public *;
 }
--keepclassmembers class iad1tya.melo.music.utils.potoken.PoTokenWebView {
+-keepclassmembers class com.hyperlabs.melo.utils.potoken.PoTokenWebView {
     @android.webkit.JavascriptInterface public *;
 }
 
 # Keep streaming utility classes
--keep class iad1tya.melo.music.utils.cipher.** { *; }
--keep class iad1tya.melo.music.utils.sabr.** { *; }
--keep class iad1tya.melo.music.utils.potoken.** { *; }
+-keep class com.hyperlabs.melo.utils.cipher.** { *; }
+-keep class com.hyperlabs.melo.utils.sabr.** { *; }
+-keep class com.hyperlabs.melo.utils.potoken.** { *; }
 
 # Keep coroutine continuation for WebView callbacks
 -keepclassmembers class * {
@@ -117,11 +117,11 @@
 
 ## Queue Persistence Rules
 # Keep queue-related classes to prevent serialization issues in release builds
--keep class iad1tya.melo.music.models.PersistQueue { *; }
--keep class iad1tya.melo.music.models.PersistPlayerState { *; }
--keep class iad1tya.melo.music.models.QueueData { *; }
--keep class iad1tya.melo.music.models.QueueType { *; }
--keep class iad1tya.melo.music.playback.queues.** { *; }
+-keep class com.hyperlabs.melo.models.PersistQueue { *; }
+-keep class com.hyperlabs.melo.models.PersistPlayerState { *; }
+-keep class com.hyperlabs.melo.models.QueueData { *; }
+-keep class com.hyperlabs.melo.models.QueueType { *; }
+-keep class com.hyperlabs.melo.playback.queues.** { *; }
 
 # Keep serialization methods for queue persistence
 -keepclassmembers class * implements java.io.Serializable {
@@ -135,7 +135,7 @@
 -keep interface com.yalantis.ucrop** { *; }
 
 ## Google Cast Rules
--keep class iad1tya.melo.music.cast.** { *; }
+-keep class com.hyperlabs.melo.cast.** { *; }
 -keep class com.google.android.gms.cast.** { *; }
 -keep class androidx.mediarouter.** { *; }
 
@@ -143,8 +143,8 @@
 -dontwarn com.google.re2j.**
 
 # Vibra fingerprint library
--keep class iad1tya.melo.music.recognition.VibraSignature { *; }
--keepclassmembers class iad1tya.melo.music.recognition.VibraSignature {
+-keep class com.hyperlabs.melo.recognition.VibraSignature { *; }
+-keepclassmembers class com.hyperlabs.melo.recognition.VibraSignature {
     native <methods>;
 }
 
@@ -174,13 +174,13 @@
 }
 
 ## Listen Together Serialization
--keep class iad1tya.melo.music.listentogether.** { *; }
--keepclassmembers class iad1tya.melo.music.listentogether.** {
+-keep class com.hyperlabs.melo.listentogether.** { *; }
+-keepclassmembers class com.hyperlabs.melo.listentogether.** {
     *;
 }
--keepclassmembers class iad1tya.melo.music.listentogether.** {
+-keepclassmembers class com.hyperlabs.melo.listentogether.** {
     *** Companion;
 }
--keepclasseswithmembers class iad1tya.melo.music.listentogether.** {
+-keepclasseswithmembers class com.hyperlabs.melo.listentogether.** {
     kotlinx.serialization.KSerializer serializer(...);
 }

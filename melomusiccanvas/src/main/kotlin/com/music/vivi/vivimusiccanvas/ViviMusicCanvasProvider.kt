@@ -1,6 +1,6 @@
-package iad1tya.melo.music.melomusiccanvas
+package com.hyperlabs.melo.melomusiccanvas
 
-import iad1tya.melo.music.canvas.CanvasArtwork
+import com.hyperlabs.melo.canvas.CanvasArtwork
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.okhttp.OkHttp

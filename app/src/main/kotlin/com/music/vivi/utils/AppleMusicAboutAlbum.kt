@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body

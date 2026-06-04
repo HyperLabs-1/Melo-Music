@@ -1,4 +1,4 @@
-package iad1tya.melo.music.listentogether
+package com.hyperlabs.melo.listentogether
 
 import android.content.BroadcastReceiver
 import android.content.Context

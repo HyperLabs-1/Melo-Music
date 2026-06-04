@@ -1,10 +1,10 @@
-package iad1tya.melo.music.ui.screens.equalizer
+package com.hyperlabs.melo.ui.screens.equalizer
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import iad1tya.melo.music.eq.EqualizerService
-import iad1tya.melo.music.eq.data.EQProfileRepository
-import iad1tya.melo.music.eq.data.ParametricEQParser
+import com.hyperlabs.melo.eq.EqualizerService
+import com.hyperlabs.melo.eq.data.EQProfileRepository
+import com.hyperlabs.melo.eq.data.ParametricEQParser
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

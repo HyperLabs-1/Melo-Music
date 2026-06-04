@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.extensions
+package com.hyperlabs.melo.extensions
 
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope

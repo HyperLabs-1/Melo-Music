@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.playback
+package com.hyperlabs.melo.playback
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableLongStateOf

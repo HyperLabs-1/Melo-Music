@@ -5,7 +5,7 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -16,11 +16,11 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import iad1tya.melo.music.localmedia.LocalSongScanConfig
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.localmedia.LocalSongScanSummary
-import iad1tya.melo.music.localmedia.LocalSongScanner
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.localmedia.LocalSongScanConfig
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.localmedia.LocalSongScanSummary
+import com.hyperlabs.melo.localmedia.LocalSongScanner
+import com.hyperlabs.melo.utils.reportException
 import javax.inject.Inject
 
 @HiltViewModel

@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.library
+package com.hyperlabs.melo.ui.screens.library
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -38,30 +38,30 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.CONTENT_TYPE_HEADER
-import iad1tya.melo.music.constants.CONTENT_TYPE_SONG
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.SongFilter
-import iad1tya.melo.music.constants.SongFilterKey
-import iad1tya.melo.music.constants.SongSortDescendingKey
-import iad1tya.melo.music.constants.SongSortType
-import iad1tya.melo.music.constants.SongSortTypeKey
-import iad1tya.melo.music.constants.YtmSyncKey
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.ui.component.ChipsRow
-import iad1tya.melo.music.ui.component.HideOnScrollFAB
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.SongListItem
-import iad1tya.melo.music.ui.component.SortHeader
-import iad1tya.melo.music.ui.menu.SongMenu
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.LibrarySongsViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.CONTENT_TYPE_HEADER
+import com.hyperlabs.melo.constants.CONTENT_TYPE_SONG
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.SongFilter
+import com.hyperlabs.melo.constants.SongFilterKey
+import com.hyperlabs.melo.constants.SongSortDescendingKey
+import com.hyperlabs.melo.constants.SongSortType
+import com.hyperlabs.melo.constants.SongSortTypeKey
+import com.hyperlabs.melo.constants.YtmSyncKey
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.ui.component.ChipsRow
+import com.hyperlabs.melo.ui.component.HideOnScrollFAB
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.SongListItem
+import com.hyperlabs.melo.ui.component.SortHeader
+import com.hyperlabs.melo.ui.menu.SongMenu
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.LibrarySongsViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable

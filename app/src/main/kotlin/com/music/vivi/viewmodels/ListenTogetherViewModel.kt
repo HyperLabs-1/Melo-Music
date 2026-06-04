@@ -1,9 +1,9 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import androidx.lifecycle.ViewModel
-import iad1tya.melo.music.listentogether.ListenTogetherManager
+import com.hyperlabs.melo.listentogether.ListenTogetherManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

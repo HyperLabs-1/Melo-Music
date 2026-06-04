@@ -1,15 +1,15 @@
 
 
-package iad1tya.melo.music.extensions
+package com.hyperlabs.melo.extensions
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import com.music.innertube.utils.parseCookieString
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.constants.YtmSyncKey
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.constants.YtmSyncKey
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 import kotlinx.coroutines.runBlocking
 
 fun Context.isSyncEnabled(): Boolean {

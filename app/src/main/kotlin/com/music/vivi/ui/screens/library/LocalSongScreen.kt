@@ -5,7 +5,7 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package iad1tya.melo.music.ui.screens.library
+package com.hyperlabs.melo.ui.screens.library
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -95,27 +95,27 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.CONTENT_TYPE_HEADER
-import iad1tya.melo.music.constants.CONTENT_TYPE_SONG
-import iad1tya.melo.music.constants.LocalSongsExcludedFoldersKey
-import iad1tya.melo.music.constants.LocalSongsMinDurationSecondsKey
-import iad1tya.melo.music.constants.LocalSongsSortDescendingKey
-import iad1tya.melo.music.constants.LocalSongsSortTypeKey
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.extensions.togglePlayPause
-import iad1tya.melo.music.localmedia.LocalSongScanConfig
-import iad1tya.melo.music.localmedia.SupportedLocalAudio
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.SongListItem
-import iad1tya.melo.music.ui.component.SortHeader
-import iad1tya.melo.music.ui.menu.SongMenu
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.LocalSongsScanState
-import iad1tya.melo.music.viewmodels.LocalSongsViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.CONTENT_TYPE_HEADER
+import com.hyperlabs.melo.constants.CONTENT_TYPE_SONG
+import com.hyperlabs.melo.constants.LocalSongsExcludedFoldersKey
+import com.hyperlabs.melo.constants.LocalSongsMinDurationSecondsKey
+import com.hyperlabs.melo.constants.LocalSongsSortDescendingKey
+import com.hyperlabs.melo.constants.LocalSongsSortTypeKey
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.extensions.togglePlayPause
+import com.hyperlabs.melo.localmedia.LocalSongScanConfig
+import com.hyperlabs.melo.localmedia.SupportedLocalAudio
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.SongListItem
+import com.hyperlabs.melo.ui.component.SortHeader
+import com.hyperlabs.melo.ui.menu.SongMenu
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.LocalSongsScanState
+import com.hyperlabs.melo.viewmodels.LocalSongsViewModel
 import java.text.Collator
 import java.time.LocalDateTime
 import java.util.Locale

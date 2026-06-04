@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component.shimmer
+package com.hyperlabs.melo.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Spacer

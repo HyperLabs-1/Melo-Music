@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.player
+package com.hyperlabs.melo.ui.player
 
 import android.annotation.SuppressLint
 import androidx.activity.compose.BackHandler
@@ -110,33 +110,33 @@ import androidx.media3.common.Player
 import androidx.media3.common.Timeline
 import androidx.media3.exoplayer.source.ShuffleOrder.DefaultShuffleOrder
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalListenTogetherManager
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.constants.PlayerBackgroundStyle
-import iad1tya.melo.music.constants.QueueEditLockKey
-import iad1tya.melo.music.constants.ShowCommentButtonKey
-import iad1tya.melo.music.constants.UseNewPlayerDesignKey
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.extensions.move
-import iad1tya.melo.music.extensions.toggleRepeatMode
-import iad1tya.melo.music.listentogether.RoomRole
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.ui.component.ActionPromptDialog
-import iad1tya.melo.music.ui.component.BottomSheet
-import iad1tya.melo.music.ui.component.BottomSheetState
-import iad1tya.melo.music.ui.component.LocalBottomSheetPageState
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.MediaMetadataListItem
-import iad1tya.melo.music.ui.menu.PlayerMenu
-import iad1tya.melo.music.ui.menu.QueueMenu
-import iad1tya.melo.music.ui.menu.SelectionMediaMetadataMenu
-import iad1tya.melo.music.ui.screens.CommentSheet
-import iad1tya.melo.music.ui.utils.ShowMediaInfo
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.utils.makeTimeString
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalListenTogetherManager
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.constants.PlayerBackgroundStyle
+import com.hyperlabs.melo.constants.QueueEditLockKey
+import com.hyperlabs.melo.constants.ShowCommentButtonKey
+import com.hyperlabs.melo.constants.UseNewPlayerDesignKey
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.extensions.move
+import com.hyperlabs.melo.extensions.toggleRepeatMode
+import com.hyperlabs.melo.listentogether.RoomRole
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.ui.component.ActionPromptDialog
+import com.hyperlabs.melo.ui.component.BottomSheet
+import com.hyperlabs.melo.ui.component.BottomSheetState
+import com.hyperlabs.melo.ui.component.LocalBottomSheetPageState
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.MediaMetadataListItem
+import com.hyperlabs.melo.ui.menu.PlayerMenu
+import com.hyperlabs.melo.ui.menu.QueueMenu
+import com.hyperlabs.melo.ui.menu.SelectionMediaMetadataMenu
+import com.hyperlabs.melo.ui.screens.CommentSheet
+import com.hyperlabs.melo.ui.utils.ShowMediaInfo
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.utils.makeTimeString
+import com.hyperlabs.melo.utils.rememberPreference
 import androidx.compose.material.icons.Icons
 import androidx.compose.runtime.produceState
 import android.content.IntentFilter
@@ -148,8 +148,8 @@ import android.bluetooth.BluetoothDevice
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import iad1tya.melo.music.melomusic.isBluetoothHeadphoneConnected
-import iad1tya.melo.music.melomusic.AudioDeviceBottomSheet
+import com.hyperlabs.melo.melomusic.isBluetoothHeadphoneConnected
+import com.hyperlabs.melo.melomusic.AudioDeviceBottomSheet
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
@@ -228,7 +228,7 @@ fun Queue(
 
     
     val listenTogetherManager = LocalListenTogetherManager.current
-    val listenTogetherRoleState = listenTogetherManager?.role?.collectAsState(initial = iad1tya.melo.music.listentogether.RoomRole.NONE)
+    val listenTogetherRoleState = listenTogetherManager?.role?.collectAsState(initial = com.hyperlabs.melo.listentogether.RoomRole.NONE)
     val isListenTogetherGuest = listenTogetherRoleState?.value == RoomRole.GUEST
 
     val playerConnection = LocalPlayerConnection.current ?: return

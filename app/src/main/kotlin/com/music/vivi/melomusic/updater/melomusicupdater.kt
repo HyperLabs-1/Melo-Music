@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.melomusic.updater
+package com.hyperlabs.melo.melomusic.updater
 
 
 import android.content.Context
@@ -56,13 +56,13 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import androidx.work.workDataOf
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.R
 import coil3.compose.AsyncImage
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
-import iad1tya.melo.music.melomusic.updater.downloadmanager.UpdateDownloadWorker
-import iad1tya.melo.music.melomusic.updater.downloadmanager.DownloadNotificationManager
+import com.hyperlabs.melo.melomusic.updater.downloadmanager.UpdateDownloadWorker
+import com.hyperlabs.melo.melomusic.updater.downloadmanager.DownloadNotificationManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -74,14 +74,14 @@ import java.net.URL
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.regex.Pattern
-import iad1tya.melo.music.ui.component.ChangelogItem
-import iad1tya.melo.music.ui.component.leadingItemShape
-import iad1tya.melo.music.ui.component.middleItemShape
-import iad1tya.melo.music.ui.component.endItemShape
-import iad1tya.melo.music.ui.component.detachedItemShape
-import iad1tya.melo.music.ui.component.AnimatedActionButton
-import iad1tya.melo.music.ui.component.ExpressiveIconButton
-import iad1tya.melo.music.ui.component.ErrorSnackbar
+import com.hyperlabs.melo.ui.component.ChangelogItem
+import com.hyperlabs.melo.ui.component.leadingItemShape
+import com.hyperlabs.melo.ui.component.middleItemShape
+import com.hyperlabs.melo.ui.component.endItemShape
+import com.hyperlabs.melo.ui.component.detachedItemShape
+import com.hyperlabs.melo.ui.component.AnimatedActionButton
+import com.hyperlabs.melo.ui.component.ExpressiveIconButton
+import com.hyperlabs.melo.ui.component.ErrorSnackbar
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString

@@ -1,10 +1,10 @@
 
 
-package iad1tya.melo.music.viewmodels
+package com.hyperlabs.melo.viewmodels
 
 import androidx.lifecycle.ViewModel
-import iad1tya.melo.music.ui.screens.settings.DarkMode
-import iad1tya.melo.music.ui.theme.DefaultThemeColor
+import com.hyperlabs.melo.ui.screens.settings.DarkMode
+import com.hyperlabs.melo.ui.theme.DefaultThemeColor
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

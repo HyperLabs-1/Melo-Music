@@ -1,6 +1,6 @@
-package iad1tya.melo.music.eq.audio
+package com.hyperlabs.melo.eq.audio
 
-import iad1tya.melo.music.eq.data.FilterType
+import com.hyperlabs.melo.eq.data.FilterType
 import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.pow

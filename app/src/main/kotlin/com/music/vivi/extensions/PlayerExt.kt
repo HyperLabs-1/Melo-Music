@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.extensions
+package com.hyperlabs.melo.extensions
 
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
@@ -10,7 +10,7 @@ import androidx.media3.common.Player.REPEAT_MODE_OFF
 import androidx.media3.common.Player.REPEAT_MODE_ONE
 import androidx.media3.common.Timeline
 import androidx.media3.common.TrackSelectionParameters
-import iad1tya.melo.music.models.MediaMetadata
+import com.hyperlabs.melo.models.MediaMetadata
 import java.util.ArrayDeque
 
 fun Player.togglePlayPause() {

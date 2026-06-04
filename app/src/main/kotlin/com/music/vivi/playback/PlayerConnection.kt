@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.playback
+package com.hyperlabs.melo.playback
 
 import android.content.Context
 import androidx.media3.common.MediaItem
@@ -13,15 +13,15 @@ import androidx.media3.common.Player.REPEAT_MODE_OFF
 import androidx.media3.common.Player.STATE_ENDED
 import androidx.media3.common.Timeline
 import androidx.media3.exoplayer.ExoPlayer
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.extensions.currentMetadata
-import iad1tya.melo.music.extensions.getCurrentQueueIndex
-import iad1tya.melo.music.extensions.getQueueWindows
-import iad1tya.melo.music.extensions.metadata
-import iad1tya.melo.music.extensions.togglePlayPause
-import iad1tya.melo.music.playback.MusicService.MusicBinder
-import iad1tya.melo.music.playback.queues.Queue
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.extensions.currentMetadata
+import com.hyperlabs.melo.extensions.getCurrentQueueIndex
+import com.hyperlabs.melo.extensions.getQueueWindows
+import com.hyperlabs.melo.extensions.metadata
+import com.hyperlabs.melo.extensions.togglePlayPause
+import com.hyperlabs.melo.playback.MusicService.MusicBinder
+import com.hyperlabs.melo.playback.queues.Queue
+import com.hyperlabs.melo.utils.reportException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow

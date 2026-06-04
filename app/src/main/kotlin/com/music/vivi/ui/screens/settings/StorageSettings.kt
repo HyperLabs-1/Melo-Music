@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Column
@@ -41,20 +41,20 @@ import coil3.SingletonImageLoader
 import coil3.annotation.DelicateCoilApi
 import coil3.annotation.ExperimentalCoilApi
 import coil3.imageLoader
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.MaxImageCacheSizeKey
-import iad1tya.melo.music.constants.MaxSongCacheSizeKey
-import iad1tya.melo.music.extensions.tryOrNull
-import iad1tya.melo.music.ui.component.ActionPromptDialog
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.ui.utils.formatFileSize
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.MaxImageCacheSizeKey
+import com.hyperlabs.melo.constants.MaxSongCacheSizeKey
+import com.hyperlabs.melo.extensions.tryOrNull
+import com.hyperlabs.melo.ui.component.ActionPromptDialog
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.ui.utils.formatFileSize
+import com.hyperlabs.melo.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
@@ -166,7 +166,7 @@ fun StorageSettings(
             onConfirm = {
                 androidx.media3.exoplayer.offline.DownloadService.sendRemoveAllDownloads(
                     context,
-                    iad1tya.melo.music.playback.ExoDownloadService::class.java,
+                    com.hyperlabs.melo.playback.ExoDownloadService::class.java,
                     false
                 )
                 clearDownloads = false

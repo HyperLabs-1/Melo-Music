@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic.changelog
+package com.hyperlabs.melo.melomusic.changelog
 
 
 
@@ -78,10 +78,10 @@ import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.melomusic.updater.extractUrls
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.melomusic.updater.extractUrls
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

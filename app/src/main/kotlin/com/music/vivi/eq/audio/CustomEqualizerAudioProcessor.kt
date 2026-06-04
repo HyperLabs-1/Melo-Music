@@ -1,10 +1,10 @@
-package iad1tya.melo.music.eq.audio
+package com.hyperlabs.melo.eq.audio
 
 import androidx.media3.common.C
 import androidx.media3.common.audio.AudioProcessor
 import androidx.media3.common.util.UnstableApi
-import iad1tya.melo.music.eq.data.ParametricEQ
-import iad1tya.melo.music.eq.data.ParametricEQBand
+import com.hyperlabs.melo.eq.data.ParametricEQ
+import com.hyperlabs.melo.eq.data.ParametricEQBand
 import timber.log.Timber
 import java.nio.ByteBuffer
 import java.nio.ByteOrder

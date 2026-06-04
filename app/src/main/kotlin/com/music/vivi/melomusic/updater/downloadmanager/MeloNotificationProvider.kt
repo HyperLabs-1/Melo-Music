@@ -1,4 +1,4 @@
-package iad1tya.melo.music.melomusic.updater.downloadmanager
+package com.hyperlabs.melo.melomusic.updater.downloadmanager
 
 import android.app.Notification
 import android.content.Context
@@ -13,7 +13,7 @@ import androidx.media3.session.DefaultMediaNotificationProvider
 import androidx.media3.session.MediaNotification
 import androidx.media3.session.MediaSession
 import com.google.common.collect.ImmutableList
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 import java.util.Locale
 
 

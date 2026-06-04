@@ -5,14 +5,14 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package iad1tya.melo.music.playback.queues
+package com.hyperlabs.melo.playback.queues
 
 import androidx.media3.common.MediaItem
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.extensions.toMediaItem
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.extensions.toMediaItem
 import com.music.innertube.YouTube
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.models.MediaMetadata
+import com.hyperlabs.melo.models.MediaMetadata
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.flow.first

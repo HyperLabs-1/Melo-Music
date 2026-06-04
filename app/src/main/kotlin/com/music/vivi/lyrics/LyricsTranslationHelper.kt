@@ -1,15 +1,15 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
 import android.content.Context
-import iad1tya.melo.music.api.DeepLService
-import iad1tya.melo.music.api.MistralService
-import iad1tya.melo.music.api.OpenRouterService
-import iad1tya.melo.music.api.OpenRouterStreamingService
-import iad1tya.melo.music.constants.LanguageCodeToName
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.LyricsEntity
+import com.hyperlabs.melo.api.DeepLService
+import com.hyperlabs.melo.api.MistralService
+import com.hyperlabs.melo.api.OpenRouterService
+import com.hyperlabs.melo.api.OpenRouterStreamingService
+import com.hyperlabs.melo.constants.LanguageCodeToName
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.LyricsEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -233,12 +233,12 @@ object LyricsTranslationHelper {
                 
                 val effectiveApiKey = if (provider == "DeepL") deeplApiKey else apiKey
                 if (effectiveApiKey.isBlank()) {
-                    _status.value = TranslationStatus.Error(context.getString(iad1tya.melo.music.R.string.ai_error_api_key_required))
+                    _status.value = TranslationStatus.Error(context.getString(com.hyperlabs.melo.R.string.ai_error_api_key_required))
                     return@launch
                 }
 
                 if (lyrics.isEmpty()) {
-                    _status.value = TranslationStatus.Error(context.getString(iad1tya.melo.music.R.string.ai_error_no_lyrics))
+                    _status.value = TranslationStatus.Error(context.getString(com.hyperlabs.melo.R.string.ai_error_no_lyrics))
                     return@launch
                 }
 
@@ -248,7 +248,7 @@ object LyricsTranslationHelper {
                 }
 
                 if (nonEmptyEntries.isEmpty()) {
-                    _status.value = TranslationStatus.Error(context.getString(iad1tya.melo.music.R.string.ai_error_lyrics_empty))
+                    _status.value = TranslationStatus.Error(context.getString(com.hyperlabs.melo.R.string.ai_error_lyrics_empty))
                     return@launch
                 }
 
@@ -299,7 +299,7 @@ object LyricsTranslationHelper {
 
                 
                 if (targetLanguage.isBlank()) {
-                    _status.value = TranslationStatus.Error(context.getString(iad1tya.melo.music.R.string.ai_error_language_required))
+                    _status.value = TranslationStatus.Error(context.getString(com.hyperlabs.melo.R.string.ai_error_language_required))
                     return@launch
                 }
 
@@ -446,7 +446,7 @@ object LyricsTranslationHelper {
                             _status.value = TranslationStatus.Success
                         }
                         else -> {
-                            _status.value = TranslationStatus.Error(context.getString(iad1tya.melo.music.R.string.ai_error_unexpected))
+                            _status.value = TranslationStatus.Error(context.getString(com.hyperlabs.melo.R.string.ai_error_unexpected))
                         }
                     }
 
@@ -460,12 +460,12 @@ object LyricsTranslationHelper {
                         return@onFailure
                     }
 
-                    val errorMessage = error.message ?: context.getString(iad1tya.melo.music.R.string.ai_error_unknown)
+                    val errorMessage = error.message ?: context.getString(com.hyperlabs.melo.R.string.ai_error_unknown)
                     _status.value = TranslationStatus.Error(errorMessage)
                 }
             } catch (e: Exception) {
                 if (e !is kotlinx.coroutines.CancellationException && isCompositionActive) {
-                    val errorMessage = e.message ?: context.getString(iad1tya.melo.music.R.string.ai_error_translation_failed)
+                    val errorMessage = e.message ?: context.getString(com.hyperlabs.melo.R.string.ai_error_translation_failed)
                     _status.value = TranslationStatus.Error(errorMessage)
                 }
             }

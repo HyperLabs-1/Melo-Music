@@ -1,9 +1,9 @@
 
 
-package iad1tya.melo.music.di
+package com.hyperlabs.melo.di
 
 import android.content.Context
-import iad1tya.melo.music.utils.NetworkConnectivityObserver
+import com.hyperlabs.melo.utils.NetworkConnectivityObserver
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

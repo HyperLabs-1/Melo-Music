@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import android.app.SearchManager
 import android.content.Intent
@@ -56,29 +56,29 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.entities.LyricsEntity
-import iad1tya.melo.music.db.entities.SongEntity
-import iad1tya.melo.music.models.MediaMetadata
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.ListDialog
-import iad1tya.melo.music.ui.component.Material3MenuGroup
-import iad1tya.melo.music.ui.component.Material3MenuItemData
-import iad1tya.melo.music.ui.component.NewAction
-import iad1tya.melo.music.ui.component.NewActionGrid
-import iad1tya.melo.music.ui.component.TextFieldDialog
-import iad1tya.melo.music.viewmodels.LyricsMenuViewModel
-import iad1tya.melo.music.constants.OpenRouterApiKey
-import iad1tya.melo.music.constants.DeeplApiKey
-import iad1tya.melo.music.constants.AiProviderKey
-import iad1tya.melo.music.constants.TranslateLanguageKey
-import iad1tya.melo.music.constants.TranslateModeKey
-import iad1tya.melo.music.constants.OpenRouterBaseUrlKey
-import iad1tya.melo.music.constants.OpenRouterModelKey
-import iad1tya.melo.music.constants.DeeplFormalityKey
-import iad1tya.melo.music.lyrics.LyricsTranslationHelper
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.entities.LyricsEntity
+import com.hyperlabs.melo.db.entities.SongEntity
+import com.hyperlabs.melo.models.MediaMetadata
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.ListDialog
+import com.hyperlabs.melo.ui.component.Material3MenuGroup
+import com.hyperlabs.melo.ui.component.Material3MenuItemData
+import com.hyperlabs.melo.ui.component.NewAction
+import com.hyperlabs.melo.ui.component.NewActionGrid
+import com.hyperlabs.melo.ui.component.TextFieldDialog
+import com.hyperlabs.melo.viewmodels.LyricsMenuViewModel
+import com.hyperlabs.melo.constants.OpenRouterApiKey
+import com.hyperlabs.melo.constants.DeeplApiKey
+import com.hyperlabs.melo.constants.AiProviderKey
+import com.hyperlabs.melo.constants.TranslateLanguageKey
+import com.hyperlabs.melo.constants.TranslateModeKey
+import com.hyperlabs.melo.constants.OpenRouterBaseUrlKey
+import com.hyperlabs.melo.constants.OpenRouterModelKey
+import com.hyperlabs.melo.constants.DeeplFormalityKey
+import com.hyperlabs.melo.lyrics.LyricsTranslationHelper
+import com.hyperlabs.melo.utils.rememberPreference
 import androidx.compose.runtime.collectAsState
 
 @OptIn(ExperimentalMaterial3Api::class)

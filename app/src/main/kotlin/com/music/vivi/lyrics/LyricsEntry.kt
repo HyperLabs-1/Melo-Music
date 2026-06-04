@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
 import kotlinx.coroutines.flow.MutableStateFlow
 

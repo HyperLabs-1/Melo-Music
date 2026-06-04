@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.constants
+package com.hyperlabs.melo.constants
 
 import android.os.Bundle
 import androidx.media3.session.SessionCommand

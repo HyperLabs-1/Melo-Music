@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
@@ -36,9 +36,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import iad1tya.melo.music.R
-import iad1tya.melo.music.viewmodels.ConvertedSongLog
-import iad1tya.melo.music.viewmodels.CsvImportState
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.viewmodels.ConvertedSongLog
+import com.hyperlabs.melo.viewmodels.CsvImportState
 
 @Composable
 fun CsvColumnMappingDialog(

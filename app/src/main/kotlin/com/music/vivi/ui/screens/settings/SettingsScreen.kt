@@ -1,8 +1,8 @@
 
 
-package iad1tya.melo.music.ui.screens.settings
+package com.hyperlabs.melo.ui.screens.settings
 
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Build
@@ -28,14 +28,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import androidx.navigation.NavController
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.screens.Screens
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.melomusic.updater.getUpdateAvailableState
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.screens.Screens
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.melomusic.updater.getUpdateAvailableState
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -47,7 +47,7 @@ fun SettingsScreen(
     val uriHandler = LocalUriHandler.current
     val context = LocalContext.current
     val isAndroid12OrLater = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
-    val isUpdateAvailable = getUpdateAvailableState(context) && iad1tya.melo.music.melomusic.updater.getAutoUpdateCheckSetting(context)
+    val isUpdateAvailable = getUpdateAvailableState(context) && com.hyperlabs.melo.melomusic.updater.getAutoUpdateCheckSetting(context)
 
     val scrollState = rememberScrollState()
     Column(

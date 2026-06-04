@@ -1,9 +1,9 @@
 
 
-package iad1tya.melo.music.models
+package com.hyperlabs.melo.models
 
 import com.music.innertube.models.YTItem
-import iad1tya.melo.music.db.entities.LocalItem
+import com.hyperlabs.melo.db.entities.LocalItem
 
 data class SimilarRecommendation(
     val title: LocalItem,

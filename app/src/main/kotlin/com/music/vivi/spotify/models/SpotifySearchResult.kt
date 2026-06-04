@@ -5,7 +5,7 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package iad1tya.melo.music.spotify.models
+package com.hyperlabs.melo.spotify.models
 
 import kotlinx.serialization.Serializable
 

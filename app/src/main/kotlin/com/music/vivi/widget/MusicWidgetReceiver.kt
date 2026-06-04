@@ -3,7 +3,7 @@
  * Licensed under GPL-3.0 | See git history for contributors
  */
 
-package iad1tya.melo.music.widget
+package com.hyperlabs.melo.widget
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
@@ -11,7 +11,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import iad1tya.melo.music.playback.MusicService
+import com.hyperlabs.melo.playback.MusicService
 
 class MusicWidgetReceiver : AppWidgetProvider() {
 
@@ -80,10 +80,10 @@ class MusicWidgetReceiver : AppWidgetProvider() {
     }
 
     companion object {
-        const val ACTION_PLAY_PAUSE = "iad1tya.melo.music.widget.PLAY_PAUSE"
-        const val ACTION_LIKE = "iad1tya.melo.music.widget.LIKE"
-        const val ACTION_NEXT = "iad1tya.melo.music.widget.NEXT"
-        const val ACTION_PREVIOUS = "iad1tya.melo.music.widget.PREVIOUS"
-        const val ACTION_UPDATE_WIDGET = "iad1tya.melo.music.widget.UPDATE_WIDGET"
+        const val ACTION_PLAY_PAUSE = "com.hyperlabs.melo.widget.PLAY_PAUSE"
+        const val ACTION_LIKE = "com.hyperlabs.melo.widget.LIKE"
+        const val ACTION_NEXT = "com.hyperlabs.melo.widget.NEXT"
+        const val ACTION_PREVIOUS = "com.hyperlabs.melo.widget.PREVIOUS"
+        const val ACTION_UPDATE_WIDGET = "com.hyperlabs.melo.widget.UPDATE_WIDGET"
     }
 }

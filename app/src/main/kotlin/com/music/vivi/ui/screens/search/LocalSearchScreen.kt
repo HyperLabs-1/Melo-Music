@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.search
+package com.hyperlabs.melo.ui.screens.search
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -42,28 +42,28 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.CONTENT_TYPE_LIST
-import iad1tya.melo.music.constants.ListItemHeight
-import iad1tya.melo.music.db.entities.Album
-import iad1tya.melo.music.db.entities.Artist
-import iad1tya.melo.music.db.entities.Playlist
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.playback.queues.ListQueue
-import iad1tya.melo.music.ui.component.AlbumListItem
-import iad1tya.melo.music.ui.component.ArtistListItem
-import iad1tya.melo.music.ui.component.ChipsRow
-import iad1tya.melo.music.ui.component.EmptyPlaceholder
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.PlaylistListItem
-import iad1tya.melo.music.ui.component.SongListItem
-import iad1tya.melo.music.ui.menu.SongMenu
-import iad1tya.melo.music.utils.listItemShape
-import iad1tya.melo.music.viewmodels.LocalFilter
-import iad1tya.melo.music.viewmodels.LocalSearchViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.CONTENT_TYPE_LIST
+import com.hyperlabs.melo.constants.ListItemHeight
+import com.hyperlabs.melo.db.entities.Album
+import com.hyperlabs.melo.db.entities.Artist
+import com.hyperlabs.melo.db.entities.Playlist
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.playback.queues.ListQueue
+import com.hyperlabs.melo.ui.component.AlbumListItem
+import com.hyperlabs.melo.ui.component.ArtistListItem
+import com.hyperlabs.melo.ui.component.ChipsRow
+import com.hyperlabs.melo.ui.component.EmptyPlaceholder
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.PlaylistListItem
+import com.hyperlabs.melo.ui.component.SongListItem
+import com.hyperlabs.melo.ui.menu.SongMenu
+import com.hyperlabs.melo.utils.listItemShape
+import com.hyperlabs.melo.viewmodels.LocalFilter
+import com.hyperlabs.melo.viewmodels.LocalSearchViewModel
 import kotlinx.coroutines.flow.drop
 
 @OptIn(ExperimentalFoundationApi::class)

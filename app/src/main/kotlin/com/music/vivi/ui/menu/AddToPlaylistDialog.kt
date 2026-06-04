@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.menu
+package com.hyperlabs.melo.ui.menu
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -10,7 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
-import iad1tya.melo.music.utils.listItemShape
+import com.hyperlabs.melo.utils.listItemShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -38,23 +38,23 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import com.music.innertube.YouTube
 import com.music.innertube.utils.parseCookieString
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AddToPlaylistSortDescendingKey
-import iad1tya.melo.music.constants.AddToPlaylistSortTypeKey
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.constants.ListThumbnailSize
-import iad1tya.melo.music.constants.PlaylistSortType
-import iad1tya.melo.music.db.entities.Playlist
-import iad1tya.melo.music.ui.component.CreatePlaylistDialog
-import iad1tya.melo.music.ui.component.DefaultDialog
-import iad1tya.melo.music.ui.component.ListDialog
-import iad1tya.melo.music.ui.component.ListItem
-import iad1tya.melo.music.ui.component.PlaylistListItem
-import iad1tya.melo.music.ui.component.SortHeader
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.PlaylistsViewModel
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AddToPlaylistSortDescendingKey
+import com.hyperlabs.melo.constants.AddToPlaylistSortTypeKey
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.constants.ListThumbnailSize
+import com.hyperlabs.melo.constants.PlaylistSortType
+import com.hyperlabs.melo.db.entities.Playlist
+import com.hyperlabs.melo.ui.component.CreatePlaylistDialog
+import com.hyperlabs.melo.ui.component.DefaultDialog
+import com.hyperlabs.melo.ui.component.ListDialog
+import com.hyperlabs.melo.ui.component.ListItem
+import com.hyperlabs.melo.ui.component.PlaylistListItem
+import com.hyperlabs.melo.ui.component.SortHeader
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.PlaylistsViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

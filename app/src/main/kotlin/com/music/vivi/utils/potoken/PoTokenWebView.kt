@@ -1,4 +1,4 @@
-package iad1tya.melo.music.utils.potoken
+package com.hyperlabs.melo.utils.potoken
 
 import android.content.Context
 import android.webkit.ConsoleMessage
@@ -8,7 +8,7 @@ import android.webkit.WebView
 import androidx.annotation.MainThread
 import androidx.collection.ArrayMap
 import com.music.innertube.YouTube
-import iad1tya.melo.music.BuildConfig
+import com.hyperlabs.melo.BuildConfig
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope

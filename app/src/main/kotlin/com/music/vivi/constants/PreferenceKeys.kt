@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.constants
+package com.hyperlabs.melo.constants
 
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.floatPreferencesKey

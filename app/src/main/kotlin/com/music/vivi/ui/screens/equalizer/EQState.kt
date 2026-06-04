@@ -1,6 +1,6 @@
-package iad1tya.melo.music.ui.screens.equalizer
+package com.hyperlabs.melo.ui.screens.equalizer
 
-import iad1tya.melo.music.eq.data.SavedEQProfile
+import com.hyperlabs.melo.eq.data.SavedEQProfile
 
 
 data class EQState(

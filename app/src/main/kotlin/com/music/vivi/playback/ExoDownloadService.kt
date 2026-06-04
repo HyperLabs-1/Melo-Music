@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.playback
+package com.hyperlabs.melo.playback
 
 import android.app.Notification
 import android.app.PendingIntent
@@ -15,7 +15,7 @@ import androidx.media3.exoplayer.offline.DownloadNotificationHelper
 import androidx.media3.exoplayer.offline.DownloadService
 import androidx.media3.exoplayer.scheduler.PlatformScheduler
 import androidx.media3.exoplayer.scheduler.Scheduler
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

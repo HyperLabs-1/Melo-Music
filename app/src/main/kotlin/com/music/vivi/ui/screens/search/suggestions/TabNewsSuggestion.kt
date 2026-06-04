@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.search.suggestions
+package com.hyperlabs.melo.ui.screens.search.suggestions
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -36,10 +36,10 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
 import coil3.compose.SubcomposeAsyncImage
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.SuggestionRegionKey
-import iad1tya.melo.music.constants.SuggestionRegionSlugToName
-import iad1tya.melo.music.utils.rememberPreference
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.SuggestionRegionKey
+import com.hyperlabs.melo.constants.SuggestionRegionSlugToName
+import com.hyperlabs.melo.utils.rememberPreference
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.material3.pulltorefresh.PullToRefreshDefaults
 import androidx.compose.material3.pulltorefresh.rememberPullToRefreshState
@@ -71,7 +71,7 @@ fun SuggestionsTabContent(
     val isLoading by viewModel.isLoading.collectAsState()
     val isManualLoading by viewModel.isManualLoading.collectAsState()
     val uriHandler = androidx.compose.ui.platform.LocalUriHandler.current
-    val playerConnection = iad1tya.melo.music.LocalPlayerConnection.current
+    val playerConnection = com.hyperlabs.melo.LocalPlayerConnection.current
     val context = LocalContext.current
     val (regionCode, _) = rememberPreference(
         key = SuggestionRegionKey,

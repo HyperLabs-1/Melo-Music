@@ -1,6 +1,6 @@
-package iad1tya.melo.music.utils
+package com.hyperlabs.melo.utils
 
-import iad1tya.melo.music.models.MediaMetadata
+import com.hyperlabs.melo.models.MediaMetadata
 import kotlinx.coroutines.CoroutineScope
 
 class ScrobbleManager(

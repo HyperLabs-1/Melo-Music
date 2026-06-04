@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.library
+package com.hyperlabs.melo.ui.screens.library
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
@@ -49,32 +49,32 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AlbumFilter
-import iad1tya.melo.music.constants.AlbumFilterKey
-import iad1tya.melo.music.constants.AlbumSortDescendingKey
-import iad1tya.melo.music.constants.AlbumSortType
-import iad1tya.melo.music.constants.AlbumSortTypeKey
-import iad1tya.melo.music.constants.AlbumViewTypeKey
-import iad1tya.melo.music.constants.CONTENT_TYPE_ALBUM
-import iad1tya.melo.music.constants.CONTENT_TYPE_HEADER
-import iad1tya.melo.music.constants.GridItemSize
-import iad1tya.melo.music.constants.GridItemsSizeKey
-import iad1tya.melo.music.constants.GridThumbnailHeight
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.LibraryViewType
-import iad1tya.melo.music.constants.YtmSyncKey
-import iad1tya.melo.music.ui.component.ChipsRow
-import iad1tya.melo.music.ui.component.EmptyPlaceholder
-import iad1tya.melo.music.ui.component.LibraryAlbumGridItem
-import iad1tya.melo.music.ui.component.LibraryAlbumListItem
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.SortHeader
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.LibraryAlbumsViewModel
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AlbumFilter
+import com.hyperlabs.melo.constants.AlbumFilterKey
+import com.hyperlabs.melo.constants.AlbumSortDescendingKey
+import com.hyperlabs.melo.constants.AlbumSortType
+import com.hyperlabs.melo.constants.AlbumSortTypeKey
+import com.hyperlabs.melo.constants.AlbumViewTypeKey
+import com.hyperlabs.melo.constants.CONTENT_TYPE_ALBUM
+import com.hyperlabs.melo.constants.CONTENT_TYPE_HEADER
+import com.hyperlabs.melo.constants.GridItemSize
+import com.hyperlabs.melo.constants.GridItemsSizeKey
+import com.hyperlabs.melo.constants.GridThumbnailHeight
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.LibraryViewType
+import com.hyperlabs.melo.constants.YtmSyncKey
+import com.hyperlabs.melo.ui.component.ChipsRow
+import com.hyperlabs.melo.ui.component.EmptyPlaceholder
+import com.hyperlabs.melo.ui.component.LibraryAlbumGridItem
+import com.hyperlabs.melo.ui.component.LibraryAlbumListItem
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.SortHeader
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.LibraryAlbumsViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -1,12 +1,12 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
 import android.content.Context
-import iad1tya.melo.music.betterlyrics.BetterLyrics
-import iad1tya.melo.music.constants.EnableBetterLyricsKey
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
+import com.hyperlabs.melo.betterlyrics.BetterLyrics
+import com.hyperlabs.melo.constants.EnableBetterLyricsKey
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
 
 object BetterLyricsProvider : LyricsProvider {
     override val name = "BetterLyrics"

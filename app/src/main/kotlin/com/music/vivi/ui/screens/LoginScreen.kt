@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -28,18 +28,18 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavController
 import com.music.innertube.YouTube
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.AccountChannelHandleKey
-import iad1tya.melo.music.constants.AccountEmailKey
-import iad1tya.melo.music.constants.AccountNameKey
-import iad1tya.melo.music.constants.DataSyncIdKey
-import iad1tya.melo.music.constants.InnerTubeCookieKey
-import iad1tya.melo.music.constants.VisitorDataKey
-import iad1tya.melo.music.ui.component.IconButton
-import iad1tya.melo.music.ui.utils.backToMain
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.AccountChannelHandleKey
+import com.hyperlabs.melo.constants.AccountEmailKey
+import com.hyperlabs.melo.constants.AccountNameKey
+import com.hyperlabs.melo.constants.DataSyncIdKey
+import com.hyperlabs.melo.constants.InnerTubeCookieKey
+import com.hyperlabs.melo.constants.VisitorDataKey
+import com.hyperlabs.melo.ui.component.IconButton
+import com.hyperlabs.melo.ui.utils.backToMain
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.utils.reportException
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

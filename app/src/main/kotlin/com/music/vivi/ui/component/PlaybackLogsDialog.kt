@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
@@ -33,9 +33,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.R
-import iad1tya.melo.music.utils.PlaybackLogEntry
-import iad1tya.melo.music.utils.PlaybackLogLevel
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.utils.PlaybackLogEntry
+import com.hyperlabs.melo.utils.PlaybackLogLevel
 
 @Composable
 fun PlaybackLogsDialog(

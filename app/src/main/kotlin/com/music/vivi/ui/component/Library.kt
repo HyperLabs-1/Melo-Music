@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -13,14 +13,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import com.music.innertube.models.PlaylistItem
 import com.music.innertube.models.WatchEndpoint
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.entities.Album
-import iad1tya.melo.music.db.entities.Artist
-import iad1tya.melo.music.db.entities.Playlist
-import iad1tya.melo.music.ui.menu.AlbumMenu
-import iad1tya.melo.music.ui.menu.ArtistMenu
-import iad1tya.melo.music.ui.menu.PlaylistMenu
-import iad1tya.melo.music.ui.menu.YouTubePlaylistMenu
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.entities.Album
+import com.hyperlabs.melo.db.entities.Artist
+import com.hyperlabs.melo.db.entities.Playlist
+import com.hyperlabs.melo.ui.menu.AlbumMenu
+import com.hyperlabs.melo.ui.menu.ArtistMenu
+import com.hyperlabs.melo.ui.menu.PlaylistMenu
+import com.hyperlabs.melo.ui.menu.YouTubePlaylistMenu
 import kotlinx.coroutines.CoroutineScope
 
 @Composable

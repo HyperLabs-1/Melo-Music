@@ -1,4 +1,4 @@
-package iad1tya.melo.music.db.entities
+package com.hyperlabs.melo.db.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

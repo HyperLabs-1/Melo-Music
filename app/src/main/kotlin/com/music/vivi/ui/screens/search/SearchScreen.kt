@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.screens.search
+package com.hyperlabs.melo.ui.screens.search
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -74,22 +74,22 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.navigation.NavController
 import com.music.innertube.models.WatchEndpoint
 import com.music.innertube.utils.YouTubeUrlParser
-import iad1tya.melo.music.LocalDatabase
-import iad1tya.melo.music.LocalIsPlayerExpanded
-import iad1tya.melo.music.LocalPlayerAwareWindowInsets
-import iad1tya.melo.music.LocalPlayerConnection
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.PauseSearchHistoryKey
-import iad1tya.melo.music.constants.SearchSource
-import iad1tya.melo.music.constants.SearchSourceKey
-import iad1tya.melo.music.db.entities.SearchHistory
-import iad1tya.melo.music.playback.queues.YouTubeQueue
-import iad1tya.melo.music.ui.component.NavigationTitle
-import iad1tya.melo.music.utils.rememberEnumPreference
-import iad1tya.melo.music.utils.rememberPreference
-import iad1tya.melo.music.viewmodels.MoodAndGenresViewModel
-import iad1tya.melo.music.viewmodels.ExploreViewModel
-import iad1tya.melo.music.ui.screens.search.suggestions.SuggestionsTabContent
+import com.hyperlabs.melo.LocalDatabase
+import com.hyperlabs.melo.LocalIsPlayerExpanded
+import com.hyperlabs.melo.LocalPlayerAwareWindowInsets
+import com.hyperlabs.melo.LocalPlayerConnection
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.PauseSearchHistoryKey
+import com.hyperlabs.melo.constants.SearchSource
+import com.hyperlabs.melo.constants.SearchSourceKey
+import com.hyperlabs.melo.db.entities.SearchHistory
+import com.hyperlabs.melo.playback.queues.YouTubeQueue
+import com.hyperlabs.melo.ui.component.NavigationTitle
+import com.hyperlabs.melo.utils.rememberEnumPreference
+import com.hyperlabs.melo.utils.rememberPreference
+import com.hyperlabs.melo.viewmodels.MoodAndGenresViewModel
+import com.hyperlabs.melo.viewmodels.ExploreViewModel
+import com.hyperlabs.melo.ui.screens.search.suggestions.SuggestionsTabContent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.net.URLEncoder
@@ -107,12 +107,12 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalHapticFeedback
-import iad1tya.melo.music.ui.component.LocalMenuState
-import iad1tya.melo.music.ui.component.YouTubeGridItem
-import iad1tya.melo.music.ui.menu.YouTubeAlbumMenu
-import iad1tya.melo.music.constants.GridThumbnailHeight
-import iad1tya.melo.music.constants.GridItemsSizeKey
-import iad1tya.melo.music.constants.GridItemSize
+import com.hyperlabs.melo.ui.component.LocalMenuState
+import com.hyperlabs.melo.ui.component.YouTubeGridItem
+import com.hyperlabs.melo.ui.menu.YouTubeAlbumMenu
+import com.hyperlabs.melo.constants.GridThumbnailHeight
+import com.hyperlabs.melo.constants.GridItemsSizeKey
+import com.hyperlabs.melo.constants.GridItemSize
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

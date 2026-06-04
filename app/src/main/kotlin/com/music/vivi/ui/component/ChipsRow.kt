@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.component
+package com.hyperlabs.melo.ui.component
 
 import android.annotation.SuppressLint
 import androidx.compose.animation.animateContentSize
@@ -55,8 +55,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import iad1tya.melo.music.R
-import iad1tya.melo.music.ui.screens.OptionStats
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.ui.screens.OptionStats
 
 @Composable
 fun <E> ChipsRow(

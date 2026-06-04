@@ -1,4 +1,4 @@
-package iad1tya.melo.music.playback
+package com.hyperlabs.melo.playback
 
 import android.content.Context
 import kotlinx.coroutines.CoroutineScope
@@ -44,7 +44,7 @@ class CastConnectionHandler(
     fun initialize(): Boolean = false
     fun disconnect() {}
     fun loadCurrentMedia() {}
-    fun loadMedia(metadata: iad1tya.melo.music.models.MediaMetadata) {}
+    fun loadMedia(metadata: com.hyperlabs.melo.models.MediaMetadata) {}
     fun play() {}
     fun pause() {}
     fun seekTo(position: Long) {}

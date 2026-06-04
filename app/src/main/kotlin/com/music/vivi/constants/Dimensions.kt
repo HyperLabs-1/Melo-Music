@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.constants
+package com.hyperlabs.melo.constants
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring

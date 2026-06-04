@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.extensions
+package com.hyperlabs.melo.extensions
 
 import java.io.File
 import java.io.InputStream

@@ -1,8 +1,8 @@
 
 
-package iad1tya.melo.music.lyrics
+package com.hyperlabs.melo.lyrics
 
-import iad1tya.melo.music.constants.PreferredLyricsProvider
+import com.hyperlabs.melo.constants.PreferredLyricsProvider
 
 
 object LyricsProviderRegistry {

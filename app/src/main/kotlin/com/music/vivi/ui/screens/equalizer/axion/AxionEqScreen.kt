@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.screens.equalizer.axion
+package com.hyperlabs.melo.ui.screens.equalizer.axion
 
 import androidx.compose.animation.*
 import androidx.compose.foundation.background
@@ -29,11 +29,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
-import iad1tya.melo.music.R
-import iad1tya.melo.music.eq.data.SavedEQProfile
-import iad1tya.melo.music.ui.component.Material3SettingsGroup
-import iad1tya.melo.music.ui.component.Material3SettingsItem
-import iad1tya.melo.music.ui.utils.backToMain
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.eq.data.SavedEQProfile
+import com.hyperlabs.melo.ui.component.Material3SettingsGroup
+import com.hyperlabs.melo.ui.component.Material3SettingsItem
+import com.hyperlabs.melo.ui.utils.backToMain
 import kotlin.math.abs
 import racra.compose.smooth_corner_rect_library.AbsoluteSmoothCornerShape
 
@@ -52,7 +52,7 @@ fun AxionEqScreen(
             TopAppBar(
                 title = { Text(stringResource(R.string.melo_equalizer)) },
                 navigationIcon = {
-                    iad1tya.melo.music.ui.component.IconButton(
+                    com.hyperlabs.melo.ui.component.IconButton(
                         onClick = onBackClick,
                         onLongClick = {}
                     ) {

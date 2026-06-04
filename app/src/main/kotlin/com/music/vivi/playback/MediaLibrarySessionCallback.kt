@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.playback
+package com.hyperlabs.melo.playback
 
 import android.content.ContentResolver
 import android.content.Context
@@ -31,20 +31,20 @@ import com.music.innertube.models.PlaylistItem
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.filterExplicit
 import com.music.innertube.models.filterVideoSongs
-import iad1tya.melo.music.R
-import iad1tya.melo.music.constants.HideExplicitKey
-import iad1tya.melo.music.constants.HideVideoSongsKey
-import iad1tya.melo.music.constants.MediaSessionConstants
-import iad1tya.melo.music.constants.SongSortType
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.PlaylistEntity
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.extensions.toMediaItem
-import iad1tya.melo.music.extensions.toggleRepeatMode
-import iad1tya.melo.music.models.toMediaMetadata
-import iad1tya.melo.music.utils.dataStore
-import iad1tya.melo.music.utils.get
-import iad1tya.melo.music.utils.reportException
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.constants.HideExplicitKey
+import com.hyperlabs.melo.constants.HideVideoSongsKey
+import com.hyperlabs.melo.constants.MediaSessionConstants
+import com.hyperlabs.melo.constants.SongSortType
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.PlaylistEntity
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.extensions.toMediaItem
+import com.hyperlabs.melo.extensions.toggleRepeatMode
+import com.hyperlabs.melo.models.toMediaMetadata
+import com.hyperlabs.melo.utils.dataStore
+import com.hyperlabs.melo.utils.get
+import com.hyperlabs.melo.utils.reportException
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -792,7 +792,7 @@ constructor(
         singleItemStyle = MediaConstants.EXTRAS_VALUE_CONTENT_STYLE_CATEGORY_LIST_ITEM,
     )
 
-    private fun iad1tya.melo.music.db.entities.Playlist.toBrowsableMediaItem() = browsableMediaItem(
+    private fun com.hyperlabs.melo.db.entities.Playlist.toBrowsableMediaItem() = browsableMediaItem(
         "${MusicService.PLAYLIST}/$id",
         playlist.name,
         context.resources.getQuantityString(

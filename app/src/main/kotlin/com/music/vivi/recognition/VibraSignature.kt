@@ -1,4 +1,4 @@
-package iad1tya.melo.music.recognition
+package com.hyperlabs.melo.recognition
 
 
 object VibraSignature {

@@ -1,13 +1,13 @@
 
 
-package iad1tya.melo.music.models
+package com.hyperlabs.melo.models
 
 import androidx.compose.runtime.Immutable
 import com.music.innertube.models.SongItem
 import com.music.innertube.models.WatchEndpoint.WatchEndpointMusicSupportedConfigs.WatchEndpointMusicConfig.Companion.MUSIC_VIDEO_TYPE_ATV
-import iad1tya.melo.music.db.entities.Song
-import iad1tya.melo.music.db.entities.SongEntity
-import iad1tya.melo.music.ui.utils.resize
+import com.hyperlabs.melo.db.entities.Song
+import com.hyperlabs.melo.db.entities.SongEntity
+import com.hyperlabs.melo.ui.utils.resize
 import java.io.Serializable
 import java.time.LocalDateTime
 

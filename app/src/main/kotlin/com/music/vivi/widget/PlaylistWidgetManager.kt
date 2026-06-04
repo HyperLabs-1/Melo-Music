@@ -3,7 +3,7 @@
  * Licensed under GPL-3.0 | See git history for contributors
  */
 
-package iad1tya.melo.music.widget
+package com.hyperlabs.melo.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -25,11 +25,11 @@ import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.request.crossfade
 import coil3.toBitmap
-import iad1tya.melo.music.MainActivity
-import iad1tya.melo.music.R
-import iad1tya.melo.music.db.MusicDatabase
-import iad1tya.melo.music.db.entities.Playlist
-import iad1tya.melo.music.di.ApplicationScope
+import com.hyperlabs.melo.MainActivity
+import com.hyperlabs.melo.R
+import com.hyperlabs.melo.db.MusicDatabase
+import com.hyperlabs.melo.db.entities.Playlist
+import com.hyperlabs.melo.di.ApplicationScope
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
@@ -618,7 +618,7 @@ class PlaylistWidgetManager @Inject constructor(
 
     private fun getOpenTargetIntent(item: QuickPick): PendingIntent {
         val intent = Intent(context, MainActivity::class.java).apply {
-            action = "iad1tya.melo.music.action.OPEN_WIDGET_TARGET"
+            action = "com.hyperlabs.melo.action.OPEN_WIDGET_TARGET"
             putExtra("extra_widget_target_type", item.targetType)
             putExtra("extra_widget_target_id", item.targetId)
         }

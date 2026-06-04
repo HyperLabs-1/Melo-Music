@@ -1,4 +1,4 @@
-package iad1tya.melo.music.ui.screens
+package com.hyperlabs.melo.ui.screens
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
@@ -33,8 +33,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import iad1tya.melo.music.BuildConfig
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.BuildConfig
+import com.hyperlabs.melo.R
 
 @Composable
 fun WelcomeDialog(

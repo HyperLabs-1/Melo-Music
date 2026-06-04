@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.ui.player
+package com.hyperlabs.melo.ui.player
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -27,7 +27,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.media3.common.PlaybackException
-import iad1tya.melo.music.R
+import com.hyperlabs.melo.R
 
 @Composable
 fun PlaybackError(

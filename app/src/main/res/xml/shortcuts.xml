@@ -6,9 +6,9 @@
         android:shortcutId="search"
         android:shortcutShortLabel="@string/search">
         <intent
-            android:action="iad1tya.melo.music.action.SEARCH"
-            android:targetClass="iad1tya.melo.music.MainActivity"
-            android:targetPackage="iad1tya.melo.music" />
+            android:action="com.hyperlabs.melo.action.SEARCH"
+            android:targetClass="com.hyperlabs.melo.MainActivity"
+            android:targetPackage="com.hyperlabs.melo" />
     </shortcut>
     <shortcut
         android:enabled="true"
@@ -16,8 +16,8 @@
         android:shortcutId="library"
         android:shortcutShortLabel="@string/filter_library">
         <intent
-            android:action="iad1tya.melo.music.action.LIBRARY"
-            android:targetClass="iad1tya.melo.music.MainActivity"
-            android:targetPackage="iad1tya.melo.music" />
+            android:action="com.hyperlabs.melo.action.LIBRARY"
+            android:targetClass="com.hyperlabs.melo.MainActivity"
+            android:targetPackage="com.hyperlabs.melo" />
     </shortcut>
 </shortcuts>

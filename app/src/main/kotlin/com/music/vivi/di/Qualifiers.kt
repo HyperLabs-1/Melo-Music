@@ -1,6 +1,6 @@
 
 
-package iad1tya.melo.music.di
+package com.hyperlabs.melo.di
 
 import javax.inject.Qualifier
 
