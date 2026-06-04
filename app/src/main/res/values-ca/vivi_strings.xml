@@ -579,7 +579,7 @@
     <string name="enable_high_refresh_rate">Habilita una alta freqüència d\'actualització</string>
     <string name="enable_high_refresh_rate_desc">Força la pantalla a treballar a la màxima freqüència d\'actualització (p.e. 120Hz)</string>
     <string name="recognition">Reconeixement</string>
-    <string name="recognize_music">Identificar Música</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="tap_to_recognize">Toca per identificar</string>
     <string name="listening">Escoltant…</string>
     <string name="processing">Processant…</string>

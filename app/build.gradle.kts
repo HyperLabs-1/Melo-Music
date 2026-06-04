@@ -26,8 +26,8 @@ android {
         applicationId = "com.hyperlabs.melo"
         minSdk = 26
         targetSdk = 36
-        versionCode = 507
-        versionName = "5.1.6"
+        versionCode = 1
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true

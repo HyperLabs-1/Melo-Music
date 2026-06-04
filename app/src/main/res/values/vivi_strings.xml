@@ -750,7 +750,7 @@
 
     <!-- Music Recognition -->
     <string name="recognition">Recognition</string>
-    <string name="recognize_music">Recognize Music</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="tap_to_recognize">Tap to recognize</string>
     <string name="listening">Listening…</string>
     <string name="processing">Processing…</string>

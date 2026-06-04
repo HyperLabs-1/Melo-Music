@@ -530,7 +530,7 @@
     <string name="widget_turntable">Gramofon</string>
     <string name="enter_room_code">Vložte kód místnosti</string>
     <string name="listen_together_settings_desc">Nastavit server, uživatelské jméno a další</string>
-    <string name="recognize_music">Rozpoznat hudbu</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="youtube_url_column">Sloupec adresy YouTube (nepovinný)</string>
     <string name="ai_translation_mode">Režim překladu</string>
     <string name="ai_model">Model</string>

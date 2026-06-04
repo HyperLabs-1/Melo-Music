@@ -584,7 +584,7 @@
     <string name="enable_high_refresh_rate">Habilitar alta tasa de refresco</string>
     <string name="enable_high_refresh_rate_desc">Obliga a la pantalla a funcionar con la frecuencia de actualización más alta compatible (por ejemplo, 120 Hz)</string>
     <string name="recognition">Reconocimiento</string>
-    <string name="recognize_music">Identificar Canción</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="tap_to_recognize">Toca para identificar</string>
     <string name="listening">Escuchando…</string>
     <string name="processing">Procesando…</string>

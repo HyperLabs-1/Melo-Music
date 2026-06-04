@@ -566,7 +566,7 @@
     <string name="enable_high_refresh_rate">Aktifkan refresh rate tinggi</string>
     <string name="enable_high_refresh_rate_desc">Paksa layar untuk berjalan pada refresh rate tertinggi yang didukung (mis. 120Hz)</string>
     <string name="recognition">Pengenalan</string>
-    <string name="recognize_music">Kenali Musik</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="tap_to_recognize">Ketuk untuk mengenali</string>
     <string name="listening">Mendengarkan…</string>
     <string name="processing">Memproses…</string>

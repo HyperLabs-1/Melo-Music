@@ -553,7 +553,7 @@
     <string name="ai_error_unknown">Произошла неизвестная ошибка</string>
     <string name="ai_error_translation_failed">Ошибка перевода</string>
     <string name="play_all">Играть все</string>
-    <string name="recognize_music">Распознать музыку</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="youtube_url_column">Столбец ссылки на YouTube (необязательно)</string>
     <string name="re_listen">Прослушать снова</string>
     <string name="clear_recognition_history_confirm">Вы уверены, что хотите очистить всю историю распознавания?</string>

@@ -692,7 +692,7 @@ est irréversible.
 
     <!-- Music Recognition -->
     <string name="recognition">Reconnaissance</string>
-    <string name="recognize_music">Reconnaître la musique</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="tap_to_recognize">Appuyez pour reconnaître</string>
     <string name="listening">Écoute…</string>
     <string name="processing">Traitement en cours…</string>

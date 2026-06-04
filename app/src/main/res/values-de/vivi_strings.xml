@@ -542,7 +542,7 @@
     <string name="ai_error_translation_failed">Übersetzung fehlgeschlagen</string>
     <string name="palette_amber">Bernstein</string>
     <string name="play_all">Alle abspielen</string>
-    <string name="recognize_music">Musik erkennen</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="youtube_url_column">YouTube-URL-Spalte (optional)</string>
     <string name="re_listen">Noch einmal zuhören</string>
     <string name="clear_recognition_history_confirm">Bist du sicher, dass du den gesamten Erkennungsverlauf löschen möchten?</string>

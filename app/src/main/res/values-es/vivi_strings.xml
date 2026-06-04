@@ -548,7 +548,7 @@
     <string name="ai_error_unknown">Error desconocido ocurrido</string>
     <string name="ai_error_translation_failed">Error de traducción</string>
     <string name="play_all">Reproducir todo</string>
-    <string name="recognize_music">Reconocer música</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="youtube_url_column">Columna de URL de YouTube (Opcional)</string>
     <string name="re_listen">Volver a escuchar</string>
     <string name="clear_recognition_history_confirm">¿Estás seguro de que quieres borrar todo el historial de reconocimiento?</string>

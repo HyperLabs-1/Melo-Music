@@ -538,7 +538,7 @@
     <string name="listen_together_no_blocked_users">لا يوجد مستخدمون محظورون</string>
     <string name="unblock">إلغاء الحظر</string>
     <string name="user_blocked_by_host">تم حظر المستخدم من قبل المضيف</string>
-    <string name="recognize_music">التعرف على الموسيقى</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="youtube_url_column">خانة رابط يوتيوب (اختياري)</string>
     <string name="ai_translation_mode">وضع الترجمة</string>
     <string name="ai_model">نموذج</string>

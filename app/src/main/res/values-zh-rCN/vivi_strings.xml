@@ -538,7 +538,7 @@
     <string name="play_all">播放全部</string>
     <string name="together">一起听</string>
     <string name="ai_translation_transcribed">转录</string>
-    <string name="recognize_music">识别音乐</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="youtube_url_column">YouTube 网址列（可选）</string>
     <string name="re_listen">重新识别</string>
     <string name="clear_recognition_history_confirm">您确定要清除所有识别历史吗？</string>
@@ -566,7 +566,7 @@
     <string name="play_on_app">在 melomusic 上播放</string>
     <string name="listening">正在聆听…</string>
     <string name="continue_action">继续</string>
-    <string name="hold_to_recognize">按住搜索图标识别音乐</string>
+    <string name="hold_to_recognize">按住搜索图标Melo Find</string>
     <string name="enable">启用</string>
     <string name="crossfade">淡入淡出</string>
     <string name="crossfade_desc">歌曲间淡入淡出</string>

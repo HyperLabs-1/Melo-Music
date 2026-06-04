@@ -553,7 +553,7 @@
     <string name="enable_high_refresh_rate">เปิดใช้งานรีเฟรชเรตสูง</string>
     <string name="enable_high_refresh_rate_desc">บังคับให้หน้าจอทำงานที่อัตรารีเฟรชสูงสุดที่รองรับ (เช่น 120Hz)</string>
     <string name="recognition">การรู้จำเพลง</string>
-    <string name="recognize_music">ค้นหาเพลงจากเสียง</string>
+    <string name="recognize_music">Melo Find</string>
     <string name="tap_to_recognize">แตะเพื่อค้นหาเพลง</string>
     <string name="listening">กำลังฟัง…</string>
     <string name="processing">กำลังประมวลผล…</string>
