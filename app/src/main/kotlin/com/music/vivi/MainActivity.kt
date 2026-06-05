@@ -190,7 +190,7 @@ import com.hyperlabs.melo.ui.menu.YouTubeSongMenu
 import com.hyperlabs.melo.ui.player.BottomSheetPlayer
 import com.hyperlabs.melo.ui.screens.Screens
 import com.hyperlabs.melo.ui.screens.SettingDialoge
-import com.hyperlabs.melo.ui.screens.WelcomeDialog
+
 import com.hyperlabs.melo.ui.screens.navigationBuilder
 import com.hyperlabs.melo.ui.screens.settings.DarkMode
 import com.hyperlabs.melo.ui.screens.settings.NavigationTab
@@ -750,14 +750,6 @@ class MainActivity : ComponentActivity() {
                 val snackbarHostState = remember { SnackbarHostState() }
                 var showSettingDialoge by remember { mutableStateOf(false) }
 
-                val (lastOpenedVersionCode, setLastOpenedVersionCode) = rememberPreference(com.hyperlabs.melo.constants.LastOpenedVersionCodeKey, -1)
-                var showWelcomeDialog by remember { mutableStateOf(false) }
-
-                LaunchedEffect(lastOpenedVersionCode) {
-                    if (lastOpenedVersionCode < BuildConfig.VERSION_CODE) {
-                        showWelcomeDialog = true
-                    }
-                }
 
                 LaunchedEffect(Unit) {
                     if (pendingIntent != null) {
