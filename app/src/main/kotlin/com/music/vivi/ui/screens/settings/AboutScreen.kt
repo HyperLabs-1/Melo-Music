@@ -106,7 +106,7 @@ private fun AboutAppCard() {
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             Image(
-                painter = painterResource(R.drawable.ic_melo),
+                painter = painterResource(R.drawable.icon),
                 contentDescription = null,
                 modifier = Modifier
                     .size(120.dp)
