@@ -1190,11 +1190,6 @@ class MainActivity : ComponentActivity() {
                         )
                     }
 
-                    if (showWelcomeDialog) {
-                        WelcomeDialog(
-                            onDismissRequest = {
-                                showWelcomeDialog = false
-                                setLastOpenedVersionCode(BuildConfig.VERSION_CODE)
                             }
                         )
                     }
