@@ -466,7 +466,7 @@ class MusicService :
             val notification: Notification = NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle(getString(R.string.music_player))
                 .setContentText("")
-                .setSmallIcon(R.drawable.ic_launcher_nobg)  
+                .setSmallIcon(R.drawable.ic_notification)  
                 .setContentIntent(pending)
                 .setOngoing(true)
                 .build()
@@ -484,7 +484,7 @@ class MusicService :
                 R.string.music_player
             )
                 .apply {
-                    setSmallIcon(R.drawable.ic_launcher_nobg)
+                    setSmallIcon(R.drawable.ic_notification)
                 },
         )
         player = createExoPlayer()
